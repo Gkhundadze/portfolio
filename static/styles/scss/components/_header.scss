@@ -1,3 +1,55 @@
 header {
-    color: $green-text;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(10, 25, 47, 0.85);
+    padding-inline: 50px;
+
+    .logo{
+        width: 150px;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        ul {
+            display: flex;
+            li {
+                margin-inline: 15px;
+                a{
+                    text-decoration: none;
+                    color: #ccd6f6;
+                    font-size: $fz-xs;
+                    font-family: $font-mono;
+                    transition: $transition;
+                    &:hover{
+                        color: $green;
+                    }
+                    span{
+                        margin-right: 5px;
+                        color: $green;
+                    }
+                }
+            }
+        }
+        .resumBtn {
+            cursor: pointer;
+            color: $green;
+            background-color: transparent;
+            border: 1px solid $green;
+            border-radius: 5px;
+            padding: 0.75rem 1rem;
+            text-decoration: none;
+            margin-left: 15px;
+            font-size: $fz-xs;
+            font-family: $font-mono;
+            transition: $transition;
+
+            &:hover{
+                background-color: $green-tint;
+            }
+        }
+    }
+
 }

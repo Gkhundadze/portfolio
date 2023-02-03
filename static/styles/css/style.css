@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap");
 *, *:before, *:after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -50,7 +51,69 @@ input {
 }
 
 header {
-  color: green;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(10, 25, 47, 0.85);
+  padding-inline: 50px;
+}
+header .logo {
+  width: 150px;
+}
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+header nav ul li {
+  margin-inline: 15px;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: #ccd6f6;
+  font-size: 13px;
+  font-family: "Roboto Mono", monospace;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+header nav ul li a:hover {
+  color: #64ffda;
+}
+header nav ul li a span {
+  margin-right: 5px;
+  color: #64ffda;
+}
+header nav .resumBtn {
+  cursor: pointer;
+  color: #64ffda;
+  background-color: transparent;
+  border: 1px solid #64ffda;
+  border-radius: 5px;
+  padding: 0.75rem 1rem;
+  text-decoration: none;
+  margin-left: 15px;
+  font-size: 13px;
+  font-family: "Roboto Mono", monospace;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+header nav .resumBtn:hover {
+  background-color: rgba(100, 255, 218, 0.1);
 }
 
 main {
