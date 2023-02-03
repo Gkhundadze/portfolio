@@ -79,7 +79,7 @@ header.showHeader {
           transform: translateY(0);
 }
 header .logo {
-  width: 120px;
+  width: 80px;
 }
 header nav {
   display: -webkit-box;
