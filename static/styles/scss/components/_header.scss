@@ -1,14 +1,28 @@
 header {
+    width: 100%;
+    position: fixed;
+    top: 0;
     height: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: rgba(10, 25, 47, 0.85);
     padding-inline: 50px;
+    transition: $transition;
+
+    &.hideHeader{
+        height: 70px;
+        transform: translateY(calc( 72px * -1));
+    }
+
+    &.showHeader{
+        transform: translateY(0);
+    }
 
     .logo{
-        width: 150px;
+        width: 120px;
     }
+
 
     nav {
         display: flex;
