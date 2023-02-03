@@ -51,6 +51,9 @@ input {
 }
 
 header {
+  width: 100%;
+  position: fixed;
+  top: 0;
   height: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -63,6 +66,17 @@ header {
           align-items: center;
   background-color: rgba(10, 25, 47, 0.85);
   padding-inline: 50px;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+header.hideHeader {
+  height: 70px;
+  -webkit-transform: translateY(-72px);
+          transform: translateY(-72px);
+}
+header.showHeader {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 header .logo {
   width: 80px;
@@ -118,6 +132,7 @@ header nav .resumBtn:hover {
 
 main {
   color: blue;
+  height: 200vh;
 }
 
 footer {
