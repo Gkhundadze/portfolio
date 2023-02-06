@@ -1,3 +1,121 @@
 main {
     color: $blue-text;
+    height: 200vh;
+    #about {
+        background-color: $navy;
+        color: $slate;
+        padding: 15rem 15%;
+        font-family: $font-mono;
+
+        h2 {
+            display: flex;
+            align-items: center;
+            color: $lightest-slate;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+        }
+
+        h2::after {
+            display: block;
+            position: relative;
+            content: '';
+            width: 13rem;
+            height: 0.1rem;
+            top: 0.2rem;
+            margin: 0 1rem;
+            background-color: $slate;
+        }
+
+        .info {
+            display: grid;
+            grid-template-columns: 3fr 2fr;
+            gap: 3rem;
+
+
+            p:not(:last-child) {
+                padding-bottom: 2rem;
+            }
+
+            .profileWrapper {
+                border-radius: 0.5rem;
+                position: relative;
+                width: fit-content;
+                height: fit-content;
+                z-index: 1;
+
+                img {
+                    width: 25rem;
+                    border-radius: inherit;
+                }
+            }
+
+            .profileWrapper::before {
+                content: "";
+                display: block;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background-color: $green;
+                opacity: 0.5;
+                border-radius: inherit;
+                z-index: 2;
+                transition: $transition;
+            }
+
+            .profileWrapper::after {
+                content: "";
+                display: block;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                border: 2px solid $green;
+                top: 1.5rem;
+                left: 1.5rem;
+                border-radius: inherit;
+                z-index: -1;
+                transition: $transition;
+            }
+
+            .profileWrapper:hover::before {
+                content: "";
+                display: block;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background-color: transparent;
+                opacity: 0.5;
+                border-radius: inherit;
+                z-index: 2;
+            }
+
+            .profileWrapper:hover::after {
+                content: "";
+                display: block;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                border: 2px solid $green;
+                top: 0.5rem;
+                left: 0.5rem;
+                border-radius: inherit;
+                z-index: -1;
+            }
+
+            #devStack {
+                display: grid;
+                grid-template-columns: auto auto auto;
+                justify-content: space-evenly;
+
+                li {
+                    margin: 0.2rem 0;
+                }
+
+                li::before {
+                    content: '»';
+                    color: $green;
+                    margin-right: 0.2rem;
+                }
+            }
+        }
+    }
 }

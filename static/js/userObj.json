@@ -5,8 +5,19 @@
   "address": "address",
   "age": 25,
   "contactNumber": "12345 56213 15123",
+
   "developerPhoto": {
     "desktop": "url",
+
+  "about": {
+    "p1": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio libero dolorem corrupti nisi error omnis, ratione magnam reprehenderit sint ad, quos dolor quaerat deleniti debitis perspiciatis soluta. Officia nulla omnis sapiente enim necessitatibus? Deserunt suscipit nam eum repudiandae. Quidem, laborum.",
+    "p2": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt eum harum totam, rem laborum aliquid accusamus amet! Possimus unde sapiente ratione quis iure quia tempore, laudantium atque sint nihil doloribus?",
+    "p3": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem beatae dicta totam hic fugiat dolorum ipsum magni esse quae, voluptate necessitatibus. Optio voluptates eveniet quidem?",
+    "p4": "Here are a few technologies I've been working with recently:"
+  },
+  "developerPhoto": {
+    "desktop": "./static/images/profile.jpg",
+
     "tablet": "url",
     "mobile": "url"
   },

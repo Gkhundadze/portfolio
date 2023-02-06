@@ -1,18 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./static/styles/css/style.css" />
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./static/styles/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Portfolio</title>
-  </head>
-  <body>
-    <header>header goes here</header>
-    <main>main content</main>
+</head>
+<body>
+    <header id="header">
+        <div>
+            <img class="logo" src="static/images/logo.png" alt="">
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="#"><span>01.</span>About</a></li>
+                <li><a href="#"><span>02.</span>Experience</a></li>
+                <li><a href="#"><span>03.</span>Work</a></li>
+                <li><a href="#"><span>04.</span>Contact</a></li>
+            </ul>
+
+                <a href="#" class="resumeBtn">Resume</a>
+
+        </nav>
+        <div class="icon">
+            <i class="fa-solid fa-bars openNavbar"></i>
+            <i class="fa-solid fa-xmark closeNavbar"></i>
+        </div>
+    </header>
+    <main>
+        <section id="about">
+            <h2>about me</h2>
+            <div class="info">
+                <div id="aboutMe"></div>
+                <div class="profileWrapper">
+                    <img id="profilePhoto" src="" alt="profile">
+                </div>
+                <ul id="devStack"></ul>
+            </div>
+        </section>
+    </main>
     <footer>
-      footer goes here
-      <div class="social__icons">
+              <div class="social__icons">
         <ul class="social__icons__list">
           <li class="social__links">
             <a href="#">
@@ -135,5 +165,6 @@
       </div>
     </footer>
     <script type="module" src="static/js/app.js"></script>
-  </body>
+    <script type="module" src="static/js/animation.js"></script>
+</body>
 </html>
