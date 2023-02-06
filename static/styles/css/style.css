@@ -151,6 +151,7 @@ footer {
   color: red;
 }
 
+
 header.hideHeader {
   height: 70px;
   -webkit-transform: translateY(-72px);
@@ -431,4 +432,3 @@ main #about .info #devStack li::before {
 footer {
   color: red;
 }
-
