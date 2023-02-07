@@ -1,8 +1,3 @@
-
-
-export function test(test) {
-    console.log(test);
-=======
 export function showDevelopmentStack(devStack, Developer) {
     let li = document.createElement('li');
     Developer['developmentStack'].forEach(stack => {
@@ -21,5 +16,4 @@ export function showAboutMe(aboutMe, Developer) {
         p.innerHTML = Developer['about'][i];
         aboutMe.appendChild(p.cloneNode(true))
     }
-
 }

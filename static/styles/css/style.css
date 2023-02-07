@@ -1,62 +1,3 @@
-
-*,
-*:before,
-*:after {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-html,
-body,
-div,
-span,
-object,
-iframe,
-figure,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-code,
-em,
-img,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-b,
-u,
-i,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-main,
-canvas,
-embed,
-footer,
-header,
-nav,
-section,
-video {
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap");
 *, *:before, *:after {
@@ -74,24 +15,12 @@ html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockq
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: none;
-
-  -moz-text-size-adjust: none;
-  -ms-text-size-adjust: none;
-  text-size-adjust: none;
-}
-
-footer,
-header,
-nav,
-section,
-main {
      -moz-text-size-adjust: none;
       -ms-text-size-adjust: none;
           text-size-adjust: none;
 }
 
 footer, header, nav, section, main {
-
   display: block;
 }
 
@@ -99,21 +28,6 @@ body {
   line-height: 1;
 }
 
-
-ol,
-ul {
-  list-style: none;
-}
-
-blockquote,
-q {
-  quotes: none;
-}
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
 ol, ul {
   list-style: none;
 }
@@ -123,7 +37,6 @@ blockquote, q {
 }
 
 blockquote:before, blockquote:after, q:before, q:after {
-
   content: "";
   content: none;
 }
@@ -139,19 +52,25 @@ input {
 }
 
 header {
-
   color: green;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(10, 25, 47, 0.85);
+  padding-inline: 50px;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
 }
-
-main {
-  color: blue;
-}
-
-footer {
-  color: red;
-}
-
-
 header.hideHeader {
   height: 70px;
   -webkit-transform: translateY(-72px);
@@ -310,14 +229,12 @@ header i {
     display: none;
   }
 }
-main {
-  height: 200vh;
-}
 main #about {
+  font-family: "Roboto Mono", monospace;
   background-color: #0a192f;
   color: #8892b0;
-  padding: 15rem 15%;
-  font-family: "Roboto Mono", monospace;
+  padding: 10% 15%;
+  height: 100vh;
 }
 main #about h2 {
   display: -webkit-box;
@@ -427,6 +344,54 @@ main #about .info #devStack li::before {
   content: "»";
   color: #64ffda;
   margin-right: 0.2rem;
+}
+
+/* Social Icons Styles */
+.social__icons {
+  width: 40px;
+  position: fixed;
+  bottom: 0;
+  left: 40px;
+  right: auto;
+  z-index: 9999;
+}
+.social__icons .social__icons__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style-type: none;
+}
+.social__icons .social__icons__list .social__links a {
+  display: inline-block;
+  padding: 10px;
+}
+.social__icons .social__icons__list .social__links a .social__svg--dimensions {
+  width: 20px;
+  height: 20px;
+  fill: none;
+  color: rgb(168, 178, 209);
+  -webkit-transition: all 0.25s cubic-bezier(0.65, 0.05, 0.36, 1);
+  transition: all 0.25s cubic-bezier(0.65, 0.05, 0.36, 1);
+}
+.social__icons .social__icons__list .social__links a .social__svg--dimensions:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  color: #64ffda;
+}
+.social__icons .social__icons__list .social__icons__list::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 90px;
+  margin: 0px auto;
+  background-color: rgb(168, 178, 209);
 }
 
 footer {
