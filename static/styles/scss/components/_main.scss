@@ -1,7 +1,7 @@
 main {
+    background-color: $navy;
     #about {
         font-family: $font-mono;
-        background-color: $navy;
         color: $slate;
         padding: 10% 15%;
         height: 100vh;
@@ -117,6 +117,219 @@ main {
             }
         }
     }
+
+    .work-experience {
+        max-width: 700px;
+        margin: 0 auto;
+        padding: 100px 0;
+    
+        .work-title{
+            display: flex;
+            align-items: center;
+            margin: 10px 0px 40px;
+            span{
+                color: $green;
+                margin-right: 10px;
+                font-family: $font-mono;
+                font-size: $fz-xxl;
+            }
+            h2{
+                font-size: 32px;
+                font-weight: 600;
+                color: $lightest-slate;
+                font-family: $font-sans;
+            }
+        }
+    
+        .work-content {
+            height: auto;
+            display: flex;
+    
+            .projectNames {
+                display: flex;
+                flex-direction: column;
+                button {
+                    cursor: pointer;
+                    position: relative;
+                    font-family: $font-mono;
+                    font-size: $fz-xs;
+                    height: $tab-height;
+                    border: none;
+                    background-color: transparent;
+                    color: $slate;
+                    padding: 0px 20px 2px;
+                    border-left: 2px solid $lightest-navy;
+                    transition: $transition;
+                    text-align: left;
+    
+    
+    
+                    &.active{
+                        background-color: $light-navy;
+                        color: $green;
+                        transition: 2s;
+                        &::before{
+                            content: '';
+                            position: absolute;
+                            width: 3px;
+                            height: 100%;
+                            top: 0;
+                            left: -2px;
+                            background-color: $green;
+                        }
+                    }
+    
+                    &:hover {
+                        background-color: $light-navy;
+                        color: $green;
+                        outline: 0px;
+                    }
+    
+    
+                }
+            }
+    
+            .project-inner {
+                margin-left: 20px;
+                padding: 10px 5px;
+    
+                h3 {
+                    font-family: $font-sans;
+                    margin-bottom: 8px;
+                    font-size: $fz-xxl;
+                    color: $lightest-slate;
+                }
+    
+                .duration {
+                    margin-bottom: 25px;
+                    color: $light-slate;
+                    font-family: $font-mono;
+                    font-size: $fz-xs;
+                }
+                        
+                div{
+                    display: flex;
+                    i{
+                        color: $green;
+                    }
+                    p {
+                            padding-left: 30px;
+                            color: $slate;
+                            font-size: 15px;
+                            font-family: $font-sans;
+                            margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    .work-experience {
+        max-width: 700px;
+        margin: 0 auto;
+        padding: 100px 0;
+    
+        .work-title{
+            display: flex;
+            align-items: center;
+            margin: 10px 0px 40px;
+            span{
+                color: $green;
+                margin-right: 10px;
+                font-family: $font-mono;
+                font-size: $fz-xxl;
+            }
+            h2{
+                font-size: 32px;
+                font-weight: 600;
+                color: $lightest-slate;
+                font-family: $font-sans;
+            }
+        }
+    
+        .work-content {
+            height: auto;
+            display: flex;
+    
+            .projectNames {
+                display: flex;
+                flex-direction: column;
+                button {
+                    cursor: pointer;
+                    position: relative;
+                    font-family: $font-mono;
+                    font-size: $fz-xs;
+                    height: $tab-height;
+                    border: none;
+                    background-color: transparent;
+                    color: $slate;
+                    padding: 0px 20px 2px;
+                    border-left: 2px solid $lightest-navy;
+                    transition: $transition;
+                    text-align: left;
+    
+    
+    
+                    &.active{
+                        background-color: $light-navy;
+                        color: $green;
+                        transition: 2s;
+                        &::before{
+                            content: '';
+                            position: absolute;
+                            width: 3px;
+                            height: 100%;
+                            top: 0;
+                            left: -2px;
+                            background-color: $green;
+                        }
+                    }
+    
+                    &:hover {
+                        background-color: $light-navy;
+                        color: $green;
+                        outline: 0px;
+                    }
+    
+    
+                }
+            }
+    
+            .project-inner {
+                margin-left: 20px;
+                padding: 10px 5px;
+    
+                h3 {
+                    font-family: $font-sans;
+                    margin-bottom: 8px;
+                    font-size: $fz-xxl;
+                    color: $lightest-slate;
+                }
+    
+                .duration {
+                    margin-bottom: 25px;
+                    color: $light-slate;
+                    font-family: $font-mono;
+                    font-size: $fz-xs;
+                }
+                        
+                div{
+                    display: flex;
+                    i{
+                        color: $green;
+                    }
+                    p {
+                            padding-left: 30px;
+                            color: $slate;
+                            font-size: 15px;
+                            font-family: $font-sans;
+                            margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+    }    
+
 }
 
 /* Social Icons Styles */

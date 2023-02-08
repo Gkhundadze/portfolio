@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&display=swap");
 *, *:before, *:after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -70,6 +71,7 @@ header {
   padding-inline: 50px;
   -webkit-transition: 0.25s;
   transition: 0.25s;
+  z-index: 99;
 }
 header.hideHeader {
   height: 70px;
@@ -229,9 +231,11 @@ header i {
     display: none;
   }
 }
+main {
+  background-color: #0a192f;
+}
 main #about {
   font-family: "Roboto Mono", monospace;
-  background-color: #0a192f;
   color: #8892b0;
   padding: 10% 15%;
   height: 100vh;
@@ -344,6 +348,220 @@ main #about .info #devStack li::before {
   content: "»";
   color: #64ffda;
   margin-right: 0.2rem;
+}
+main .work-experience {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+main .work-experience .work-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px 0px 40px;
+}
+main .work-experience .work-title span {
+  color: #64ffda;
+  margin-right: 10px;
+  font-family: "Roboto Mono", monospace;
+  font-size: 22px;
+}
+main .work-experience .work-title h2 {
+  font-size: 32px;
+  font-weight: 600;
+  color: #ccd6f6;
+  font-family: "Noto Sans", sans-serif;
+}
+main .work-experience .work-content {
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+main .work-experience .work-content .projectNames {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+main .work-experience .work-content .projectNames button {
+  cursor: pointer;
+  position: relative;
+  font-family: "Roboto Mono", monospace;
+  font-size: 13px;
+  height: 42px;
+  border: none;
+  background-color: transparent;
+  color: #8892b0;
+  padding: 0px 20px 2px;
+  border-left: 2px solid #233554;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  text-align: left;
+}
+main .work-experience .work-content .projectNames button.active {
+  background-color: #112240;
+  color: #64ffda;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+main .work-experience .work-content .projectNames button.active::before {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 100%;
+  top: 0;
+  left: -2px;
+  background-color: #64ffda;
+}
+main .work-experience .work-content .projectNames button:hover {
+  background-color: #112240;
+  color: #64ffda;
+  outline: 0px;
+}
+main .work-experience .work-content .project-inner {
+  margin-left: 20px;
+  padding: 10px 5px;
+}
+main .work-experience .work-content .project-inner h3 {
+  font-family: "Noto Sans", sans-serif;
+  margin-bottom: 8px;
+  font-size: 22px;
+  color: #ccd6f6;
+}
+main .work-experience .work-content .project-inner .duration {
+  margin-bottom: 25px;
+  color: #a8b2d1;
+  font-family: "Roboto Mono", monospace;
+  font-size: 13px;
+}
+main .work-experience .work-content .project-inner div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+main .work-experience .work-content .project-inner div i {
+  color: #64ffda;
+}
+main .work-experience .work-content .project-inner div p {
+  padding-left: 30px;
+  color: #8892b0;
+  font-size: 15px;
+  font-family: "Noto Sans", sans-serif;
+  margin-bottom: 10px;
+}
+main .work-experience {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+main .work-experience .work-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px 0px 40px;
+}
+main .work-experience .work-title span {
+  color: #64ffda;
+  margin-right: 10px;
+  font-family: "Roboto Mono", monospace;
+  font-size: 22px;
+}
+main .work-experience .work-title h2 {
+  font-size: 32px;
+  font-weight: 600;
+  color: #ccd6f6;
+  font-family: "Noto Sans", sans-serif;
+}
+main .work-experience .work-content {
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+main .work-experience .work-content .projectNames {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+main .work-experience .work-content .projectNames button {
+  cursor: pointer;
+  position: relative;
+  font-family: "Roboto Mono", monospace;
+  font-size: 13px;
+  height: 42px;
+  border: none;
+  background-color: transparent;
+  color: #8892b0;
+  padding: 0px 20px 2px;
+  border-left: 2px solid #233554;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  text-align: left;
+}
+main .work-experience .work-content .projectNames button.active {
+  background-color: #112240;
+  color: #64ffda;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+main .work-experience .work-content .projectNames button.active::before {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 100%;
+  top: 0;
+  left: -2px;
+  background-color: #64ffda;
+}
+main .work-experience .work-content .projectNames button:hover {
+  background-color: #112240;
+  color: #64ffda;
+  outline: 0px;
+}
+main .work-experience .work-content .project-inner {
+  margin-left: 20px;
+  padding: 10px 5px;
+}
+main .work-experience .work-content .project-inner h3 {
+  font-family: "Noto Sans", sans-serif;
+  margin-bottom: 8px;
+  font-size: 22px;
+  color: #ccd6f6;
+}
+main .work-experience .work-content .project-inner .duration {
+  margin-bottom: 25px;
+  color: #a8b2d1;
+  font-family: "Roboto Mono", monospace;
+  font-size: 13px;
+}
+main .work-experience .work-content .project-inner div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+main .work-experience .work-content .project-inner div i {
+  color: #64ffda;
+}
+main .work-experience .work-content .project-inner div p {
+  padding-left: 30px;
+  color: #8892b0;
+  font-size: 15px;
+  font-family: "Noto Sans", sans-serif;
+  margin-bottom: 10px;
 }
 
 /* Social Icons Styles */
