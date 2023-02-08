@@ -29,8 +29,12 @@
   ],
   "completedProjects": [
     {
-      "projectName": "ProjectName",
-      "projectDuration": "duration",
+      "projectName": "Upstatement",
+      "projectStart": "May 2018",
+      "projectEnd": "Present",
+      "ProjectContent": ["Write modern, performant, maintainable code for a diverse array of client and internal projects",
+                        "Work with a variety of different languages, platforms, frameworks, and content management systems such as JavaScript, TypeScript, Gatsby, React, Craft, WordPress, Prismic, and Netlify",
+                        "Communicate with multi-disciplinary teams of engineers, designers, producers, and clients on a daily basis"],
       "projectStack": "MERN Stack",
       "projectMembers": [
         {
@@ -40,12 +44,16 @@
           "role": "Developer"
         }
       ],
-      "projectRole": "Developer",
-      "projectUrl": "project url"
+      "projectRole": "Engineer",
+      "projectUrl": "https://upstatement.com/"
     },
     {
-      "projectName": "ProjectName",
-      "projectDuration": "duration",
+      "projectName": "Scout",
+      "projectStart": "January",
+      "projectEnd": "April 2018",
+      "ProjectContent": ["Worked with a team of three designers to build a marketing website and e-commerce platform for blistabloc, an ambitious startup originating from Northeastern",
+                        "Helped solidify a brand direction for blistabloc that spans both packaging and web",
+                        "Interfaced with clients on a weekly basis, providing technological expertise"],
       "projectStack": "MERN Stack",
       "projectMembers": [
         {
@@ -55,38 +63,8 @@
           "role": "Developer"
         }
       ],
-      "projectRole": "Developer",
-      "projectUrl": "project url"
-    },
-    {
-      "projectName": "ProjectName",
-      "projectDuration": "duration",
-      "projectStack": "MERN Stack",
-      "projectMembers": [
-        {
-          "name": "name1",
-          "surname": "surname",
-          "linkedin": "Url",
-          "role": "Developer"
-        }
-      ],
-      "projectRole": "Developer",
-      "projectUrl": "project url"
-    },
-    {
-      "projectName": "ProjectName",
-      "projectDuration": "duration",
-      "projectStack": "MERN Stack",
-      "projectMembers": [
-        {
-          "name": "name1",
-          "surname": "surname",
-          "linkedin": "Url",
-          "role": "Developer"
-        }
-      ],
-      "projectRole": "Developer",
-      "projectUrl": "project url"
+      "projectRole": "Studio Developer",
+      "projectUrl": "https://scout.camd.northeastern.edu/"
     }
   ]
 }

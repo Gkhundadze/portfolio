@@ -10,6 +10,7 @@ header {
     background-color: rgba(10, 25, 47, 0.85);
     padding-inline: 50px;
     transition: $transition;
+    z-index: 99;
 
     &.hideHeader{
         height: 70px;
