@@ -1,3 +1,377 @@
 main {
-    color: $blue-text;
+    background-color: $navy;
+    #about {
+        font-family: $font-mono;
+        color: $slate;
+        padding: 10% 15%;
+        height: 100vh;
+
+        h2 {
+            display: flex;
+            align-items: center;
+            color: $lightest-slate;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+        }
+
+        h2::after {
+            display: block;
+            position: relative;
+            content: '';
+            width: 13rem;
+            height: 0.1rem;
+            top: 0.2rem;
+            margin: 0 1rem;
+            background-color: $slate;
+        }
+
+        .info {
+            display: grid;
+            grid-template-columns: 3fr 2fr;
+            gap: 3rem;
+
+
+            p:not(:last-child) {
+                padding-bottom: 2rem;
+            }
+
+            .profileWrapper {
+                border-radius: 0.5rem;
+                position: relative;
+                width: fit-content;
+                height: fit-content;
+                z-index: 1;
+
+                img {
+                    width: 25rem;
+                    border-radius: inherit;
+                }
+            }
+
+            .profileWrapper::before {
+                content: "";
+                display: block;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background-color: $green;
+                opacity: 0.5;
+                border-radius: inherit;
+                z-index: 2;
+                transition: $transition;
+            }
+
+            .profileWrapper::after {
+                content: "";
+                display: block;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                border: 2px solid $green;
+                top: 1.5rem;
+                left: 1.5rem;
+                border-radius: inherit;
+                z-index: -1;
+                transition: $transition;
+            }
+
+            .profileWrapper:hover::before {
+                content: "";
+                display: block;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background-color: transparent;
+                opacity: 0.5;
+                border-radius: inherit;
+                z-index: 2;
+            }
+
+            .profileWrapper:hover::after {
+                content: "";
+                display: block;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                border: 2px solid $green;
+                top: 0.5rem;
+                left: 0.5rem;
+                border-radius: inherit;
+                z-index: -1;
+            }
+
+            #devStack {
+                display: grid;
+                grid-template-columns: auto auto auto;
+                justify-content: space-evenly;
+
+                li {
+                    margin: 0.2rem 0;
+                }
+
+                li::before {
+                    content: '»';
+                    color: $green;
+                    margin-right: 0.2rem;
+                }
+            }
+        }
+    }
+
+    .work-experience {
+        max-width: 700px;
+        margin: 0 auto;
+        padding: 100px 0;
+    
+        .work-title{
+            display: flex;
+            align-items: center;
+            margin: 10px 0px 40px;
+            span{
+                color: $green;
+                margin-right: 10px;
+                font-family: $font-mono;
+                font-size: $fz-xxl;
+            }
+            h2{
+                font-size: 32px;
+                font-weight: 600;
+                color: $lightest-slate;
+                font-family: $font-sans;
+            }
+        }
+    
+        .work-content {
+            height: auto;
+            display: flex;
+    
+            .projectNames {
+                display: flex;
+                flex-direction: column;
+                button {
+                    cursor: pointer;
+                    position: relative;
+                    font-family: $font-mono;
+                    font-size: $fz-xs;
+                    height: $tab-height;
+                    border: none;
+                    background-color: transparent;
+                    color: $slate;
+                    padding: 0px 20px 2px;
+                    border-left: 2px solid $lightest-navy;
+                    transition: $transition;
+                    text-align: left;
+    
+    
+    
+                    &.active{
+                        background-color: $light-navy;
+                        color: $green;
+                        transition: 2s;
+                        &::before{
+                            content: '';
+                            position: absolute;
+                            width: 3px;
+                            height: 100%;
+                            top: 0;
+                            left: -2px;
+                            background-color: $green;
+                        }
+                    }
+    
+                    &:hover {
+                        background-color: $light-navy;
+                        color: $green;
+                        outline: 0px;
+                    }
+    
+    
+                }
+            }
+    
+            .project-inner {
+                margin-left: 20px;
+                padding: 10px 5px;
+    
+                h3 {
+                    font-family: $font-sans;
+                    margin-bottom: 8px;
+                    font-size: $fz-xxl;
+                    color: $lightest-slate;
+                }
+    
+                .duration {
+                    margin-bottom: 25px;
+                    color: $light-slate;
+                    font-family: $font-mono;
+                    font-size: $fz-xs;
+                }
+                        
+                div{
+                    display: flex;
+                    i{
+                        color: $green;
+                    }
+                    p {
+                            padding-left: 30px;
+                            color: $slate;
+                            font-size: 15px;
+                            font-family: $font-sans;
+                            margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    .work-experience {
+        max-width: 700px;
+        margin: 0 auto;
+        padding: 100px 0;
+    
+        .work-title{
+            display: flex;
+            align-items: center;
+            margin: 10px 0px 40px;
+            span{
+                color: $green;
+                margin-right: 10px;
+                font-family: $font-mono;
+                font-size: $fz-xxl;
+            }
+            h2{
+                font-size: 32px;
+                font-weight: 600;
+                color: $lightest-slate;
+                font-family: $font-sans;
+            }
+        }
+    
+        .work-content {
+            height: auto;
+            display: flex;
+    
+            .projectNames {
+                display: flex;
+                flex-direction: column;
+                button {
+                    cursor: pointer;
+                    position: relative;
+                    font-family: $font-mono;
+                    font-size: $fz-xs;
+                    height: $tab-height;
+                    border: none;
+                    background-color: transparent;
+                    color: $slate;
+                    padding: 0px 20px 2px;
+                    border-left: 2px solid $lightest-navy;
+                    transition: $transition;
+                    text-align: left;
+    
+    
+    
+                    &.active{
+                        background-color: $light-navy;
+                        color: $green;
+                        transition: 2s;
+                        &::before{
+                            content: '';
+                            position: absolute;
+                            width: 3px;
+                            height: 100%;
+                            top: 0;
+                            left: -2px;
+                            background-color: $green;
+                        }
+                    }
+    
+                    &:hover {
+                        background-color: $light-navy;
+                        color: $green;
+                        outline: 0px;
+                    }
+    
+    
+                }
+            }
+    
+            .project-inner {
+                margin-left: 20px;
+                padding: 10px 5px;
+    
+                h3 {
+                    font-family: $font-sans;
+                    margin-bottom: 8px;
+                    font-size: $fz-xxl;
+                    color: $lightest-slate;
+                }
+    
+                .duration {
+                    margin-bottom: 25px;
+                    color: $light-slate;
+                    font-family: $font-mono;
+                    font-size: $fz-xs;
+                }
+                        
+                div{
+                    display: flex;
+                    i{
+                        color: $green;
+                    }
+                    p {
+                            padding-left: 30px;
+                            color: $slate;
+                            font-size: 15px;
+                            font-family: $font-sans;
+                            margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+    }    
+
+}
+
+/* Social Icons Styles */
+.social__icons {
+    width: 40px;
+    position: fixed;
+    bottom: 0;
+    left: 40px;
+    right: auto;
+    z-index: 9999;
+
+    .social__icons__list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        list-style-type: none;
+
+        .social__links a {
+            display: inline-block;
+            padding: 10px;
+
+            .social__svg--dimensions {
+                width: 20px;
+                height: 20px;
+                fill: none;
+                color: rgb(168 178 209);
+                transition: all 0.25s cubic-bezier(0.65, 0.05, 0.36, 1);
+            }
+
+            .social__svg--dimensions:hover {
+                transform: translateY(-5px);
+                color: #64ffda;
+            }
+        }
+
+        .social__icons__list::after {
+            content: "";
+            display: block;
+            width: 1px;
+            height: 90px;
+            margin: 0px auto;
+            background-color: rgb(168 178 209);
+        }
+    }
 }

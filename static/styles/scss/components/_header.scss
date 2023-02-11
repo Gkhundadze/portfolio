@@ -1,3 +1,156 @@
 header {
     color: $green-text;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(10, 25, 47, 0.85);
+    padding-inline: 50px;
+    transition: $transition;
+    z-index: 99;
+
+    &.hideHeader{
+        height: 70px;
+        transform: translateY(calc( 72px * -1));
+    }
+
+    &.showHeader{
+        transform: translateY(0);
+    }
+
+    .logo{
+        width: 120px;
+    }
+
+
+    nav {
+        display: flex;
+        align-items: center;
+        ul {
+            display: flex;
+            li {
+                margin-inline: 15px;
+                a{
+                    text-decoration: none;
+                    color: #ccd6f6;
+                    font-size: $fz-xs;
+                    font-family: $font-mono;
+                    transition: $transition;
+                    &:hover{
+                        color: $green;
+                    }
+                    span{
+                        margin-right: 5px;
+                        color: $green;
+                    }
+                }
+            }
+        }
+
+        .resumeBtn {
+            cursor: pointer;
+            color: $green;
+            background-color: transparent;
+            transition: $transition;
+            border: 1px solid $green;
+            padding: 0.75rem 1rem;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-left: 15px;
+            font-family: $font-mono;
+
+            &:hover{
+                background-color: $green-tint;
+            }
+        }
+
+    }
+
+    .icon{
+        display: none;
+    }
+    i {
+        cursor: pointer;
+        font-size: 25px;
+    }
 }
+
+@media screen and (max-width: 768px) {
+    header {
+        padding: 0px 25px;
+        &.active{
+            .nav{
+                visibility: visible;
+                width: min(75vw, 400px);
+            }
+            .openNavbar{
+                display: none !important;
+            }
+            .closeNavbar {
+
+                font-size: 30px;
+                display: block !important;
+            }
+        }
+        .nav {
+            flex-direction: column;
+            right: 0;
+            top: 0;
+            width: 0;
+            visibility: hidden;
+            position: absolute;
+            background-color: #112240;
+            box-shadow: -10px 0px 30px -15px rgba(2,12,27,0.7);
+            height: 100vh;
+            justify-content: center;
+            transition: 0.2s;
+            ul{
+                width: 100%;
+                row-gap: 50px;
+                flex-direction: column;
+                li{
+                    margin: 0;
+                }
+                a{
+                    font-size: 17px;
+                    display: flex;
+                    flex-direction: column;
+                    text-align: center;
+                    transition: $transition;
+                    width: 100%;
+                    span{
+                        margin: 0 0 8px 0;
+                    }
+                }
+            }
+
+            .resumeBtn {
+                margin: 10% auto 0px;
+                width: max-content;
+                flex-direction: column;
+                transition: 0s;
+                font-size: 14px;
+                padding: 18px 50px;
+            }
+
+        }
+        .icon{
+            width: 30px;
+            color: $green;
+            display: block !important;
+            z-index: 1;
+            .openNavbar{
+                font-size: 30px;
+                display: block;
+            }
+
+            .closeNavbar{
+                display: none;
+            }
+        }
+
+    }
+}  
