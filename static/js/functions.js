@@ -17,3 +17,15 @@ export function showAboutMe(aboutMe, Developer) {
         aboutMe.appendChild(p.cloneNode(true))
     }
 }
+
+export function greetingsAndIntro(devName, Developer) {
+    let h2 = document.createElement('h2');
+        h2.textContent =  Developer['name'];
+    let h3 = document.createElement('h3');
+        h3.textContent = Developer ['slogan']
+    let p = document.createElement('p');
+        p.textContent = Developer['introduction']
+        devName.appendChild(h2.cloneNode(true));
+        devName.appendChild(h3.cloneNode(true));
+        devName.appendChild(p.cloneNode(true));
+}

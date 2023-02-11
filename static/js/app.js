@@ -6,6 +6,7 @@ import Developer from './userObj.json' assert {type: 'json'};
 f.showDevelopmentStack(variables.devStack, Developer);
 f.showProfilePhoto(variables.profilePhoto, Developer);
 f.showAboutMe(variables.aboutMe, Developer);
+f.greetingsAndIntro(variables.devName,Developer)
 
 
 const completedProjects = Developer.completedProjects;
