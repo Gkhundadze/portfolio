@@ -40,17 +40,6 @@ main {
         .first-btn{
             margin: 50px 0;
         }
-        .first-btn > a{
-            border: 1px solid $green;
-            border-radius: 4px;
-            padding: 1.25rem 1.75rem;
-            font-size: 14px;
-            font-family: 'Roboto Mono';
-            line-height: 1;
-            text-decoration: none;
-            cursor: pointer;
-            color: $green;
-        }
     }
     #about {
         font-family: $font-mono;
