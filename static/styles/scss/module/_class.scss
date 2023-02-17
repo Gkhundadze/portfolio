@@ -1,0 +1,15 @@
+.Btn {
+    cursor: pointer;
+    color: $green;
+    background-color: transparent;
+    transition: $transition;
+    border: 1px solid $green;
+    padding: 0.75rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: $font-mono;
+
+    &:hover{
+        background-color: $green-tint;
+    }
+}
