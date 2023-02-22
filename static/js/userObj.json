@@ -1,72 +1,102 @@
 {
-  "name": "Developer Name",
-  "surname": "Developer Surname",
-  "slogan": "I build things for the web.",
-  "email": "Developerinfo@mail.com",
-  "address": "address",
-  "age": 25,
-  "contactNumber": "12345 56213 15123",
-  "introduction":"I m a software engineer specializing in building (and occasionally designing) exceptional digital experiences. Currently, I m focused on building accessible, human-centered products at Upstatement.",
-  "about": {
-    "p1": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio libero dolorem corrupti nisi error omnis, ratione magnam reprehenderit sint ad, quos dolor quaerat deleniti debitis perspiciatis soluta. Officia nulla omnis sapiente enim necessitatibus? Deserunt suscipit nam eum repudiandae. Quidem, laborum.",
-    "p2": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt eum harum totam, rem laborum aliquid accusamus amet! Possimus unde sapiente ratione quis iure quia tempore, laudantium atque sint nihil doloribus?",
-    "p3": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem beatae dicta totam hic fugiat dolorum ipsum magni esse quae, voluptate necessitatibus. Optio voluptates eveniet quidem?",
-    "p4": "Here are a few technologies I've been working with recently:"
-  },
-  "developerPhoto": {
-    "desktop": "./static/images/profile.jpg",
-    "tablet": "url",
-    "mobile": "url"
-  },
-  "currentStatus": "Job Title",
-  "workingStatus": false,
-  "freelancing": false,
-  "developmentStack": [
-    "HTML",
-    "Cascading Style Sheet",
-    "JavaScript",
-    "React.js",
-    "Angular.js",
-    "Vue.js"
-  ],
-  "completedProjects": [
-    {
-      "projectName": "Upstatement",
-      "projectStart": "May 2018",
-      "projectEnd": "Present",
-      "ProjectContent": ["Write modern, performant, maintainable code for a diverse array of client and internal projects",
-                        "Work with a variety of different languages, platforms, frameworks, and content management systems such as JavaScript, TypeScript, Gatsby, React, Craft, WordPress, Prismic, and Netlify",
-                        "Communicate with multi-disciplinary teams of engineers, designers, producers, and clients on a daily basis"],
-      "projectStack": "MERN Stack",
-      "projectMembers": [
-        {
-          "name": "name1",
-          "surname": "surname",
-          "linkedin": "Url",
-          "role": "Developer"
-        }
-      ],
-      "projectRole": "Engineer",
-      "projectUrl": "https://upstatement.com/"
-    },
-    {
-      "projectName": "Scout",
-      "projectStart": "January",
-      "projectEnd": "April 2018",
-      "ProjectContent": ["Worked with a team of three designers to build a marketing website and e-commerce platform for blistabloc, an ambitious startup originating from Northeastern",
-                        "Helped solidify a brand direction for blistabloc that spans both packaging and web",
-                        "Interfaced with clients on a weekly basis, providing technological expertise"],
-      "projectStack": "MERN Stack",
-      "projectMembers": [
-        {
-          "name": "name1",
-          "surname": "surname",
-          "linkedin": "Url",
-          "role": "Developer"
-        }
-      ],
-      "projectRole": "Studio Developer",
-      "projectUrl": "https://scout.camd.northeastern.edu/"
-    }
-  ]
+	"name": "Developer Name",
+	"surname": "Developer Surname",
+	"slogan": "I build things for the web.",
+	"email": "Developerinfo@mail.com",
+	"address": "address",
+	"age": 25,
+	"contactNumber": "12345 56213 15123",
+	"introduction": "I m a software engineer specializing in building (and occasionally designing) exceptional digital experiences. Currently, I m focused on building accessible, human-centered products at Upstatement.",
+	"about": {
+		"p1": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio libero dolorem corrupti nisi error omnis, ratione magnam reprehenderit sint ad, quos dolor quaerat deleniti debitis perspiciatis soluta. Officia nulla omnis sapiente enim necessitatibus? Deserunt suscipit nam eum repudiandae. Quidem, laborum.",
+		"p2": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt eum harum totam, rem laborum aliquid accusamus amet! Possimus unde sapiente ratione quis iure quia tempore, laudantium atque sint nihil doloribus?",
+		"p3": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem beatae dicta totam hic fugiat dolorum ipsum magni esse quae, voluptate necessitatibus. Optio voluptates eveniet quidem?",
+		"p4": "Here are a few technologies I've been working with recently:"
+	},
+	"developerPhoto": {
+		"desktop": "./static/images/profile.jpg",
+		"tablet": "url",
+		"mobile": "url"
+	},
+	"currentStatus": "Job Title",
+	"workingStatus": false,
+	"freelancing": false,
+	"developmentStack": [
+		"HTML",
+		"Cascading Style Sheet",
+		"JavaScript",
+		"React.js",
+		"Angular.js",
+		"Vue.js"
+	],
+	"completedProjects": [
+		{
+			"projectName": "Upstatement",
+			"projectStart": "May 2018",
+			"projectEnd": "Present",
+			"ProjectContent": [
+				"Write modern, performant, maintainable code for a diverse array of client and internal projects",
+				"Work with a variety of different languages, platforms, frameworks, and content management systems such as JavaScript, TypeScript, Gatsby, React, Craft, WordPress, Prismic, and Netlify",
+				"Communicate with multi-disciplinary teams of engineers, designers, producers, and clients on a daily basis"
+			],
+			"projectStack": "MERN Stack",
+			"projectMembers": [
+				{
+					"name": "name1",
+					"surname": "surname",
+					"linkedin": "Url",
+					"role": "Developer"
+				}
+			],
+			"projectRole": "Engineer",
+			"projectUrl": "https://upstatement.com/"
+		},
+		{
+			"projectName": "Scout",
+			"projectStart": "January",
+			"projectEnd": "April 2018",
+			"ProjectContent": [
+				"Worked with a team of three designers to build a marketing website and e-commerce platform for blistabloc, an ambitious startup originating from Northeastern",
+				"Helped solidify a brand direction for blistabloc that spans both packaging and web",
+				"Interfaced with clients on a weekly basis, providing technological expertise"
+			],
+			"projectStack": "MERN Stack",
+			"projectMembers": [
+				{
+					"name": "name1",
+					"surname": "surname",
+					"linkedin": "Url",
+					"role": "Developer"
+				}
+			],
+			"projectRole": "Studio Developer",
+			"projectUrl": "https://scout.camd.northeastern.edu/"
+		}
+	],
+	"workProjects": [
+		{
+			"projectImgSource": "http://heidmann.com/frontPics/code.jpg",
+			"projectTitle": "Halcyon Theme",
+			"projectText": "A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.",
+			"projectTechs": ["VS Code", "Sublime Text", "VAtom", "Iterm2"],
+			"projectGithub": "github.com",
+			"projectLink": "sample.com"
+		},
+		{
+			"projectImgSource": "https://techcrunch.com/wp-content/uploads/2015/04/codecode.jpg",
+			"projectTitle": "Spotify",
+			"projectText": "A web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track. Create and save new playlists of recommended tracks based on your existing playlists and more.",
+			"projectTechs": ["VS Code", "Sublime Text", "Tailwind", "React"],
+			"projectGithub": "github.com",
+			"projectLink": "sample.com"
+		},
+		{
+			"projectImgSource": "http://heidmann.com/frontPics/code.jpg",
+			"projectTitle": "Halcyon Theme",
+			"projectText": "A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.",
+			"projectTechs": ["VS Code", "Sublime Text", "VAtom", "Iterm2"],
+			"projectGithub": "github.com",
+			"projectLink": "sample.com"
+		}
+	]
 }
