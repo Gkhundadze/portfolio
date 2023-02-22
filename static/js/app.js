@@ -10,37 +10,43 @@ f.greetingsAndIntro(variables.devName, Developer);
 const completedProjects = Developer.completedProjects;
 const work_content = document.querySelector(".work-content");
 
-function createContainer(index) {
-	const { projectStart, projectEnd, ProjectContent, projectRole } =
-		completedProjects[index];
-	const experienceContainer =
-		"<div class='projectNames'>" +
-		completedProjects
-			.map((item, ind) => {
-				return `<button class="projectBtn${
-					index == ind ? " active" : ""
-				}" data-id = ${ind}>${item.projectName}</button>`;
-			})
-			.join("") +
-		"</div><div class='project-inner'><h3>" +
-		projectRole +
-		"</h3><p class='duration'>" +
-		projectStart +
-		" - " +
-		projectEnd +
-		"</p>" +
-		ProjectContent.map((item) => {
-			return (
-				'<div><i class="fa-solid fa-caret-right"></i><p>' +
-				item +
-				"</p></div>"
-			);
-		}).join("");
-	("</div>");
-	work_content.innerHTML = experienceContainer;
+
+//createContainer
+const createContainer = (index) => {
+    const { projectStart, projectEnd, ProjectContent, projectRole } = completedProjects[index];
+    const experienceContainer = "<div class='projectNames'>"+
+        completedProjects.map((item, ind) => {
+            return `<button class="projectBtn${index == ind ? ' active' : ''}" data-id = ${ind}>${item.projectName}</button>`
+        }).join('')
+    +"</div><div class='project-inner'><h3>"+projectRole+"</h3><p class='duration'>"+projectStart + ' - ' + projectEnd +"</p>"+
+    ProjectContent.map((item) => {
+        return '<div><i class="fa-solid fa-caret-right"></i><p>'+item+'</p></div>';
+    }).join('')
+    "</div>"
+    work_content.innerHTML = experienceContainer;
+}
+
+//scrollBtn
+const scrollBtn = () => {
+    const projectNames = document.querySelector('.projectNames');
+    completedProjects.length > 6 ? projectNames.classList.add('active') : projectNames.classList.remove('active');
 }
 
 createContainer(0);
+scrollBtn();
+
+work_content.addEventListener('click', function(e) {
+    if(e.target.classList == 'projectBtn'){
+        createContainer(e.target.dataset.id);   
+        scrollBtn();
+    }
+})
+
+//createGmailName
+const gmailName = document.querySelector('.gmailName');
+gmailName.textContent = Developer.gmailName;
+
+
 
 work_content.addEventListener("click", function (e) {
 	if (e.target.classList == "projectBtn") {
@@ -105,3 +111,4 @@ function createWorkProjects() {
 }
 
 createWorkProjects();
+
