@@ -1,146 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./static/styles/css/style.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+			integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<title>Portfolio</title>
+	</head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./static/styles/css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <title>Portfolio</title>
-</head>
+	<body>
+		<header id="header">
+			<div>
+				<img class="logo" src="static/images/logo.png" alt="" />
+			</div>
+			<nav class="nav">
+				<ul>
+					<li>
+						<a href="#"><span>01.</span>About</a>
+					</li>
+					<li>
+						<a href="#"><span>02.</span>Experience</a>
+					</li>
+					<li>
+						<a href="#"><span>03.</span>Work</a>
+					</li>
+					<li>
+						<a href="#"><span>04.</span>Contact</a>
+					</li>
+				</ul>
 
-<body>
-  <header id="header">
-    <div>
-      <img class="logo" src="static/images/logo.png" alt="">
-    </div>
-    <nav class="nav">
-      <ul>
-        <li><a href="#"><span>01.</span>About</a></li>
-        <li><a href="#"><span>02.</span>Experience</a></li>
-        <li><a href="#"><span>03.</span>Work</a></li>
-        <li><a href="#"><span>04.</span>Contact</a></li>
-      </ul>
+				<a href="#" class="Btn">Resume</a>
+			</nav>
+			<div class="icon">
+				<i class="fa-solid fa-bars openNavbar"></i>
+				<i class="fa-solid fa-xmark closeNavbar"></i>
+			</div>
+		</header>
 
-      <a href="#" class="Btn">Resume</a>
+		<main>
+			<section class="developer-intro">
+				<h1 class="dev-name">hi, my name is</h1>
+				<div id="devName"></div>
+				<div class="first-btn">
+					<a class="Btn" href="#">check out my course</a>
+				</div>
+			</section>
 
-    </nav>
-    <div class="icon">
-      <i class="fa-solid fa-bars openNavbar"></i>
-      <i class="fa-solid fa-xmark closeNavbar"></i>
-    </div>
-  </header>
+			<section id="about">
+				<h2>about me</h2>
+				<div class="info">
+					<div id="aboutMe"></div>
+					<div class="profileWrapper">
+						<img id="profilePhoto" src="" alt="profile" />
+					</div>
+					<ul id="devStack"></ul>
+				</div>
+			</section>
 
-  <main>
-    <section class="developer-intro">
-        <h1 class="dev-name">hi, my name is</h1>
-      <div id="devName"></div>
-      <div class="first-btn">
-        <a class="Btn" href="#">check out my course</a>
-      </div>
-    </section>
-    
-    <section id="about">
-      <h2>about me</h2>
-      <div class="info">
-        <div id="aboutMe"></div>
-        <div class="profileWrapper">
-          <img id="profilePhoto" src="" alt="profile">
-        </div>
-        <ul id="devStack"></ul>
-      </div>
-    </section>
+			      
+			<section class="work-experience">
+				<div class="work-title">
+					<span>02.</span>
+					<h2>Where I've Worked</h2>
+				</div>
 
-    <section class="work-experience">
-        <div class="work-title">
-            <span>02.</span>
-            <h2>Where I've Worked</h2>
-        </div>
-        
-        <div class="work-content">
-            
-        </div>
-    </section>
-  </main>
-  
-  <footer>
-    <div class="social__icons">
-      <ul class="social__icons__list">
-        <li class="social__links">
-          <a href="#">
-            <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-              stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-              class="feather feather-github social__svg--dimensions">
-              <title>GitHub</title>
-              <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37
-                   3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44
+				<div class="work-content"></div>
+			</section>
+
+			<section class="projects">
+				<div class="projects-title">
+					<span>03.</span>
+					<h2>Some Things I've Built</h2>
+				</div>
+
+				<div class="projects-content"></div>
+			</section>
+		</main>
+
+		<footer>
+			<div class="social__icons">
+				<ul class="social__icons__list">
+					<li class="social__links">
+						<a href="#">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								role="img"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								class="feather feather-github social__svg--dimensions"
+							>
+								<title>GitHub</title>
+								<path
+									d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37
+					3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44
                     5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65
                      16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07
                       5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61
-                       6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-            </svg>
-          </a>
-        </li>
-        <li class="social__links">
-          <a href="#">
-            <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-              stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-              class="feather feather-instagram social__svg--dimensions">
-              <title>Instagram</title>
-              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-            </svg>
-          </a>
-        </li>
-        <li class="social__links">
-          <a href="#">
-            <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-              stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-              class="feather feather-twitter social__svg--dimensions">
-              <title>Twitter</title>
-              <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53
+                       6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+								></path>
+							</svg>
+						</a>
+					</li>
+					<li class="social__links">
+						<a href="#">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								role="img"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								class="feather feather-instagram social__svg--dimensions"
+							>
+								<title>Instagram</title>
+								<rect
+									x="2"
+									y="2"
+									width="20"
+									height="20"
+									rx="5"
+									ry="5"
+								></rect>
+								<path
+									d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
+								></path>
+								<line
+									x1="17.5"
+									y1="6.5"
+									x2="17.51"
+									y2="6.5"
+								></line>
+							</svg>
+						</a>
+					</li>
+					<li class="social__links">
+						<a href="#">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								role="img"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								class="feather feather-twitter social__svg--dimensions"
+							>
+								<title>Twitter</title>
+								<path
+									d="M23 3a10.9 10.9 0 0 1-3.14 1.53
                    4.48 4.48 0 0 0-7.86 3v1A10.66 10.66
                     0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7
                      2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72
-                      7.72 0 0 0 23 3z"></path>
-            </svg>
-          </a>
-        </li>
-        <li class="social__links">
-          <a href="#">
-            <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-              stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-              class="feather feather-linkedin social__svg--dimensions">
-              <title>LinkedIn</title>
-              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-              <rect x="2" y="9" width="4" height="12"></rect>
-              <circle cx="4" cy="4" r="2"></circle>
-            </svg>
-          </a>
-        </li>
-        <li class="social__links">
-          <a href="#">
-            <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-              stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-              class="feather feather-codepen social__svg--dimensions">
-              <title>CodePen</title>
-              <polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2"></polygon>
-              <line x1="12" y1="22" x2="12" y2="15.5"></line>
-              <polyline points="22 8.5 12 15.5 2 8.5"></polyline>
-              <polyline points="2 15.5 12 8.5 22 15.5"></polyline>
-              <line x1="12" y1="2" x2="12" y2="8.5"></line>
-            </svg>
-          </a>
-        </li>
-      </ul>
-    </div>
-  </footer>
-  <script type="module" src="static/js/app.js"></script>
-  <script type="module" src="static/js/animation.js"></script>
-</body>
-
+                      7.72 0 0 0 23 3z"
+								></path>
+							</svg>
+						</a>
+					</li>
+					<li class="social__links">
+						<a href="#">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								role="img"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								class="feather feather-linkedin social__svg--dimensions"
+							>
+								<title>LinkedIn</title>
+								<path
+									d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+								></path>
+								<rect x="2" y="9" width="4" height="12"></rect>
+								<circle cx="4" cy="4" r="2"></circle>
+							</svg>
+						</a>
+					</li>
+					<li class="social__links">
+						<a href="#">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								role="img"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								class="feather feather-codepen social__svg--dimensions"
+							>
+								<title>CodePen</title>
+								<polygon
+									points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2"
+								></polygon>
+								<line x1="12" y1="22" x2="12" y2="15.5"></line>
+								<polyline
+									points="22 8.5 12 15.5 2 8.5"
+								></polyline>
+								<polyline
+									points="2 15.5 12 8.5 22 15.5"
+								></polyline>
+								<line x1="12" y1="2" x2="12" y2="8.5"></line>
+							</svg>
+						</a>
+					</li>
+				</ul>
+			</div>
+			
+			<div class="gmailLink">
+				<div>
+				  <a href="#" class="gmailName"></a>
+				</div>
+			  </div>
+		</footer>
+		<script type="module" src="static/js/app.js"></script>
+		<script type="module" src="static/js/animation.js"></script>
+	</body>
 </html>
