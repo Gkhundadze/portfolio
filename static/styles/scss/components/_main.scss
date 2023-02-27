@@ -162,7 +162,7 @@ main {
 	.work-experience {
         width: 700px;
         margin: 0 auto;
-        padding: 100px 0;
+        padding-top: 100px;
         position: relative;
 
         .work-title{
@@ -185,7 +185,7 @@ main {
     
         .work-content {
             display: -webkit-box;
-            min-height: 340px;
+            height: 440px;
             .projectNames {
                 display: flex;
                 flex-direction: column;
