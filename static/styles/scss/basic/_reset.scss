@@ -17,7 +17,9 @@ html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockq
 footer, header, nav, section, main{
     display: block;
 }
-
+html {
+    scroll-behavior: smooth;
+}
 body{
     line-height: 1;
 }
