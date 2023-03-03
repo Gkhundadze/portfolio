@@ -157,131 +157,125 @@ main {
 		}
 	}
 
-
-
 	.work-experience {
-        width: 700px;
-        margin: 0 auto;
-        padding: 100px 0;
-        position: relative;
+		width: 700px;
+		margin: 0 auto;
+		padding-top: 100px;
+		position: relative;
 
-        .work-title{
-            display: flex;
-            align-items: center;
-            margin: 10px 0px 40px;
-            span{
-                color: $green;
-                margin-right: 10px;
-                font-family: $font-mono;
-                font-size: $fz-xxl;
-            }
-            h2{
-                font-size: 32px;
-                font-weight: 600;
-                color: $lightest-slate;
-                font-family: $font-sans;
-            }
-        }
-    
-        .work-content {
-            display: -webkit-box;
-            min-height: 340px;
-            .projectNames {
-                display: flex;
-                flex-direction: column;
-                height: 252px;
-                overflow-y: scroll;
-                overflow-x: hidden;
+		.work-title {
+			display: flex;
+			align-items: center;
+			margin: 10px 0px 40px;
+			span {
+				color: $green;
+				margin-right: 10px;
+				font-family: $font-mono;
+				font-size: $fz-xxl;
+			}
+			h2 {
+				font-size: 32px;
+				font-weight: 600;
+				color: $lightest-slate;
+				font-family: $font-sans;
+			}
+		}
 
-                &::-webkit-scrollbar {
-                    width: 4px;
-                }
-                  
-                &::-webkit-scrollbar-track {
-                    background: transparent;
-                }
-                &::-webkit-scrollbar-thumb {
-                    background: $green;
-                }
+		.work-content {
+			display: -webkit-box;
+			height: 440px;
+			.projectNames {
+				display: flex;
+				flex-direction: column;
+				height: 252px;
+				overflow-y: scroll;
+				overflow-x: hidden;
 
-                button {
-                    cursor: pointer;
-                    position: relative;
-                    display: flex;
-                    align-items: center;
-                    font-family: $font-mono;
-                    font-size: $fz-xs;
-                    border: none;
-                    background-color: transparent;
-                    color: $slate;
-                    width: 130px;
-                    height: 42px;
-                    padding: 15px;
-                    border-left: 2px solid $lightest-navy;
-                    transition: .5s;
-                    text-align: left;
+				&::-webkit-scrollbar {
+					width: 4px;
+				}
 
+				&::-webkit-scrollbar-track {
+					background: transparent;
+				}
+				&::-webkit-scrollbar-thumb {
+					background: $green;
+				}
 
-                    &.active{
-                        background-color: $light-navy;
-                        color: $green;
-                        &::before{
-                            content: '';
-                            position: absolute;
-                            width: 3px;
-                            height: 100%;
-                            top: 0;
-                            left: -2px;
-                            background-color: $green;
-                        }
-                    }
-    
-                    &:hover {
-                        background-color: $light-navy;
-                        color: $green;
-                        outline: 0px;
-                    }
-    
-    
-                }
-            }
+				button {
+					cursor: pointer;
+					position: relative;
+					display: flex;
+					align-items: center;
+					font-family: $font-mono;
+					font-size: $fz-xs;
+					border: none;
+					background-color: transparent;
+					color: $slate;
+					width: 130px;
+					height: 42px;
+					padding: 15px;
+					border-left: 2px solid $lightest-navy;
+					transition: 0.5s;
+					text-align: left;
 
-            .project-inner {
-                margin-left: 20px;
-                padding: 10px 5px;
-                width: 570px;
-                h3 {
-                    font-family: $font-sans;
-                    margin-bottom: 8px;
-                    font-size: $fz-xxl;
-                    color: $lightest-slate;
-                }
-    
-                .duration {
-                    margin-bottom: 25px;
-                    color: $light-slate;
-                    font-family: $font-mono;
-                    font-size: $fz-xs;
-                }
-                        
-                div{
-                    display: flex;
-                    i{
-                        color: $green;
-                    }
-                    p {
-                            padding-left: 30px;
-                            color: $slate;
-                            font-size: 15px;
-                            font-family: $font-sans;
-                            margin-bottom: 10px;
-                            line-height: 25px;
-                    }
-                }
-            }
-        }
-    }
+					&.active {
+						background-color: $light-navy;
+						color: $green;
+						&::before {
+							content: "";
+							position: absolute;
+							width: 3px;
+							height: 100%;
+							top: 0;
+							left: -2px;
+							background-color: $green;
+						}
+					}
 
+					&:hover {
+						background-color: $light-navy;
+						color: $green;
+						outline: 0px;
+					}
+				}
+			}
+
+			.project-inner {
+				margin-left: 20px;
+				padding: 10px 5px;
+				width: 570px;
+				h3 {
+					font-family: $font-sans;
+					margin-bottom: 8px;
+					font-size: $fz-xxl;
+					color: $lightest-slate;
+				}
+
+				.duration {
+					margin-bottom: 25px;
+					color: $light-slate;
+					font-family: $font-mono;
+					font-size: $fz-xs;
+				}
+
+				div {
+					display: flex;
+					i {
+						color: $green;
+					}
+					p {
+						padding-left: 30px;
+						color: $slate;
+						font-size: 15px;
+						font-family: $font-sans;
+						margin-bottom: 10px;
+						line-height: 25px;
+					}
+				}
+			}
+		}
+	}
 
 	.projects {
 		max-width: 1000px;
@@ -397,6 +391,15 @@ main {
 							font-size: 16px;
 							align-items: flex-end;
 							justify-content: flex-end;
+
+							li {
+								transition: all 0.2s;
+
+								&:hover {
+									color: white;
+									cursor: pointer;
+								}
+							}
 						}
 					}
 
@@ -417,15 +420,6 @@ main {
 		}
 	}
 }
-
-
-
-
-
-
-
-
-
 
 .opposite {
 	.projects-content-item-img {
@@ -481,7 +475,6 @@ main {
 			}
 		}
 
-
 		.social__icons__list::after {
 			content: "";
 			display: block;
@@ -492,52 +485,50 @@ main {
 		}
 	}
 }
-        .social__icons__list::after {
-            content: "";
-            display: block;
-            width: 1px;
-            height: 90px;
-            margin: 0px auto;
-            background-color: rgb(168 178 209);
-        }
+.social__icons__list::after {
+	content: "";
+	display: block;
+	width: 1px;
+	height: 90px;
+	margin: 0px auto;
+	background-color: rgb(168 178 209);
+}
 
-.gmailLink{
-    width: 40px;
-    position: fixed;
-    bottom: 0px;
-    left: auto;
-    right: 40px;
-    z-index: 10;
-    color: $light-slate;
-    div{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        a{
-
-            color: inherit;
-            margin: 20px auto;
-            padding: 10px;
-            font-family: $font-mono;
-            font-size: $fz-xxs;
-            letter-spacing: 0.1em;
-            line-height: 18px;
-            writing-mode: vertical-rl;
-            text-decoration: none;
-            transition: $transition;
-            &:hover{
-                transform: translateY(-5px);
-                color: #64ffda;
-            }
-        }
-        &::after{
-            content: "";
-            display: block;
-            width: 1px;
-            height: 90px;
-            margin: 0px auto;
-            background-color: $light-slate;
-    
-        }
-    }
+.gmailLink {
+	width: 40px;
+	position: fixed;
+	bottom: 0px;
+	left: auto;
+	right: 40px;
+	z-index: 10;
+	color: $light-slate;
+	div {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		a {
+			color: inherit;
+			margin: 20px auto;
+			padding: 10px;
+			font-family: $font-mono;
+			font-size: $fz-xxs;
+			letter-spacing: 0.1em;
+			line-height: 18px;
+			writing-mode: vertical-rl;
+			text-decoration: none;
+			transition: $transition;
+			&:hover {
+				transform: translateY(-5px);
+				color: #64ffda;
+			}
+		}
+		&::after {
+			content: "";
+			display: block;
+			width: 1px;
+			height: 90px;
+			margin: 0px auto;
+			background-color: $light-slate;
+		}
+	}
 }

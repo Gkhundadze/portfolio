@@ -1,52 +1,67 @@
 import * as f from "./functions.js";
-import * as variables from "./variables.js";
-import Developer from "./userObj.json" assert { type: "json" };
+import { devStack, profilePhoto, aboutMe, devName } from "./variables.js";
 
-f.showDevelopmentStack(variables.devStack, Developer);
-f.showProfilePhoto(variables.profilePhoto, Developer);
-f.showAboutMe(variables.aboutMe, Developer);
-f.greetingsAndIntro(variables.devName, Developer);
+let Developer = await f.getData();
+f.showDevelopmentStack(devStack, Developer);
+f.showProfilePhoto(profilePhoto, Developer);
+f.showAboutMe(aboutMe, Developer);
+f.greetingsAndIntro(devName, Developer);
 
 const completedProjects = Developer.completedProjects;
 const work_content = document.querySelector(".work-content");
 
-
 //createContainer
 const createContainer = (index) => {
-    const { projectStart, projectEnd, ProjectContent, projectRole } = completedProjects[index];
-    const experienceContainer = "<div class='projectNames'>"+
-        completedProjects.map((item, ind) => {
-            return `<button class="projectBtn${index == ind ? ' active' : ''}" data-id = ${ind}>${item.projectName}</button>`
-        }).join('')
-    +"</div><div class='project-inner'><h3>"+projectRole+"</h3><p class='duration'>"+projectStart + ' - ' + projectEnd +"</p>"+
-    ProjectContent.map((item) => {
-        return '<div><i class="fa-solid fa-caret-right"></i><p>'+item+'</p></div>';
-    }).join('')
-    "</div>"
-    work_content.innerHTML = experienceContainer;
-}
+	const { projectStart, projectEnd, ProjectContent, projectRole } =
+		completedProjects[index];
+	const experienceContainer =
+		"<div class='projectNames'>" +
+		completedProjects
+			.map((item, ind) => {
+				return `<button class="projectBtn${
+					index == ind ? " active" : ""
+				}" data-id = ${ind}>${item.projectName}</button>`;
+			})
+			.join("") +
+		"</div><div class='project-inner'><h3>" +
+		projectRole +
+		"</h3><p class='duration'>" +
+		projectStart +
+		" - " +
+		projectEnd +
+		"</p>" +
+		ProjectContent.map((item) => {
+			return (
+				'<div><i class="fa-solid fa-caret-right"></i><p>' +
+				item +
+				"</p></div>"
+			);
+		}).join("");
+	("</div>");
+	work_content.innerHTML = experienceContainer;
+};
 
 //scrollBtn
 const scrollBtn = () => {
-    const projectNames = document.querySelector('.projectNames');
-    completedProjects.length > 6 ? projectNames.classList.add('active') : projectNames.classList.remove('active');
-}
+	const projectNames = document.querySelector(".projectNames");
+	completedProjects.length > 6
+		? projectNames.classList.add("active")
+		: projectNames.classList.remove("active");
+};
 
 createContainer(0);
 scrollBtn();
 
-work_content.addEventListener('click', function(e) {
-    if(e.target.classList == 'projectBtn'){
-        createContainer(e.target.dataset.id);   
-        scrollBtn();
-    }
-})
+work_content.addEventListener("click", function (e) {
+	if (e.target.classList == "projectBtn") {
+		createContainer(e.target.dataset.id);
+		scrollBtn();
+	}
+});
 
 //createGmailName
-const gmailName = document.querySelector('.gmailName');
+const gmailName = document.querySelector(".gmailName");
 gmailName.textContent = Developer.gmailName;
-
-
 
 work_content.addEventListener("click", function (e) {
 	if (e.target.classList == "projectBtn") {
@@ -87,11 +102,11 @@ function createWorkProjects() {
           <div class="projects-content-item-text-links">
             <a href="${project.projectGithub}">
             <img
-            src="/static/images/github-icon.svg"
+            src="./static/images/github-icon.svg"
             alt=""/></a>
             <a href="${project.projectLink}">
             <img
-            src="/static/images/external-icon.svg"
+            src="./static/images/external-icon.svg"
             alt=""/></a>
           </div>
         `;
@@ -111,4 +126,3 @@ function createWorkProjects() {
 }
 
 createWorkProjects();
-
