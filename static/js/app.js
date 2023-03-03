@@ -10,68 +10,83 @@ f.greetingsAndIntro(devName, Developer);
 const completedProjects = Developer.completedProjects;
 const work_content = document.querySelector(".work-content");
 
-
 //createContainer
 const createContainer = (index) => {
-  const { projectStart, projectEnd, ProjectContent, projectRole } = completedProjects[index];
-  const experienceContainer = "<div class='projectNames'>" +
-    completedProjects.map((item, ind) => {
-      return `<button class="projectBtn${index == ind ? ' active' : ''}" data-id = ${ind}>${item.projectName}</button>`
-    }).join('')
-    + "</div><div class='project-inner'><h3>" + projectRole + "</h3><p class='duration'>" + projectStart + ' - ' + projectEnd + "</p>" +
-    ProjectContent.map((item) => {
-      return '<div><i class="fa-solid fa-caret-right"></i><p>' + item + '</p></div>';
-    }).join('')
-  "</div>"
-  work_content.innerHTML = experienceContainer;
-}
+	const { projectStart, projectEnd, ProjectContent, projectRole } =
+		completedProjects[index];
+	const experienceContainer =
+		"<div class='projectNames'>" +
+		completedProjects
+			.map((item, ind) => {
+				return `<button class="projectBtn${
+					index == ind ? " active" : ""
+				}" data-id = ${ind}>${item.projectName}</button>`;
+			})
+			.join("") +
+		"</div><div class='project-inner'><h3>" +
+		projectRole +
+		"</h3><p class='duration'>" +
+		projectStart +
+		" - " +
+		projectEnd +
+		"</p>" +
+		ProjectContent.map((item) => {
+			return (
+				'<div><i class="fa-solid fa-caret-right"></i><p>' +
+				item +
+				"</p></div>"
+			);
+		}).join("");
+	("</div>");
+	work_content.innerHTML = experienceContainer;
+};
 
 //scrollBtn
 const scrollBtn = () => {
-  const projectNames = document.querySelector('.projectNames');
-  completedProjects.length > 6 ? projectNames.classList.add('active') : projectNames.classList.remove('active');
-}
+	const projectNames = document.querySelector(".projectNames");
+	completedProjects.length > 6
+		? projectNames.classList.add("active")
+		: projectNames.classList.remove("active");
+};
 
 createContainer(0);
 scrollBtn();
 
-work_content.addEventListener('click', function (e) {
-  if (e.target.classList == 'projectBtn') {
-    createContainer(e.target.dataset.id);
-    scrollBtn();
-  }
-})
+work_content.addEventListener("click", function (e) {
+	if (e.target.classList == "projectBtn") {
+		createContainer(e.target.dataset.id);
+		scrollBtn();
+	}
+});
 
 //createGmailName
-const gmailName = document.querySelector('.gmailName');
+const gmailName = document.querySelector(".gmailName");
 gmailName.textContent = Developer.gmailName;
 
-
-
 work_content.addEventListener("click", function (e) {
-  if (e.target.classList == "projectBtn") {
-    console.log(e.target);
-    createContainer(e.target.dataset.id, "active");
-    e.target.style.borderRadius = "25px";
-    e.target.setAttribute("style", "height:25px !important");
-  }
+	if (e.target.classList == "projectBtn") {
+		console.log(e.target);
+		createContainer(e.target.dataset.id, "active");
+		e.target.style.borderRadius = "25px";
+		e.target.setAttribute("style", "height:25px !important");
+	}
 });
 
 const workProjects = Developer.workProjects;
 const projectsContainer = document.querySelector(".projects-content");
 
 function createWorkProjects() {
-  workProjects.forEach((project, index) => {
-    const projectItem = document.createElement("div");
-    const isOdd = index % 2 === 1;
+	workProjects.forEach((project, index) => {
+		const projectItem = document.createElement("div");
+		const isOdd = index % 2 === 1;
 
-    projectItem.classList.add("projects-content-item");
+		projectItem.classList.add("projects-content-item");
 
-    if (isOdd) {
-      projectItem.classList.add("opposite");
-    }
+		if (isOdd) {
+			projectItem.classList.add("opposite");
+		}
 
-    const projectText = `
+		const projectText = `
           <p class="type">Featured Project</p>
           <h3>${project.projectTitle}</h3>
           <div class="projects-content-item-text-wrapper">
@@ -87,16 +102,16 @@ function createWorkProjects() {
           <div class="projects-content-item-text-links">
             <a href="${project.projectGithub}">
             <img
-            src="/static/images/github-icon.svg"
+            src="./static/images/github-icon.svg"
             alt=""/></a>
             <a href="${project.projectLink}">
             <img
-            src="/static/images/external-icon.svg"
+            src="./static/images/external-icon.svg"
             alt=""/></a>
           </div>
         `;
 
-    projectItem.innerHTML = `
+		projectItem.innerHTML = `
           <div class="projects-content-item-text">
             ${projectText}
           </div>
@@ -106,9 +121,8 @@ function createWorkProjects() {
           </div>
         `;
 
-    projectsContainer.appendChild(projectItem);
-  });
+		projectsContainer.appendChild(projectItem);
+	});
 }
 
 createWorkProjects();
-
