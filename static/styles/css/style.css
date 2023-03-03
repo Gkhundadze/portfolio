@@ -623,6 +623,14 @@ main .projects-content-item-text-techs ul {
       -ms-flex-pack: end;
           justify-content: flex-end;
 }
+main .projects-content-item-text-techs ul li {
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+main .projects-content-item-text-techs ul li:hover {
+  color: white;
+  cursor: pointer;
+}
 main .projects-content-item-text-links {
   display: -webkit-box;
   display: -ms-flexbox;
