@@ -69,9 +69,11 @@ main {
 			display: grid;
 			grid-template-columns: 3fr 2fr;
 			gap: 3rem;
-
+			p {
+				line-height: 20px;
+			}
 			p:not(:last-child) {
-				padding-bottom: 2rem;
+				margin-bottom: 2rem;
 			}
 
 			.profileWrapper {
@@ -80,7 +82,7 @@ main {
 				width: fit-content;
 				height: fit-content;
 				z-index: 1;
-
+				cursor: pointer;
 				img {
 					width: 25rem;
 					border-radius: inherit;
@@ -146,12 +148,17 @@ main {
 
 				li {
 					margin: 0.2rem 0;
+					transition: .2s;
+					&:hover {
+						color: white;
+						cursor: pointer;
+					}
 				}
 
 				li::before {
 					content: "»";
 					color: $green;
-					margin-right: 0.2rem;
+					margin-right: 0.5rem;
 				}
 			}
 		}

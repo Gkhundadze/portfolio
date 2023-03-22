@@ -299,8 +299,11 @@ main #about .info {
   grid-template-columns: 3fr 2fr;
   gap: 3rem;
 }
+main #about .info p {
+  line-height: 20px;
+}
 main #about .info p:not(:last-child) {
-  padding-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 main #about .info .profileWrapper {
   border-radius: 0.5rem;
@@ -312,6 +315,7 @@ main #about .info .profileWrapper {
   height: -moz-fit-content;
   height: fit-content;
   z-index: 1;
+  cursor: pointer;
 }
 main #about .info .profileWrapper img {
   width: 25rem;
@@ -376,11 +380,17 @@ main #about .info #devStack {
 }
 main #about .info #devStack li {
   margin: 0.2rem 0;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+main #about .info #devStack li:hover {
+  color: white;
+  cursor: pointer;
 }
 main #about .info #devStack li::before {
   content: "»";
   color: #64ffda;
-  margin-right: 0.2rem;
+  margin-right: 0.5rem;
 }
 main .work-experience {
   width: 700px;
