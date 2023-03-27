@@ -1,12 +1,12 @@
 import * as f from "./functions.js";
-import { devStack, profilePhoto, aboutMe, devName } from "./variables.js";
+import { devStack, profilePhoto, aboutMe, devName, socialIconsWrapper } from "./variables.js";
 
 let Developer = await f.getData();
 f.showDevelopmentStack(devStack, Developer);
 f.showProfilePhoto(profilePhoto, Developer);
 f.showAboutMe(aboutMe, Developer);
 f.greetingsAndIntro(devName, Developer);
-
+f.socialIconsHendler(Developer.developerSocials, socialIconsWrapper)
 const completedProjects = Developer.completedProjects;
 const work_content = document.querySelector(".work-content");
 
@@ -61,6 +61,9 @@ work_content.addEventListener("click", function (e) {
 
 //createGmailName
 const gmailName = document.querySelector(".gmailName");
+// gmailName.href = Developer.gmailName
+// console.log(gmailName.href)
+// gmailName.src = Developer.gmailName
 gmailName.textContent = Developer.gmailName;
 
 work_content.addEventListener("click", function (e) {

@@ -35,3 +35,18 @@ export function greetingsAndIntro(devName, Developer) {
     devName.appendChild(h3.cloneNode(true));
     devName.appendChild(p.cloneNode(true));
 }
+
+export function socialIconsHendler(socialsArr, path) {
+    socialsArr.forEach(social => {
+        const socialItem = document.createElement('li')
+        socialItem.setAttribute('class', `social__links ${social.platform}`)
+        const icontag = 
+        `
+		    <a href="${social.profileUrl}">
+                <img src="${social.platformIconUrl}" alt="${social.platform}">
+		    </a>
+        `
+        socialItem.innerHTML = icontag
+        path.append(socialItem)
+    })
+}
