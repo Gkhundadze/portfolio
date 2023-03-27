@@ -77,7 +77,6 @@ header {
   width: 100%;
   position: fixed;
   top: 0;
-  height: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -88,11 +87,14 @@ header {
       -ms-flex-align: center;
           align-items: center;
   background-color: rgba(10, 25, 47, 0.85);
-  padding-inline: 50px;
+  padding: 10px 50px;
   z-index: 99;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
 }
 header .logo {
-  width: 120px;
+  width: 100px;
+  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 50px 0px;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 50px 0px;
 }
 header nav {
   display: -webkit-box;
@@ -328,7 +330,7 @@ main #about .info .profileWrapper::before {
   width: 100%;
   height: 100%;
   background-color: #64ffda;
-  opacity: 0.5;
+  opacity: 0.3;
   border-radius: inherit;
   z-index: 2;
   -webkit-transition: 0.25s;
@@ -703,18 +705,15 @@ main .projects-content-item-text-links a img {
   display: inline-block;
   padding: 10px;
 }
-.social__icons .social__icons__list .social__links a .social__svg--dimensions {
-  width: 20px;
-  height: 20px;
-  fill: none;
-  color: rgb(168, 178, 209);
-  -webkit-transition: all 0.25s cubic-bezier(0.65, 0.05, 0.36, 1);
-  transition: all 0.25s cubic-bezier(0.65, 0.05, 0.36, 1);
+.social__icons .social__icons__list .social__links a img {
+  width: 30px;
+  height: 30px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
-.social__icons .social__icons__list .social__links a .social__svg--dimensions:hover {
-  -webkit-transform: translateY(-5px);
-          transform: translateY(-5px);
-  color: #64ffda;
+.social__icons .social__icons__list .social__links a img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 .social__icons .social__icons__list .social__icons__list::after {
   content: "";
