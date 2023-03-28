@@ -67,11 +67,11 @@ export function createWorkProjects(arr, container) {
             </ul>
           </div>
           <div class="projects-content-item-text-links">
-            <a href="${project.projectGithub}">
+            <a href="${project.projectGithub}" aria-label="github link ${project.projectTitle}" >
             <img
             src="./static/images/social-icons/github-icon.svg"
             alt=""/></a>
-            <a href="${project.projectLink}">
+            <a href="${project.projectLink}" aria-label="redirect to ${project.projectTitle}" >
             <img
             src="./static/images/external-icon.svg"
             alt=""/></a>
