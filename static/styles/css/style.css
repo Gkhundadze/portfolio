@@ -249,7 +249,7 @@ main .developer-intro #devName > h2 {
   line-height: 1.1;
   font-weight: 600;
 }
-main .developer-intro #devName > h3 {
+main .developer-intro #devName > h1 {
   font-size: clamp(40px, 8vw, 80px);
   color: #8892b0;
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
@@ -598,6 +598,7 @@ main .projects-content-item-text {
   z-index: 2;
   text-align: right;
   grid-area: 1/6/-1/-1;
+  pointer-events: none;
 }
 main .projects-content-item-text .type {
   color: #64ffda;
@@ -618,11 +619,13 @@ main .projects-content-item-text-wrapper {
   font-size: 18px;
   -webkit-box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
           box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
+  pointer-events: all;
 }
 main .projects-content-item-text-wrapper p {
   line-height: 1.2;
 }
 main .projects-content-item-text-techs {
+  pointer-events: all;
   margin: 25px 0px 25px;
 }
 main .projects-content-item-text-techs ul {
@@ -655,6 +658,9 @@ main .projects-content-item-text-links {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+}
+main .projects-content-item-text-links a {
+  pointer-events: all;
 }
 main .projects-content-item-text-links a img {
   width: 20px;

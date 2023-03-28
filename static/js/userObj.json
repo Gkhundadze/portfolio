@@ -2,7 +2,6 @@
 	"name": "giga",
 	"surname": "Khundadze",
 	"slogan": "I build WebApps & WebSites.",
-	"email": "Gkhundadze@gmail.com",
 	"address": "Tbilisi",
 	"age": 29,
   "gmailName":  "Gkhundadze@gmail.com",
@@ -213,7 +212,7 @@
 	],
 	"workProjects": [
 		{
-			"projectImgSource": "http://heidmann.com/frontPics/code.jpg",
+			"projectImgSource": "./static/images/profile.png",
 			"projectTitle": "Halcyon Theme",
 			"projectText": "A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.",
 			"projectTechs": ["VS Code", "Sublime Text", "VAtom", "Iterm2"],
