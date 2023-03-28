@@ -2,7 +2,6 @@
 	"name": "giga",
 	"surname": "Khundadze",
 	"slogan": "I build WebApps & WebSites.",
-	"email": "Gkhundadze@gmail.com",
 	"address": "Tbilisi",
 	"age": 29,
   "gmailName":  "Gkhundadze@gmail.com",
@@ -11,7 +10,7 @@
 	"about": {
 		"p1": "I am an energetic person, purposeful, ambitious.",
 		"p2": "With creative mind, well organized, I always plan ahead to make sure I manage my time well",
-		"p3": "Also I’m positive person. responsible, attentive.",
+		"p3": "I’m positive person. responsible, attentive.",
 		"p4": "Excellent in working with others to achieve a certain objective on time and with excellence."
 	},
 	"developerPhoto": {
@@ -213,7 +212,7 @@
 	],
 	"workProjects": [
 		{
-			"projectImgSource": "http://heidmann.com/frontPics/code.jpg",
+			"projectImgSource": "./static/images/profile.png",
 			"projectTitle": "Halcyon Theme",
 			"projectText": "A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.",
 			"projectTechs": ["VS Code", "Sublime Text", "VAtom", "Iterm2"],
@@ -221,7 +220,7 @@
 			"projectLink": "sample.com"
 		},
 		{
-			"projectImgSource": "https://techcrunch.com/wp-content/uploads/2015/04/codecode.jpg",
+			"projectImgSource": "./static/images/profile.png",
 			"projectTitle": "Spotify",
 			"projectText": "A web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track. Create and save new playlists of recommended tracks based on your existing playlists and more.",
 			"projectTechs": ["VS Code", "Sublime Text", "Tailwind", "React"],
@@ -229,7 +228,7 @@
 			"projectLink": "sample.com"
 		},
 		{
-			"projectImgSource": "http://heidmann.com/frontPics/code.jpg",
+			"projectImgSource": "./static/images/profile.png",
 			"projectTitle": "Halcyon Theme",
 			"projectText": "A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.",
 			"projectTechs": ["VS Code", "Sublime Text", "VAtom", "Iterm2"],
