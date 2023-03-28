@@ -220,7 +220,7 @@
 			"projectLink": "sample.com"
 		},
 		{
-			"projectImgSource": "https://techcrunch.com/wp-content/uploads/2015/04/codecode.jpg",
+			"projectImgSource": "./static/images/profile.png",
 			"projectTitle": "Spotify",
 			"projectText": "A web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track. Create and save new playlists of recommended tracks based on your existing playlists and more.",
 			"projectTechs": ["VS Code", "Sublime Text", "Tailwind", "React"],
@@ -228,7 +228,7 @@
 			"projectLink": "sample.com"
 		},
 		{
-			"projectImgSource": "http://heidmann.com/frontPics/code.jpg",
+			"projectImgSource": "./static/images/profile.png",
 			"projectTitle": "Halcyon Theme",
 			"projectText": "A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.",
 			"projectTechs": ["VS Code", "Sublime Text", "VAtom", "Iterm2"],
