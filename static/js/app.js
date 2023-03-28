@@ -27,14 +27,14 @@ f.scrollBtn(completedProjects);
 
 work_content.addEventListener("click", function (e) {
 	if (e.target.classList == "projectBtn") {
-		createContainer(e.target.dataset.id);
-		scrollBtn();
+		f.createContainer(e.target.dataset.id, completedProjects, work_content);
+		f.scrollBtn(completedProjects);
 	}
 });
 work_content.addEventListener("click", function (e) {
 	if (e.target.classList == "projectBtn") {
-		console.log(e.target);
-		createContainer(e.target.dataset.id, "active");
+		f.createContainer(e.target.dataset.id, completedProjects, work_content);
+		e.target.classList.add('active')
 		e.target.style.borderRadius = "25px";
 		e.target.setAttribute("style", "height:25px !important");
 	}

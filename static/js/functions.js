@@ -4,8 +4,8 @@ export async function getData(Developer) {
         .then((data) => {return data});
 }
 export function showDevelopmentStack(devStack, Developer) {
-    let li = document.createElement('li');
     Developer['developmentStack'].forEach(stack => {
+        let li = document.createElement('li');
         li.innerHTML = stack;
         devStack.append(li)
     });
@@ -14,8 +14,8 @@ export function showProfilePhoto(profilePhoto, Developer) {
     profilePhoto.src = Developer['developerPhoto'].desktop;
 }
 export function showAboutMe(aboutMe, Developer) {
-    let p = document.createElement('p');
     for (let i in Developer['about']) {
+        let p = document.createElement('p');
         p.innerHTML = Developer['about'][i];
         aboutMe.append(p)
     }
@@ -94,8 +94,7 @@ export const createContainer = (index, arr, wrapper) => {
     arr[index];
 	const experienceContainer =
 		"<div class='projectNames'>" +
-		arr
-			.map((item, ind) => {
+		arr.map((item, ind) => {
 				return `<button class="projectBtn${
 					index == ind ? " active" : ""
 				}" data-id = ${ind}>${item.projectName}</button>`;
