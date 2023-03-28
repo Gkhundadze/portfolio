@@ -26,7 +26,11 @@
 		"Css",
 		"JavaScript",
 		"Angular",
-		"React"
+		"React",
+    "Git",
+    "npm",
+    "Django",
+    "Flask"
 	],
   "developerSocials": [
     {
