@@ -397,7 +397,7 @@ main #about .info #devStack li::before {
 main .work-experience {
   width: 700px;
   margin: 0 auto;
-  padding-top: 100px;
+  padding-top: 60px;
   position: relative;
 }
 main .work-experience .work-title {
@@ -543,7 +543,7 @@ main .work-experience .work-content .project-inner div p {
 main .projects {
   max-width: 1000px;
   margin: 0 auto;
-  padding: 100px 0;
+  padding: 60px 0;
 }
 main .projects-title {
   display: -webkit-box;
