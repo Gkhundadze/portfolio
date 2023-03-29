@@ -1,7 +1,7 @@
 main {
 	background-color: $navy;
 	.developer-intro {
-		padding: 11% 13%;
+		padding: 150px 15% 60px 15%;
 		.dev-name {
 			color: $green;
 			font-family: "Roboto Mono";
@@ -44,7 +44,7 @@ main {
 	#about {
 		font-family: $font-mono;
 		color: $slate;
-		padding: 10% 15%;
+		padding: 60px 15%;
 		h2 {
 			display: flex;
 			align-items: center;
