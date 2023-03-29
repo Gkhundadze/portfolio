@@ -54,7 +54,7 @@ export function createWorkProjects(arr, container) {
 			projectItem.classList.add("opposite");
 		}
 		const projectText = `
-          <p class="type">Featured Project</p>
+          <p class="project-date">${project.projectStart} - ${project.projectEnd}</p>
           <h3>${project.projectTitle}</h3>
           <div class="projects-content-item-text-wrapper">
             <p>
@@ -90,8 +90,9 @@ export function createWorkProjects(arr, container) {
 	});
 }
 export const createContainer = (index, arr, wrapper) => {
-	const { projectStart, projectEnd, ProjectContent, projectRole } =
+	const { projectStart, projectEnd, ProjectContent, projectRole, projectUrl, projectName, projectStack } =
     arr[index];
+    console.log(projectUrl)
 	const experienceContainer =
 		"<div class='projectNames'>" +
 		arr.map((item, ind) => {
@@ -106,6 +107,15 @@ export const createContainer = (index, arr, wrapper) => {
 		projectStart +
 		" - " +
 		projectEnd +
+    "<h4 class='project-stack'>project stack : " +
+    projectStack +
+    "</h4>" +
+    `<p class='link-to-project'>` +
+		"link to :" +
+		" - " +
+    `<a href=${projectUrl}>` +
+		projectName +
+    "</a>" +
 		"</p>" +
 		ProjectContent.map((item) => {
 			return (

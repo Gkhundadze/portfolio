@@ -503,6 +503,27 @@ main .work-experience .work-content .project-inner .duration {
   font-family: "Roboto Mono", monospace;
   font-size: 13px;
 }
+main .work-experience .work-content .project-inner .project-stack {
+  margin-bottom: 25px;
+  color: #a8b2d1;
+  font-family: "Roboto Mono", monospace;
+  font-size: 13px;
+  text-transform: capitalize;
+}
+main .work-experience .work-content .project-inner .link-to-project {
+  margin-bottom: 25px;
+  color: #a8b2d1;
+  font-family: "Roboto Mono", monospace;
+}
+main .work-experience .work-content .project-inner .link-to-project a {
+  color: inherit;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  text-transform: capitalize;
+}
+main .work-experience .work-content .project-inner .link-to-project a:hover {
+  color: #c9d0e3;
+}
 main .work-experience .work-content .project-inner div {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -600,7 +621,7 @@ main .projects-content-item-text {
   grid-area: 1/6/-1/-1;
   pointer-events: none;
 }
-main .projects-content-item-text .type {
+main .projects-content-item-text .project-date {
   color: #64ffda;
   margin-bottom: 10px;
   font-family: "Roboto Mono", monospace;
