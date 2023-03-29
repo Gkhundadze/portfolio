@@ -1,7 +1,7 @@
 main {
 	background-color: $navy;
 	.developer-intro {
-		padding: 11% 13%;
+		padding: 150px 15% 60px 15%;
 		.dev-name {
 			color: $green;
 			font-family: "Roboto Mono";
@@ -44,7 +44,7 @@ main {
 	#about {
 		font-family: $font-mono;
 		color: $slate;
-		padding: 10% 15%;
+		padding: 60px 15%;
 		h2 {
 			display: flex;
 			align-items: center;
@@ -155,7 +155,7 @@ main {
 	.work-experience {
 		width: 700px;
 		margin: 0 auto;
-		padding-top: 100px;
+		padding-top: 60px;
 		position: relative;
 		.work-title {
 			display: flex;
@@ -243,6 +243,27 @@ main {
 					color: $light-slate;
 					font-family: $font-mono;
 					font-size: $fz-xs;
+					
+				}
+				.project-stack {
+					margin-bottom: 25px;
+					color: $light-slate;
+					font-family: $font-mono;
+					font-size: $fz-xs;
+					text-transform: capitalize;
+				}
+				.link-to-project {
+					margin-bottom: 25px;
+					color: $light-slate;
+					font-family: $font-mono;
+					a {
+						color: inherit;
+						transition: .3s;
+						text-transform: capitalize;
+						&:hover {
+							color: lighten($light-slate, 10%);
+						}
+					}
 				}
 				div {
 					display: flex;
@@ -264,7 +285,7 @@ main {
 	.projects {
 		max-width: 1000px;
 		margin: 0 auto;
-		padding: 100px 0;
+		padding: 60px 0;
 		&-title {
 			display: flex;
 			align-items: center;
@@ -331,7 +352,7 @@ main {
 					text-align: right;
 					grid-area: 1 / 6 / -1 / -1;
 					pointer-events: none;
-					.type {
+					.project-date {
 						color: $green;
 						margin-bottom: 10px;
 						font-family: $font-mono;

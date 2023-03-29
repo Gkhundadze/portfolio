@@ -230,7 +230,7 @@ main {
   background-color: #0a192f;
 }
 main .developer-intro {
-  padding: 11% 13%;
+  padding: 150px 15% 60px 15%;
 }
 main .developer-intro .dev-name {
   color: #64ffda;
@@ -273,7 +273,7 @@ main .developer-intro .first-btn {
 main #about {
   font-family: "Roboto Mono", monospace;
   color: #8892b0;
-  padding: 10% 15%;
+  padding: 60px 15%;
 }
 main #about h2 {
   display: -webkit-box;
@@ -397,7 +397,7 @@ main #about .info #devStack li::before {
 main .work-experience {
   width: 700px;
   margin: 0 auto;
-  padding-top: 100px;
+  padding-top: 60px;
   position: relative;
 }
 main .work-experience .work-title {
@@ -503,6 +503,27 @@ main .work-experience .work-content .project-inner .duration {
   font-family: "Roboto Mono", monospace;
   font-size: 13px;
 }
+main .work-experience .work-content .project-inner .project-stack {
+  margin-bottom: 25px;
+  color: #a8b2d1;
+  font-family: "Roboto Mono", monospace;
+  font-size: 13px;
+  text-transform: capitalize;
+}
+main .work-experience .work-content .project-inner .link-to-project {
+  margin-bottom: 25px;
+  color: #a8b2d1;
+  font-family: "Roboto Mono", monospace;
+}
+main .work-experience .work-content .project-inner .link-to-project a {
+  color: inherit;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  text-transform: capitalize;
+}
+main .work-experience .work-content .project-inner .link-to-project a:hover {
+  color: #c9d0e3;
+}
 main .work-experience .work-content .project-inner div {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -522,7 +543,7 @@ main .work-experience .work-content .project-inner div p {
 main .projects {
   max-width: 1000px;
   margin: 0 auto;
-  padding: 100px 0;
+  padding: 60px 0;
 }
 main .projects-title {
   display: -webkit-box;
@@ -600,7 +621,7 @@ main .projects-content-item-text {
   grid-area: 1/6/-1/-1;
   pointer-events: none;
 }
-main .projects-content-item-text .type {
+main .projects-content-item-text .project-date {
   color: #64ffda;
   margin-bottom: 10px;
   font-family: "Roboto Mono", monospace;

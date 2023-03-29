@@ -1,5 +1,5 @@
 {
-	"name": "giga",
+	"name": "grigori",
 	"surname": "Khundadze",
 	"slogan": "I build WebApps & WebSites.",
 	"address": "Tbilisi",
@@ -26,7 +26,11 @@
 		"Css",
 		"JavaScript",
 		"Angular",
-		"React"
+		"React",
+    "Git",
+    "npm",
+    "Django",
+    "Flask"
 	],
   "developerSocials": [
     {
@@ -47,193 +51,93 @@
   ],
 	"completedProjects": [
 		{
-			"projectName": "soon",
-			"projectStart": "May 2018",
-			"projectEnd": "Present",
+			"projectName": "unilab",
+			"projectStart": "May 2022",
+			"projectEnd": "present",
+      "projectRole": "Mentor / Lecturer",
+			"projectUrl": "https://unilab.iliauni.edu.ge/front-end-html-css/",
 			"ProjectContent": [
-				"Write modern, performant, maintainable code for a diverse array of client and internal projects",
-				"Work with a variety of different languages, platforms, frameworks, and content management systems such as JavaScript, TypeScript, Gatsby, React, Craft, WordPress, Prismic, and Netlify",
-				"Communicate with multi-disciplinary teams of engineers, designers, producers, and clients on a daily basis"
+				"started work as a Mentor of accelleration program with Unilab"
 			],
-			"projectStack": "MERN Stack",
+			"projectStack": "html css javascript",
 			"projectMembers": [
 				{
-					"name": "name1",
-					"surname": "surname",
-					"linkedin": "Url",
-					"role": "Developer"
+					"name": "luka",
+					"surname": "bliadze",
+					"linkedin": "https://www.linkedin.com/in/luka-bliadze-3a5806208/",
+					"role": "Mentor / Lecturer"
 				}
-			],
-			"projectRole": "Engineer",
-			"projectUrl": "https://upstatement.com/"
+			]
 		},
 		{
-			"projectName": "Scout",
-			"projectStart": "January",
-			"projectEnd": "April 2018",
+			"projectName": "geolab",
+			"projectStart": "Dec 2022",
+			"projectEnd": "present",
+      "projectRole": "Lecturer Assistant",
+			"projectUrl": "https://geolab.edu.ge/ka-GE/Courses/CourseDetails/32?course=JavaScript%20%2F%20React%20",
 			"ProjectContent": [
-				"Worked with a team of three designers to build a marketing website and e-commerce platform for blistabloc, an ambitious startup originating from Northeastern",
-				"Helped solidify a brand direction for blistabloc that spans both packaging and web",
-				"Interfaced with clients on a weekly basis, providing technological expertise"
+				"started internship program with administrator role, now i'm react lecturer assistant"
 			],
-			"projectStack": "MERN Stack",
+			"projectStack": "javascript react",
 			"projectMembers": [
 				{
-					"name": "name1",
-					"surname": "surname",
-					"linkedin": "Url",
-					"role": "Developer"
+					"name": "giorgi",
+					"surname": "artenyan",
+					"linkedin": "none",
+					"role": "Lecturer"
 				}
-			],
-			"projectRole": "Studio Developer",
-			"projectUrl": "https://scout.camd.northeastern.edu/"
+			]
 		},
     {
-    "projectName": "Apple",
-    "projectStart": "July",
-    "projectEnd": "December 2017",
-    "ProjectContent": ["Developed and shipped highly interactive web applications for Apple Music using Ember.js",
-                      "Built and shipped the Apple Music Extension within Facebook Messenger leveraging third-party and internal APIs",
-                      "Architected and implemented the front-end of Apple Music's embeddable web player widget, which lets users log in and listen to full songs in the browser",
-                      "Contributed extensively to MusicKit.js, a JavaScript framework that allows developers to add an Apple Music player to their web apps"
-                      ],
-    "projectStack": "MERN Stack",
-    "projectMembers": [
-      {
-        "name": "name1",
-        "surname": "surname",
-        "linkedin": "Url",
-        "role": "Developer"
-      }
-    ],
-    "projectRole": "UI Engineer Co-op",
-    "projectUrl": "https://scout.camd.northeastern.edu/"
-  },
-  {
-    "projectName": "Scout",
-    "projectStart": "January",
-    "projectEnd": "June 2017",
-    "ProjectContent": ["Collaborated with a small team of student designers to spearhead a new brand and design system for Scout's inaugural student-led design conference at Northeastern",
-                      "Worked closely with designers and management team to develop, document, and manage the conference's marketing website using Jekyll, Sass, and JavaScript"
-                      ],
-    "projectStack": "MERN Stack",
-    "projectMembers": [
-      {
-        "name": "name1",
-        "surname": "surname",
-        "linkedin": "Url",
-        "role": "Developer"
-      }
-    ],
-    "projectRole": "Studio Developer",
-    "projectUrl": "https://scout.camd.northeastern.edu/"
-  },
-  {
-    "projectName": "Starry",
-    "projectStart": "July",
-    "projectEnd": "December 2016",
-    "ProjectContent": ["Engineered and maintained major features of Starry's customer-facing web app using ES6, Handlebars, Backbone, Marionette and CSS",
-                      "Proposed and implemented scalable solutions to issues identified with cloud services and applications responsible for communicating with Starry Station",
-                      "Interfaced with user experience designers and other developers to ensure thoughtful and coherent user experiences across Starry's iOS and Android mobile apps"],
-    "projectStack": "MERN Stack",
-    "projectMembers": [
-      {
-        "name": "name1",
-        "surname": "surname",
-        "linkedin": "Url",
-        "role": "Developer"
-      }
-    ],
-    "projectRole": "Software Engineer Co-op",
-    "projectUrl": "https://scout.camd.northeastern.edu/"
-  },
-  {
-    "projectName": "MullenLowe",
-    "projectStart": "July",
-    "projectEnd": "December 2015",
-    "ProjectContent": ["Developed and maintained code for in-house and client websites primarily using HTML, CSS, Sass, JavaScript, and jQuery",
-                      "Manually tested sites in various browsers and mobile devices to ensure cross-browser compatibility and responsiveness",
-                      "Clients included JetBlue, Lovesac, U.S. Cellular, U.S. Department of Defense, and more"
-                    ],
-    "projectStack": "MERN Stack",
-    "projectMembers": [
-      {
-        "name": "name1",
-        "surname": "surname",
-        "linkedin": "Url",
-        "role": "Developer"
-      }
-    ],
-    "projectRole": "Creative Technologist Co-op",
-    "projectUrl": "https://scout.camd.northeastern.edu/"
-  },
-  {
-    "projectName": "Apple",
-    "projectStart": "July",
-    "projectEnd": "December 2017",
-    "ProjectContent": ["Developed and shipped highly interactive web applications for Apple Music using Ember.js",
-                      "Built and shipped the Apple Music Extension within Facebook Messenger leveraging third-party and internal APIs",
-                      "Architected and implemented the front-end of Apple Music's embeddable web player widget, which lets users log in and listen to full songs in the browser",
-                      "Contributed extensively to MusicKit.js, a JavaScript framework that allows developers to add an Apple Music player to their web apps"
-                      ],
-    "projectStack": "MERN Stack",
-    "projectMembers": [
-      {
-        "name": "name1",
-        "surname": "surname",
-        "linkedin": "Url",
-        "role": "Developer"
-      }
-    ],
-    "projectRole": "UI Engineer Co-op",
-    "projectUrl": "https://scout.camd.northeastern.edu/"
-  },
-  {
-    "projectName": "Apple",
-    "projectStart": "July",
-    "projectEnd": "December 2017",
-    "ProjectContent": ["Developed and shipped highly interactive web applications for Apple Music using Ember.js",
-                      "Built and shipped the Apple Music Extension within Facebook Messenger leveraging third-party and internal APIs",
-                      "Architected and implemented the front-end of Apple Music's embeddable web player widget, which lets users log in and listen to full songs in the browser",
-                      "Contributed extensively to MusicKit.js, a JavaScript framework that allows developers to add an Apple Music player to their web apps"
-                      ],
-    "projectStack": "MERN Stack",
-    "projectMembers": [
-      {
-        "name": "name1",
-        "surname": "surname",
-        "linkedin": "Url",
-        "role": "Developer"
-      }
-    ],
-    "projectRole": "UI Engineer Co-op",
-    "projectUrl": "https://scout.camd.northeastern.edu/"
-    }
+			"projectName": "stars georgia",
+			"projectStart": "Dec 2021",
+			"projectEnd": "Apr 2021",
+      "projectRole": "Front-End Developer",
+			"projectUrl": "none",
+			"ProjectContent": [
+				"description appears soon ..."
+			],
+			"projectStack": "Django javascript bootstrap",
+			"projectMembers": [
+				{
+					"name": "tariel",
+					"surname": "chkuaseli",
+					"linkedin": "https://www.linkedin.com/in/tariel-chkuaseli-b52a33134/",
+					"role": "Back-End Developer"
+				}
+			]
+		}
 	],
 	"workProjects": [
 		{
-			"projectImgSource": "./static/images/profile.png",
-			"projectTitle": "Halcyon Theme",
-			"projectText": "A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.",
-			"projectTechs": ["VS Code", "Sublime Text", "VAtom", "Iterm2"],
-			"projectGithub": "github.com",
-			"projectLink": "sample.com"
+			"projectImgSource": "./static/images/projects/weather-app/weather-app.jpg",
+			"projectTitle": "weather app",
+			"projectText": "I created responsive web app on Angular, that allows you to find weather data about your city",
+			"projectTechs": ["VS Code", "github desktop", "npm", "angular cli", "angular"],
+			"projectGithub": "https://github.com/Gkhundadze/weather-app",
+			"projectLink": "https://chimerical-muffin-64c9e3.netlify.app/",
+      "projectStart": "May 2021",
+			"projectEnd": "June 2021"
 		},
 		{
-			"projectImgSource": "./static/images/profile.png",
-			"projectTitle": "Spotify",
-			"projectText": "A web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track. Create and save new playlists of recommended tracks based on your existing playlists and more.",
-			"projectTechs": ["VS Code", "Sublime Text", "Tailwind", "React"],
-			"projectGithub": "github.com",
-			"projectLink": "sample.com"
+			"projectImgSource": "./static/images/projects/volga/volga.jpg",
+			"projectTitle": "volga interior",
+			"projectText": "description will appear soon ...",
+			"projectTechs": ["VS Code", "javascript", "scss"],
+			"projectGithub": "https://github.com/lakanodia/volgasalon",
+			"projectLink": "https://fullspeedwestward.com/",
+      "projectStart": "Aug 2022",
+			"projectEnd": "Dec 2022"
 		},
 		{
-			"projectImgSource": "./static/images/profile.png",
-			"projectTitle": "Halcyon Theme",
-			"projectText": "A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.",
-			"projectTechs": ["VS Code", "Sublime Text", "VAtom", "Iterm2"],
-			"projectGithub": "github.com",
-			"projectLink": "sample.com"
+			"projectImgSource": "./static/images/projects/e-207-room/e-207-room.jpg",
+			"projectTitle": "e207 room",
+			"projectText": "description will appear soon ...",
+			"projectTechs": ["VS Code", "javascript", "scss"],
+			"projectGithub": "https://github.com/UnilabEdu/e-207-room",
+			"projectLink": "https://e207room.iliauni.edu.ge/",
+      "projectStart": "Dec 2022",
+			"projectEnd": "Jan 2023"
 		}
 	]
 }
