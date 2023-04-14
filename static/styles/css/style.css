@@ -90,11 +90,13 @@ header {
   padding: 10px 50px;
   z-index: 99;
   border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+  padding: 1rem;
 }
-header .logo {
-  width: 100px;
-  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 50px 0px;
-          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 50px 0px;
+header div a.logo {
+  color: #ccd6f6;
+  text-decoration: none;
+  letter-spacing: 1px;
+  text-transform: capitalize;
 }
 header nav {
   display: -webkit-box;
@@ -135,13 +137,10 @@ header i {
   font-size: 25px;
 }
 
-@media screen and (max-width: 768px) {
-  header {
-    padding: 0px 25px;
-  }
+@media screen and (max-width: 861px) {
   header.active .nav {
     visibility: visible;
-    width: min(75vw, 400px);
+    width: 100vw;
   }
   header.active .openNavbar {
     display: none !important;
@@ -160,7 +159,9 @@ header i {
     width: 0;
     visibility: hidden;
     position: absolute;
-    background-color: #112240;
+    background-color: rgba(10, 25, 47, 0.6);
+    -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
     -webkit-box-shadow: -10px 0px 30px -15px rgba(2, 12, 27, 0.7);
             box-shadow: -10px 0px 30px -15px rgba(2, 12, 27, 0.7);
     height: 100vh;
@@ -172,7 +173,7 @@ header i {
   }
   header .nav ul {
     width: 100%;
-    row-gap: 50px;
+    row-gap: 5vh;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -198,19 +199,8 @@ header i {
   header .nav ul a span {
     margin: 0 0 8px 0;
   }
-  header .nav .resumeBtn {
-    margin: 10% auto 0px;
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-transition: 0s;
-    transition: 0s;
-    font-size: 14px;
-    padding: 18px 50px;
+  header .nav .resume-btn {
+    margin-top: 5vh;
   }
   header .icon {
     width: 30px;
@@ -301,6 +291,11 @@ main #about .info {
   grid-template-columns: 3fr 2fr;
   gap: 3rem;
 }
+@media (max-width: 992px) {
+  main #about .info {
+    grid-template-columns: 1fr;
+  }
+}
 main #about .info p {
   line-height: 20px;
 }
@@ -319,9 +314,19 @@ main #about .info .profileWrapper {
   z-index: 1;
   cursor: pointer;
 }
+@media (max-width: 581px) {
+  main #about .info .profileWrapper {
+    width: 80%;
+  }
+}
 main #about .info .profileWrapper img {
   width: 25rem;
   border-radius: inherit;
+}
+@media (max-width: 581px) {
+  main #about .info .profileWrapper img {
+    width: 100%;
+  }
 }
 main #about .info .profileWrapper::before {
   content: "";
@@ -349,6 +354,12 @@ main #about .info .profileWrapper::after {
   z-index: -1;
   -webkit-transition: 0.25s;
   transition: 0.25s;
+}
+@media (max-width: 581px) {
+  main #about .info .profileWrapper::after {
+    top: 1rem;
+    left: 1rem;
+  }
 }
 main #about .info .profileWrapper:hover::before {
   content: "";
@@ -380,6 +391,14 @@ main #about .info #devStack {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
 }
+@media (max-width: 992px) {
+  main #about .info #devStack {
+    grid-template-columns: auto auto auto;
+    -webkit-column-gap: 2rem;
+       -moz-column-gap: 2rem;
+            column-gap: 2rem;
+  }
+}
 main #about .info #devStack li {
   margin: 0.2rem 0;
   -webkit-transition: 0.2s;
@@ -395,9 +414,8 @@ main #about .info #devStack li::before {
   margin-right: 0.5rem;
 }
 main .work-experience {
-  width: 700px;
   margin: 0 auto;
-  padding-top: 60px;
+  padding: 60px 15%;
   position: relative;
 }
 main .work-experience .work-title {
@@ -423,7 +441,24 @@ main .work-experience .work-title h2 {
 }
 main .work-experience .work-content {
   display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   height: 440px;
+}
+@media (max-width: 581px) {
+  main .work-experience .work-content {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 2rem;
+  }
 }
 main .work-experience .work-content .projectNames {
   display: -webkit-box;
@@ -436,6 +471,25 @@ main .work-experience .work-content .projectNames {
   height: 252px;
   overflow-y: scroll;
   overflow-x: hidden;
+}
+@media (max-width: 581px) {
+  main .work-experience .work-content .projectNames {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+}
+@media (max-width: 481px) {
+  main .work-experience .work-content .projectNames {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 main .work-experience .work-content .projectNames::-webkit-scrollbar {
   width: 4px;
@@ -489,7 +543,18 @@ main .work-experience .work-content .projectNames button:hover {
 main .work-experience .work-content .project-inner {
   margin-left: 20px;
   padding: 10px 5px;
-  width: 570px;
+}
+@media (max-width: 581px) {
+  main .work-experience .work-content .project-inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: 0;
+  }
 }
 main .work-experience .work-content .project-inner h3 {
   font-family: "Noto Sans", sans-serif;
@@ -539,6 +604,11 @@ main .work-experience .work-content .project-inner div p {
   font-family: "Noto Sans", sans-serif;
   margin-bottom: 10px;
   line-height: 25px;
+}
+@media (max-width: 992px) {
+  main .work-experience .work-content .project-inner div p {
+    padding-left: 15px;
+  }
 }
 main .projects {
   max-width: 1000px;
@@ -715,6 +785,16 @@ main .projects-content-item-text-links a img {
   right: auto;
   z-index: 9999;
 }
+@media (max-width: 860px) {
+  .social__icons {
+    left: 20px;
+  }
+}
+@media (max-width: 581px) {
+  .social__icons {
+    left: 10px;
+  }
+}
 .social__icons .social__icons__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -764,10 +844,19 @@ main .projects-content-item-text-links a img {
   width: 40px;
   position: fixed;
   bottom: 0px;
-  left: auto;
   right: 40px;
   z-index: 10;
   color: #a8b2d1;
+}
+@media (max-width: 860px) {
+  .gmailLink {
+    right: 20px;
+  }
+}
+@media (max-width: 581px) {
+  .gmailLink {
+    right: 10px;
+  }
 }
 .gmailLink div {
   display: -webkit-box;

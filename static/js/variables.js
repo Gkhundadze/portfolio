@@ -6,3 +6,4 @@ export const socialIconsWrapper = document.querySelector('.social__icons__list')
 export const projectsContainer = document.querySelector(".projects-content");
 export const work_content = document.querySelector(".work-content");
 export const gmailName = document.querySelector(".gmailName");
+export const navLinksArr = document.querySelectorAll('[nav-link]')
