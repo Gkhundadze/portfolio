@@ -10,10 +10,19 @@ header {
     padding: 10px 50px;
     z-index: 99;
     border-bottom: 2px solid rgba(255, 255, 255, .5);
-    .logo{
-        width: 100px;
-        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 50px 0px;
+    padding: 1rem;
+    div {
+        a.logo{
+            color: $lightest-slate;
+            text-decoration: none;
+            letter-spacing: 1px;
+            text-transform: capitalize;
+        }
     }
+    // .logo{
+    //     width: 100px;
+    //     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 50px 0px;
+    // }
     nav {
         display: flex;
         align-items: center;
@@ -49,13 +58,12 @@ header {
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 861px) {
     header {
-        padding: 0px 25px;
         &.active{
             .nav{
                 visibility: visible;
-                width: min(75vw, 400px);
+                width: 100vw;
             }
             .openNavbar{
                 display: none !important;
@@ -73,19 +81,20 @@ header {
             width: 0;
             visibility: hidden;
             position: absolute;
-            background-color: #112240;
+            background-color: $burger-bg;
+            backdrop-filter: blur(5px);
             box-shadow: -10px 0px 30px -15px rgba(2,12,27,0.7);
             height: 100vh;
             justify-content: center;
             transition: 0.2s;
             ul{
                 width: 100%;
-                row-gap: 50px;
+                row-gap: 5vh;
                 flex-direction: column;
                 li{
                     margin: 0;
                 }
-                a{
+                a{  
                     font-size: 17px;
                     display: flex;
                     flex-direction: column;
@@ -97,16 +106,9 @@ header {
                     }
                 }
             }
-
-            .resumeBtn {
-                margin: 10% auto 0px;
-                width: max-content;
-                flex-direction: column;
-                transition: 0s;
-                font-size: 14px;
-                padding: 18px 50px;
+            .resume-btn {
+                margin-top: 5vh;
             }
-
         }
         .icon{
             width: 30px;

@@ -1,15 +1,15 @@
 import * as f from "./functions.js";
 import {
 	devStack,
-	profilePhoto, 
-	aboutMe, 
-	devName, 
-	socialIconsWrapper, 
-	projectsContainer, 
-	work_content, 
+	profilePhoto,
+	aboutMe,
+	devName,
+	socialIconsWrapper,
+	projectsContainer,
+	work_content,
 	gmailName,
+	navLinksArr
 } from "./variables.js";
-
 let Developer = await f.getData();
 const workProjects = Developer.workProjects;
 const completedProjects = Developer.completedProjects;
@@ -22,7 +22,7 @@ f.socialIconsHendler(Developer.developerSocials, socialIconsWrapper)
 f.createWorkProjects(workProjects, projectsContainer);
 f.createContainer(0, completedProjects, work_content)
 f.scrollBtn(completedProjects);
-
+f.checkNavLinks(navLinksArr)
 
 
 work_content.addEventListener("click", function (e) {
@@ -39,3 +39,4 @@ work_content.addEventListener("click", function (e) {
 		e.target.setAttribute("style", "height:25px !important");
 	}
 });
+
