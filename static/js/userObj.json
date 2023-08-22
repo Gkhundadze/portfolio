@@ -53,7 +53,7 @@
 		{
 			"projectName": "unilab",
 			"projectStart": "May 2022",
-			"projectEnd": "present",
+			"projectEnd": "March 2023",
       "projectRole": "Mentor / Lecturer",
 			"projectUrl": "https://unilab.iliauni.edu.ge/front-end-html-css/",
 			"ProjectContent": [
@@ -109,35 +109,56 @@
 		}
 	],
 	"workProjects": [
+		
 		{
-			"projectImgSource": "./static/images/projects/weather-app/weather-app.jpg",
-			"projectTitle": "weather app",
-			"projectText": "I created responsive web app on Angular, that allows you to find weather data about your city",
-			"projectTechs": ["VS Code", "github desktop", "npm", "angular cli", "angular"],
-			"projectGithub": "https://github.com/Gkhundadze/weather-app",
-			"projectLink": "https://chimerical-muffin-64c9e3.netlify.app/",
-      "projectStart": "May 2021",
-			"projectEnd": "June 2021"
-		},
-		{
-			"projectImgSource": "./static/images/projects/volga/volga.jpg",
 			"projectTitle": "volga interior",
+			"projectImgSource": "./static/images/projects/volga/volga.jpg",
 			"projectText": "description will appear soon ...",
 			"projectTechs": ["VS Code", "javascript", "scss"],
 			"projectGithub": "https://github.com/lakanodia/volgasalon",
 			"projectLink": "https://fullspeedwestward.com/",
-      "projectStart": "Aug 2022",
+      		"projectStart": "Aug 2022",
 			"projectEnd": "Dec 2022"
 		},
 		{
-			"projectImgSource": "./static/images/projects/e-207-room/e-207-room.jpg",
 			"projectTitle": "e207 room",
+			"projectImgSource": "./static/images/projects/e-207-room/e-207-room.jpg",
 			"projectText": "description will appear soon ...",
 			"projectTechs": ["VS Code", "javascript", "scss"],
 			"projectGithub": "https://github.com/UnilabEdu/e-207-room",
 			"projectLink": "https://e207room.iliauni.edu.ge/",
-      "projectStart": "Dec 2022",
-			"projectEnd": "Jan 2023"
+      		"projectStart": "Dec 2022",
+			"projectEnd": "March 2022"
+		},
+		{
+			"projectTitle": "Terms base",
+			"projectImgSource": "./static/images/projects/term-base/terms.png",
+			"projectText": "description will appear soon ...",
+			"projectTechs": ["VS Code", "javascript", "scss"],
+			"projectGithub": null,
+			"projectLink": "https://terms.iliauni.edu.ge/",
+      		"projectStart": "Aug 2021",
+			"projectEnd": "Dec 2022"
+		},
+		{
+			"projectTitle": "weather app",
+			"projectImgSource": "./static/images/projects/weather-app/weather-app.jpg",
+			"projectText": "I created responsive web app on Angular, that allows you to find weather data about your city",
+			"projectTechs": ["VS Code", "github desktop", "npm", "angular cli", "angular"],
+			"projectGithub": "https://github.com/Gkhundadze/weather-app",
+			"projectLink": "https://chimerical-muffin-64c9e3.netlify.app/",
+      		"projectStart": "May 2021",
+			"projectEnd": "June 2021"
+		},
+		{
+			"projectTitle": "una Chatbot",
+			"projectImgSource": "./static/images/projects/unabot/unabot.png",
+			"projectText": "description will appear soon ...",
+			"projectTechs": ["VS Code", "github", "javascript", "css"],
+			"projectGithub": "https://github.com/Gkhundadze/chatbot-una",
+			"projectLink": "http://unabot.iliauni.edu.ge/",
+      		"projectStart": "Dec 2022",
+			"projectEnd": "March 2022"
 		}
 	]
 }

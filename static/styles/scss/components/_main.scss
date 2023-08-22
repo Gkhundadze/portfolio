@@ -393,14 +393,17 @@ main {
 					pointer-events: none;
 					.project-date {
 						color: $green;
-						margin-bottom: 10px;
 						font-family: $font-mono;
 						font-weight: 400;
+						margin-bottom: 10px;
 					}
 					h3 {
 						font-size: 28px;
 						color: #ccd6f6;
 						margin-bottom: 20px;
+						border-bottom: 1px solid lightblue;
+						padding-bottom: 5px;
+						display: inline-block;
 					}
 					&-wrapper {
 						padding: 25px;

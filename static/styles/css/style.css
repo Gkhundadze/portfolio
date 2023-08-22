@@ -67,6 +67,7 @@ input {
   border-radius: 5px;
   text-decoration: none;
   font-family: "Roboto Mono", monospace;
+  text-transform: capitalize;
 }
 .Btn:hover {
   background-color: rgba(100, 255, 218, 0.1);
@@ -693,14 +694,17 @@ main .projects-content-item-text {
 }
 main .projects-content-item-text .project-date {
   color: #64ffda;
-  margin-bottom: 10px;
   font-family: "Roboto Mono", monospace;
   font-weight: 400;
+  margin-bottom: 10px;
 }
 main .projects-content-item-text h3 {
   font-size: 28px;
   color: #ccd6f6;
   margin-bottom: 20px;
+  border-bottom: 1px solid lightblue;
+  padding-bottom: 5px;
+  display: inline-block;
 }
 main .projects-content-item-text-wrapper {
   padding: 25px;
