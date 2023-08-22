@@ -54,7 +54,6 @@ export function createWorkProjects(arr, container) {
       projectItem.classList.add("opposite");
     }
     const projectText = `
-          <p class="project-date">${project.projectStart} - ${project.projectEnd}</p>
           <h3>${project.projectTitle}</h3>
           <div class="projects-content-item-text-wrapper">
             <p>
@@ -66,11 +65,19 @@ export function createWorkProjects(arr, container) {
               ${project.projectTechs.map((tech) => `<li>${tech}</li>`).join("")}
             </ul>
           </div>
+          <p class="project-date">${project.projectStart} - ${project.projectEnd}</p>
           <div class="projects-content-item-text-links">
-            <a href="${project.projectGithub}" aria-label="github link ${project.projectTitle}" >
-            <img
-            src="./static/images/social-icons/github-icon.svg"
-            alt=""/></a>
+            ${
+              project.projectGithub ? `
+              <a href="${project.projectGithub}" aria-label="github link ${project.projectTitle}" >
+                <img
+                src="./static/images/social-icons/github-icon.svg"
+                alt=""/>
+              </a>
+            `
+            : null
+            }
+            
             <a href="${project.projectLink}" aria-label="redirect to ${project.projectTitle}" >
             <img
             src="./static/images/external-icon.svg"
