@@ -97,7 +97,7 @@
 			"ProjectContent": [
 				"description appears soon ..."
 			],
-			"projectStack": "Django javascript bootstrap",
+			"projectStack": "Django javascript",
 			"projectMembers": [
 				{
 					"name": "tariel",
@@ -132,7 +132,7 @@
 		},
 		{
 			"projectTitle": "Terms base",
-			"projectImgSource": "./static/images/projects/term-base/terms.png",
+			"projectImgSource": "./static/images/projects/term-base/terms.PNG",
 			"projectText": "description will appear soon ...",
 			"projectTechs": ["VS Code", "javascript", "scss"],
 			"projectGithub": null,
@@ -152,7 +152,7 @@
 		},
 		{
 			"projectTitle": "una Chatbot",
-			"projectImgSource": "./static/images/projects/unabot/unabot.png",
+			"projectImgSource": "./static/images/projects/unabot/unabot.PNG",
 			"projectText": "description will appear soon ...",
 			"projectTechs": ["VS Code", "github", "javascript", "css"],
 			"projectGithub": "https://github.com/Gkhundadze/chatbot-una",
