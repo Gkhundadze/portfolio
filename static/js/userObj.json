@@ -92,7 +92,7 @@
 			"projectName": "stars georgia",
 			"projectStart": "Dec 2021",
 			"projectEnd": "Apr 2021",
-      "projectRole": "Front-End Developer",
+      		"projectRole": "Front-End Developer",
 			"projectUrl": "none",
 			"ProjectContent": [
 				"description appears soon ..."
@@ -104,6 +104,44 @@
 					"surname": "chkuaseli",
 					"linkedin": "https://www.linkedin.com/in/tariel-chkuaseli-b52a33134/",
 					"role": "Back-End Developer"
+				}
+			]
+		},
+		{
+			"projectName": "Ministry of Education",
+			"projectStart": "May 2023",
+			"projectEnd": "Present",
+      		"projectRole": "Javascript Author",
+			"projectUrl": "#",
+			"ProjectContent": [
+				"description appears soon ..."
+			],
+			"projectStack": "javascript",
+			"projectMembers": [
+				{
+					"name": "Linda",
+					"surname": "Giorgadze",
+					"linkedin": false,
+					"role": "Javascript Co/Author"
+				}
+			]
+		},
+		{
+			"projectName": "Aphra Marine",
+			"projectStart": "May 2020",
+			"projectEnd": "May 2021",
+      		"projectRole": "Database Moderator",
+			"projectUrl": "http://www.aphramarine.com/",
+			"ProjectContent": [
+				"description appears soon ..."
+			],
+			"projectStack": "javascript, SQL, Excel",
+			"projectMembers": [
+				{
+					"name": "Karl",
+					"surname": "Kontselidze",
+					"linkedin": "https://www.linkedin.com/in/kkontselidze/",
+					"role": "Product Owner"
 				}
 			]
 		}
