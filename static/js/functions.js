@@ -75,7 +75,7 @@ export function createWorkProjects(arr, container) {
                 alt=""/>
               </a>
             `
-            : null
+            : ''
             }
             
             <a href="${project.projectLink}" aria-label="redirect to ${project.projectTitle}" >

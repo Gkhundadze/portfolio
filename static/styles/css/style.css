@@ -58,11 +58,11 @@ input {
 
 .Btn {
   cursor: pointer;
-  color: #64ffda;
+  color: #45d4b3;
   background-color: transparent;
   -webkit-transition: 0.25s;
   transition: 0.25s;
-  border: 1px solid #64ffda;
+  border: 1px solid #45d4b3;
   padding: 0.75rem 1rem;
   border-radius: 5px;
   text-decoration: none;
@@ -124,11 +124,11 @@ header nav ul li a {
   transition: 0.25s;
 }
 header nav ul li a:hover {
-  color: #64ffda;
+  color: #45d4b3;
 }
 header nav ul li a span {
   margin-right: 5px;
-  color: #64ffda;
+  color: #45d4b3;
 }
 header .icon {
   display: none;
@@ -205,7 +205,7 @@ header i {
   }
   header .icon {
     width: 30px;
-    color: #64ffda;
+    color: #45d4b3;
     display: block !important;
     z-index: 1;
   }
@@ -224,7 +224,7 @@ main .developer-intro {
   padding: 150px 15% 60px 15%;
 }
 main .developer-intro .dev-name {
-  color: #64ffda;
+  color: #45d4b3;
   font-family: "Roboto Mono";
   font-size: 1.3rem;
   margin: 0px 0px 30px 4px;
@@ -345,7 +345,7 @@ main #about .info .profileWrapper::before {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: #64ffda;
+  background-color: #45d4b3;
   opacity: 0.3;
   border-radius: inherit;
   z-index: 2;
@@ -358,7 +358,7 @@ main #about .info .profileWrapper::after {
   position: absolute;
   width: 100%;
   height: 100%;
-  border: 2px solid #64ffda;
+  border: 2px solid #45d4b3;
   top: 1.5rem;
   left: 1.5rem;
   border-radius: inherit;
@@ -389,7 +389,7 @@ main #about .info .profileWrapper:hover::after {
   position: absolute;
   width: 100%;
   height: 100%;
-  border: 2px solid #64ffda;
+  border: 2px solid #45d4b3;
   top: 0.5rem;
   left: 0.5rem;
   border-radius: inherit;
@@ -436,7 +436,7 @@ main #about .info #devStack li:hover {
 }
 main #about .info #devStack li::before {
   content: "»";
-  color: #64ffda;
+  color: #45d4b3;
   margin-right: 0.5rem;
 }
 main .work-experience {
@@ -454,7 +454,7 @@ main .work-experience .work-title {
   margin: 10px 0px 40px;
 }
 main .work-experience .work-title span {
-  color: #64ffda;
+  color: #45d4b3;
   margin-right: 10px;
   font-family: "Roboto Mono", monospace;
   font-size: 22px;
@@ -530,7 +530,7 @@ main .work-experience .work-content .projectNames::-webkit-scrollbar-track {
   background: transparent;
 }
 main .work-experience .work-content .projectNames::-webkit-scrollbar-thumb {
-  background: #64ffda;
+  background: #45d4b3;
 }
 main .work-experience .work-content .projectNames button {
   cursor: pointer;
@@ -556,7 +556,7 @@ main .work-experience .work-content .projectNames button {
 }
 main .work-experience .work-content .projectNames button.active {
   background-color: #112240;
-  color: #64ffda;
+  color: #45d4b3;
 }
 main .work-experience .work-content .projectNames button.active::before {
   content: "";
@@ -565,11 +565,11 @@ main .work-experience .work-content .projectNames button.active::before {
   height: 100%;
   top: 0;
   left: -2px;
-  background-color: #64ffda;
+  background-color: #45d4b3;
 }
 main .work-experience .work-content .projectNames button:hover {
   background-color: #112240;
-  color: #64ffda;
+  color: #45d4b3;
   outline: 0px;
 }
 main .work-experience .work-content .project-inner {
@@ -627,7 +627,7 @@ main .work-experience .work-content .project-inner div {
   display: flex;
 }
 main .work-experience .work-content .project-inner div i {
-  color: #64ffda;
+  color: #45d4b3;
 }
 main .work-experience .work-content .project-inner div p {
   padding-left: 30px;
@@ -672,7 +672,7 @@ main .projects-title {
   margin: 10px 0px 40px;
 }
 main .projects-title span {
-  color: #64ffda;
+  color: #45d4b3;
   margin-right: 10px;
   font-family: "Roboto Mono", monospace;
   font-size: 22px;
@@ -759,7 +759,7 @@ main .projects-content-item-text {
   }
 }
 main .projects-content-item-text .project-date {
-  color: #64ffda;
+  color: #45d4b3;
   font-family: "Roboto Mono", monospace;
   font-weight: 400;
   margin-bottom: 10px;
