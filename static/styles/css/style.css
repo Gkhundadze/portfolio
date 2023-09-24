@@ -266,6 +266,11 @@ main #about {
   color: #8892b0;
   padding: 60px 15%;
 }
+@media (max-width: 992px) {
+  main #about {
+    padding: 60px 18%;
+  }
+}
 main #about h2 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -436,7 +441,7 @@ main #about .info #devStack li::before {
 }
 main .work-experience {
   margin: 0 auto;
-  padding: 60px 15%;
+  padding: 60px 18%;
   position: relative;
 }
 main .work-experience .work-title {
@@ -488,6 +493,8 @@ main .work-experience .work-content .projectNames {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   height: 252px;
   overflow-y: scroll;
   overflow-x: hidden;
@@ -501,6 +508,11 @@ main .work-experience .work-content .projectNames {
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 @media (max-width: 481px) {
@@ -647,7 +659,7 @@ main .projects {
 }
 @media (max-width: 480px) {
   main .projects {
-    padding: 60px 10px;
+    padding: 60px 18%;
   }
 }
 main .projects-title {
@@ -869,6 +881,11 @@ main .projects-content-item-text-links a img {
     left: 10px;
   }
 }
+@media (max-width: 481px) {
+  .social__icons {
+    left: 0px;
+  }
+}
 .social__icons .social__icons__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -888,6 +905,11 @@ main .projects-content-item-text-links a img {
 .social__icons .social__icons__list .social__links a {
   display: inline-block;
   padding: 10px;
+}
+@media (max-width: 481px) {
+  .social__icons .social__icons__list .social__links a {
+    padding: 5px;
+  }
 }
 .social__icons .social__icons__list .social__links a img {
   width: 30px;
