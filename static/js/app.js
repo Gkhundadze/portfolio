@@ -13,6 +13,7 @@ import {
 let Developer = await f.getData();
 const workProjects = Developer.workProjects;
 const completedProjects = Developer.completedProjects;
+gmailName.setAttribute('href', `mailto:${Developer.gmailName}`)
 gmailName.textContent = Developer.gmailName;
 f.showDevelopmentStack(devStack, Developer);
 f.showProfilePhoto(profilePhoto, Developer);
