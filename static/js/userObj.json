@@ -14,7 +14,7 @@
 		"p4": "Excellent in working with others to achieve a certain objective on time and with excellence."
 	},
 	"developerPhoto": {
-		"desktop": "./static/images/profile.png",
+		"desktop": "./static/images/profile.webp",
 		"tablet": "url",
 		"mobile": "url"
 	},
@@ -150,7 +150,7 @@
 		
 		{
 			"projectTitle": "volga interior",
-			"projectImgSource": "./static/images/projects/volga/volga.jpg",
+			"projectImgSource": "./static/images/projects/volga/volga.webp",
 			"projectText": "description will appear soon ...",
 			"projectTechs": ["VS Code", "javascript", "scss"],
 			"projectGithub": "https://github.com/lakanodia/volgasalon",
@@ -160,7 +160,7 @@
 		},
 		{
 			"projectTitle": "e207 room",
-			"projectImgSource": "./static/images/projects/e-207-room/e-207-room.jpg",
+			"projectImgSource": "./static/images/projects/e-207-room/e-207-room.webp",
 			"projectText": "description will appear soon ...",
 			"projectTechs": ["VS Code", "javascript", "scss"],
 			"projectGithub": "https://github.com/UnilabEdu/e-207-room",
@@ -170,7 +170,7 @@
 		},
 		{
 			"projectTitle": "Terms base",
-			"projectImgSource": "./static/images/projects/term-base/terms.PNG",
+			"projectImgSource": "./static/images/projects/term-base/terms.webp",
 			"projectText": "description will appear soon ...",
 			"projectTechs": ["VS Code", "javascript", "scss"],
 			"projectGithub": null,
@@ -180,7 +180,7 @@
 		},
 		{
 			"projectTitle": "weather app",
-			"projectImgSource": "./static/images/projects/weather-app/weather-app.jpg",
+			"projectImgSource": "./static/images/projects/weather-app/weather-app.webp",
 			"projectText": "I created responsive web app on Angular, that allows you to find weather data about your city",
 			"projectTechs": ["VS Code", "github desktop", "npm", "angular cli", "angular"],
 			"projectGithub": "https://github.com/Gkhundadze/weather-app",
@@ -190,7 +190,7 @@
 		},
 		{
 			"projectTitle": "una Chatbot",
-			"projectImgSource": "./static/images/projects/unabot/unabot.PNG",
+			"projectImgSource": "./static/images/projects/unabot/unabot.webp",
 			"projectText": "description will appear soon ...",
 			"projectTechs": ["VS Code", "github", "javascript", "css"],
 			"projectGithub": "https://github.com/Gkhundadze/chatbot-una",
