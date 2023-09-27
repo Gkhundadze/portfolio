@@ -47,8 +47,10 @@
 					// these IDs from the previous steps
 					emailjs.sendForm('service_ms82eju', 'template_c0aqjoq', this)
 						.then(function() {
-							console.log('SUCCESS!');
 							alert('Email sent')
+							event.srcElement[1].value = ''
+							event.srcElement[2].value = ''
+							event.srcElement[3].value = ''
 						}, function(error) {
 							console.log('Email not sent', error);
 						});
