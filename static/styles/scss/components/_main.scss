@@ -488,6 +488,81 @@ main {
 			}
 		}
 	}
+	.contact {
+		max-width: 1000px;
+		margin: 0 auto;
+		padding: 60px 0;
+		@media (max-width: 1050px) {
+			padding: 60px 30px;
+		}
+		@media (max-width: 768px) {
+			padding: 60px 70px;
+		}
+		@media (max-width: 480px) {
+			padding: 60px 18%;
+		}
+		&-title {
+			display: flex;
+			align-items: center;
+			margin: 10px 0px 40px;
+			span {
+				color: $green;
+				margin-right: 10px;
+				font-family: $font-mono;
+				font-size: $fz-xxl;
+			}
+			h2 {
+				font-size: 32px;
+				font-weight: 600;
+				color: $lightest-slate;
+				font-family: $font-sans;
+			}
+			&::after {
+				display: block;
+				position: relative;
+				content: "";
+				width: 13rem;
+				height: 0.1rem;
+				top: 0.2rem;
+				margin: 0 1rem;
+				background-color: $slate;
+			}
+		}
+		form {
+			color: $lightest-slate;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			gap: 1rem;
+			font-size: $fz-md;
+			input {
+				padding: 5px 8px;
+			}
+			input[type="submit"] {
+				padding: 10px 15px;
+				
+			}
+			label {
+				font-size: 150%;
+			}
+			textarea {
+				width: 600px;
+				height: 300px;
+				padding: 20px;
+				font-size: $fz-lg;
+				background-color: rgba(0, 0, 0, 0.3);
+				color: $lightest-slate;
+				@media (max-width: 768px) {
+					width: 400px;
+					height: 200px;
+				}
+				@media (max-width: 580px) {
+					width: 200px;
+					height: 100px;
+				}
+			}
+		}
+	}
 }
 .opposite {
 	.projects-content-item-img {
