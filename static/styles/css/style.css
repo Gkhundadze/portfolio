@@ -827,6 +827,101 @@ main .projects-content-item-text-links a img {
   width: 20px;
   height: 20px;
 }
+main .contact {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+@media (max-width: 1050px) {
+  main .contact {
+    padding: 60px 30px;
+  }
+}
+@media (max-width: 768px) {
+  main .contact {
+    padding: 60px 70px;
+  }
+}
+@media (max-width: 480px) {
+  main .contact {
+    padding: 60px 18%;
+  }
+}
+main .contact-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px 0px 40px;
+}
+main .contact-title span {
+  color: #45d4b3;
+  margin-right: 10px;
+  font-family: "Roboto Mono", monospace;
+  font-size: 22px;
+}
+main .contact-title h2 {
+  font-size: 32px;
+  font-weight: 600;
+  color: #ccd6f6;
+  font-family: "Noto Sans", sans-serif;
+}
+main .contact-title::after {
+  display: block;
+  position: relative;
+  content: "";
+  width: 13rem;
+  height: 0.1rem;
+  top: 0.2rem;
+  margin: 0 1rem;
+  background-color: #8892b0;
+}
+main .contact form {
+  color: #ccd6f6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+  font-size: 16px;
+}
+main .contact form input {
+  padding: 5px 8px;
+}
+main .contact form input[type=submit] {
+  padding: 10px 15px;
+}
+main .contact form label {
+  font-size: 150%;
+}
+main .contact form textarea {
+  width: 600px;
+  height: 300px;
+  padding: 20px;
+  font-size: 18px;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #ccd6f6;
+}
+@media (max-width: 768px) {
+  main .contact form textarea {
+    width: 400px;
+    height: 200px;
+  }
+}
+@media (max-width: 580px) {
+  main .contact form textarea {
+    width: 200px;
+    height: 100px;
+  }
+}
 
 .opposite .projects-content-item-img {
   grid-area: 1/6/-1/-1;
