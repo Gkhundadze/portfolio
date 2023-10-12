@@ -147,7 +147,16 @@
 		}
 	],
 	"workProjects": [
-		
+		{
+			"projectTitle": "From Chaos To Cosmos",
+			"projectImgSource": "./static/images/projects/from-chaos-to-cosmos/fromchaostocosmos.webp",
+			"projectText": "description will appear soon ...",
+			"projectTechs": ["React", "javascript", "scss"],
+			"projectGithub": "https://github.com/Gkhundadze/Web-edition-of-Sandro-s-book",
+			"projectLink": "https://www.fromchaostocosmos.sandroasatiani.com/",
+      		"projectStart": "Feb 2022",
+			"projectEnd": "Aug 2022"
+		},
 		{
 			"projectTitle": "volga interior",
 			"projectImgSource": "./static/images/projects/volga/volga.webp",
@@ -179,16 +188,6 @@
 			"projectEnd": "Dec 2022"
 		},
 		{
-			"projectTitle": "weather app",
-			"projectImgSource": "./static/images/projects/weather-app/weather-app.webp",
-			"projectText": "I created responsive web app on Angular, that allows you to find weather data about your city",
-			"projectTechs": ["VS Code", "github desktop", "npm", "angular cli", "angular"],
-			"projectGithub": "https://github.com/Gkhundadze/weather-app",
-			"projectLink": "https://chimerical-muffin-64c9e3.netlify.app/",
-      		"projectStart": "May 2021",
-			"projectEnd": "June 2021"
-		},
-		{
 			"projectTitle": "una Chatbot",
 			"projectImgSource": "./static/images/projects/unabot/unabot.webp",
 			"projectText": "description will appear soon ...",
@@ -197,6 +196,16 @@
 			"projectLink": "http://unabot.iliauni.edu.ge/",
       		"projectStart": "Dec 2022",
 			"projectEnd": "March 2022"
+		},
+		{
+			"projectTitle": "weather app",
+			"projectImgSource": "./static/images/projects/weather-app/weather-app.webp",
+			"projectText": "I created responsive web app on Angular, that allows you to find weather data about your city",
+			"projectTechs": ["VS Code", "github desktop", "npm", "angular cli", "angular"],
+			"projectGithub": "https://github.com/Gkhundadze/weather-app",
+			"projectLink": "https://chimerical-muffin-64c9e3.netlify.app/",
+      		"projectStart": "May 2021",
+			"projectEnd": "June 2021"
 		}
 	]
 }
