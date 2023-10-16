@@ -72,8 +72,9 @@ export function createWorkProjects(arr, container) {
               <a title="Go To ${project.projectTitle} Github repository" href="${project.projectGithub}" aria-label="github link ${project.projectTitle}" >
                 <img
                 src="./static/images/social-icons/github-icon.svg"
-                alt="github icon"/>
+                alt="github icon"
                 loading="lazy"
+                />
               </a>
             `
             : ''
