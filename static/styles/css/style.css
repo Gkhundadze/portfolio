@@ -325,6 +325,11 @@ main #about .info .profileWrapper {
     justify-self: center;
   }
 }
+@media (max-width: 768px) {
+  main #about .info .profileWrapper {
+    width: 90%;
+  }
+}
 @media (max-width: 581px) {
   main #about .info .profileWrapper {
     width: 80%;
@@ -649,7 +654,7 @@ main .projects {
 }
 @media (max-width: 1050px) {
   main .projects {
-    padding: 60px 30px;
+    padding: 80px;
   }
 }
 @media (max-width: 768px) {
@@ -659,7 +664,7 @@ main .projects {
 }
 @media (max-width: 480px) {
   main .projects {
-    padding: 60px 18%;
+    padding: 60px 10%;
   }
 }
 main .projects-title {
@@ -951,37 +956,43 @@ main .contact form textarea {
           justify-content: flex-start;
 }
 
+/* Social Icons Styles */
 .social__icons, .gmailLink {
   border: 1px solid #64ffda;
   border-bottom: none;
   border-radius: 25px;
   background-color: rgba(0, 0, 0, 0.3);
-}
-
-/* Social Icons Styles */
-.social__icons {
   position: fixed;
   bottom: 0;
+  z-index: 10;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+footer .social__icons {
   left: 40px;
-  right: auto;
-  z-index: 9999;
 }
 @media (max-width: 860px) {
-  .social__icons {
+  footer .social__icons {
     left: 20px;
   }
 }
+@media (max-width: 768px) {
+  footer .social__icons {
+    bottom: -100%;
+  }
+}
 @media (max-width: 581px) {
-  .social__icons {
+  footer .social__icons {
     left: 10px;
   }
 }
 @media (max-width: 481px) {
-  .social__icons {
+  footer .social__icons {
     left: 0px;
   }
 }
-.social__icons .social__icons__list {
+footer .social__icons .social__icons__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -997,26 +1008,26 @@ main .contact form textarea {
           align-items: center;
   list-style-type: none;
 }
-.social__icons .social__icons__list .social__links a {
+footer .social__icons .social__icons__list .social__links a {
   display: inline-block;
   padding: 10px;
 }
 @media (max-width: 481px) {
-  .social__icons .social__icons__list .social__links a {
+  footer .social__icons .social__icons__list .social__links a {
     padding: 5px;
   }
 }
-.social__icons .social__icons__list .social__links a img {
+footer .social__icons .social__icons__list .social__links a img {
   width: 30px;
   height: 30px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-.social__icons .social__icons__list .social__links a img:hover {
+footer .social__icons .social__icons__list .social__links a img:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
-.social__icons .social__icons__list .social__icons__list::after {
+footer .social__icons .social__icons__list .social__icons__list::after {
   content: "";
   display: block;
   width: 1px;
@@ -1024,8 +1035,7 @@ main .contact form textarea {
   margin: 0px auto;
   background-color: rgb(168, 178, 209);
 }
-
-.social__icons__list::after {
+footer .social__icons__list::after {
   content: "";
   display: block;
   width: 1px;
@@ -1033,25 +1043,26 @@ main .contact form textarea {
   margin: 0px auto;
   background-color: rgb(168, 178, 209);
 }
-
-.gmailLink {
-  position: fixed;
-  bottom: 0px;
+footer .gmailLink {
   right: 40px;
-  z-index: 10;
   color: #a8b2d1;
 }
 @media (max-width: 860px) {
-  .gmailLink {
+  footer .gmailLink {
     right: 20px;
   }
 }
+@media (max-width: 768px) {
+  footer .gmailLink {
+    bottom: -100%;
+  }
+}
 @media (max-width: 581px) {
-  .gmailLink {
+  footer .gmailLink {
     right: 10px;
   }
 }
-.gmailLink div {
+footer .gmailLink div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1063,7 +1074,7 @@ main .contact form textarea {
       -ms-flex-align: center;
           align-items: center;
 }
-.gmailLink div a {
+footer .gmailLink div a {
   color: inherit;
   margin: 20px auto;
   padding: 10px;
@@ -1078,12 +1089,17 @@ main .contact form textarea {
   -webkit-transition: 0.25s;
   transition: 0.25s;
 }
-.gmailLink div a:hover {
+footer .gmailLink div a:hover {
   -webkit-transform: translateY(-5px);
           transform: translateY(-5px);
   color: #64ffda;
 }
-.gmailLink div::after {
+@media (max-width: 768px) {
+  footer .gmailLink div a {
+    padding: 5px;
+  }
+}
+footer .gmailLink div::after {
   content: "";
   display: block;
   width: 1px;

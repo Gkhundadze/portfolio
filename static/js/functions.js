@@ -54,7 +54,7 @@ export function createWorkProjects(arr, container) {
       projectItem.classList.add("opposite");
     }
     const projectText = `
-          <h3>${project.projectTitle}</h3>
+          <h3 title="project name : ${project.projectTitle}">${project.projectTitle}</h3>
           <div class="projects-content-item-text-wrapper">
             <p>
               ${project.projectText}
@@ -83,8 +83,9 @@ export function createWorkProjects(arr, container) {
             <a title="Go To ${project.projectTitle} Website" href="${project.projectLink}" aria-label="redirect to ${project.projectTitle}" >
             <img
             src="./static/images/external-icon.svg"
-            alt="external link"/></a>
+            alt="external link"
             loading="lazy"
+            /></a>
           </div>
         `;
     projectItem.innerHTML = `
