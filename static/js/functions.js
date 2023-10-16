@@ -69,19 +69,21 @@ export function createWorkProjects(arr, container) {
           <div class="projects-content-item-text-links">
             ${
               project.projectGithub ? `
-              <a href="${project.projectGithub}" aria-label="github link ${project.projectTitle}" >
+              <a title="Go To ${project.projectTitle} Github repository" href="${project.projectGithub}" aria-label="github link ${project.projectTitle}" >
                 <img
                 src="./static/images/social-icons/github-icon.svg"
-                alt=""/>
+                alt="github icon"/>
+                loading="lazy"
               </a>
             `
             : ''
             }
             
-            <a href="${project.projectLink}" aria-label="redirect to ${project.projectTitle}" >
+            <a title="Go To ${project.projectTitle} Website" href="${project.projectLink}" aria-label="redirect to ${project.projectTitle}" >
             <img
             src="./static/images/external-icon.svg"
-            alt=""/></a>
+            alt="external link"/></a>
+            loading="lazy"
           </div>
         `;
     projectItem.innerHTML = `
@@ -89,7 +91,11 @@ export function createWorkProjects(arr, container) {
             ${projectText}
           </div>
           <div class="projects-content-item-img">
-            <img src="${project.projectImgSource}" alt="${project.projectTitle}" />
+            <img 
+            src="${project.projectImgSource}" 
+            alt="${project.projectTitle}" 
+            loading="lazy"
+            />
             <div class="overlay"></div>
           </div>
         `;

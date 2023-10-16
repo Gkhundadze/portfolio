@@ -13,11 +13,13 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta http-equiv="cache-control" content="max-age=86400" />
+		<meta http-equiv="cache-control" content="no-store" />
 		<!-- <meta http-equiv="Pragma" content="no-cache" /> -->
 		<link type="image/png" sizes="16x16" rel="icon" href="./static/images/favicon.ico">
-		<link rel="stylesheet" href="./static/styles/css/style.css" />
+		<link rel="stylesheet" href="./static/styles/css/style.min.css" />
 		<link
+			media="print" 
+			onload="this.media='all'"
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
 			integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
@@ -29,35 +31,8 @@
 		<meta property="og:url"          content="https://gkhundadze.com/" />
 		<meta property="og:type"         content="website" />
 		<meta property="og:title"        content="Personal Portfolio" />
-		<meta property="og:description"  content="Grigori Khundadze Frontend Developer" />
+		<meta property="og:description"  content="Grigori Khundadze Frontend Developer web" />
 		<meta property="og:image"        content="static/images/profile.png" />
-		<!-- emailJS code -->
-		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script type="text/javascript">
-        (function() {
-            emailjs.init('xsNhbSmXgDhyWmtxn');
-        })();
-    </script>
-		<script type="text/javascript">
-			window.onload = function() {
-				document.getElementById('contact-form').addEventListener('submit', function(event) {
-					event.preventDefault();
-					// generate a five digit number for the contact_number variable
-					this.contact_number.value = Math.random() * 100000 | 0;
-					// these IDs from the previous steps
-					emailjs.sendForm('service_ms82eju', 'template_c0aqjoq', this)
-						.then(function() {
-							alert('Email sent')
-							event.srcElement[1].value = ''
-							event.srcElement[2].value = ''
-							event.srcElement[3].value = ''
-						}, function(error) {
-							console.log('Email not sent', error);
-						});
-				});
-			}
-		</script>
-		<!-- emailJS code -->
 	</head>
 	<body>
 		<header id="header">
@@ -94,7 +69,7 @@
 		</header>
 		<main>
 			<section id="developer-intro" class="developer-intro">
-				<h2 class="dev-name">hi, my name is</h2>
+				<h2 class="dev-name">hi, my NAME is</h2>
 				<div id="devName"></div>
 				<div class="first-btn">
 					<a class="Btn" href="https://geolab.edu.ge/ka-GE/Courses/CourseDetails/27?course=%E1%83%AF%E1%83%90%E1%83%95%E1%83%90%E1%83%A1%E1%83%99%E1%83%A0%E1%83%98%E1%83%9E%E1%83%A2%E1%83%98" target="_blank">check out my course</a>
@@ -132,12 +107,12 @@
 				</div>
 				<form id="contact-form">
 					<input required type="hidden" name="contact_number">
-					<label>Name</label>
-					<input required type="text" name="user_name">
-					<label>Email</label>
-					<input required type="email" name="user_email">
-					<label>Message</label>
-					<textarea required name="message"></textarea>
+					<label for="nameInput">Name</label>
+					<input name="name input" required id="nameInput" type="text" name="user_name">
+					<label for="emailInput">Email</label>
+					<input name="email input" id="emailInput" required type="email" name="user_email">
+					<label for="messageInput">Message</label>
+					<textarea name="message input" id="messageInput" required name="message"></textarea>
 					<input type="submit" value="Send" class="Btn">
 				</form>
 			</section>
@@ -154,6 +129,31 @@
 			  </div>
 		</footer>
 		<script type="module" src="static/js/app.js"></script>
-		<script type="module" src="static/js/animation.js"></script>
+		<!-- <script type="module" src="static/js/animation.js"></script> -->
+		<!-- emailJS code -->
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init('xsNhbSmXgDhyWmtxn');
+        })();
+			window.onload = function() {
+				document.getElementById('contact-form').addEventListener('submit', function(event) {
+					event.preventDefault();
+					// generate a five digit number for the contact_number variable
+					this.contact_number.value = Math.random() * 100000 | 0;
+					// these IDs from the previous steps
+					emailjs.sendForm('service_ms82eju', 'template_c0aqjoq', this)
+						.then(function() {
+							alert('Email sent')
+							event.srcElement[1].value = ''
+							event.srcElement[2].value = ''
+							event.srcElement[3].value = ''
+						}, function(error) {
+							console.log('Email not sent', error);
+						});
+				});
+			}
+		</script>
+		<!-- emailJS code -->
 	</body>
 </html>
