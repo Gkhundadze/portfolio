@@ -38,7 +38,7 @@ export function socialIconsHendler(socialsArr, path) {
     const icontag =
       `
 		    <a href="${social.profileUrl}">
-                <img src="${social.platformIconUrl}" alt="${social.platform}">
+          <img src="${social.platformIconUrl}" alt="${social.platform}">
 		    </a>
         `
     socialItem.innerHTML = icontag
@@ -79,10 +79,10 @@ export function createWorkProjects(arr, container) {
             `
             : ''
             }
-            
             <a title="Go To ${project.projectTitle} Website" href="${project.projectLink}" aria-label="redirect to ${project.projectTitle}" >
             <img
             src="./static/images/external-icon.svg"
+            alt="redirect icon"/>
             alt="external link"
             loading="lazy"
             /></a>
