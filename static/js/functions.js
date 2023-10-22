@@ -82,7 +82,7 @@ export function createWorkProjects(arr, container) {
             <a title="Go To ${project.projectTitle} Website" href="${project.projectLink}" aria-label="redirect to ${project.projectTitle}" >
             <img
             src="./static/images/external-icon.svg"
-            alt="redirect icon"/>
+            alt="redirect icon"
             alt="external link"
             loading="lazy"
             /></a>
