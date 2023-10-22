@@ -38,7 +38,7 @@ export function socialIconsHendler(socialsArr, path) {
     const icontag =
       `
 		    <a href="${social.profileUrl}">
-                <img src="${social.platformIconUrl}" alt="${social.platform}">
+          <img src="${social.platformIconUrl}" alt="${social.platform}">
 		    </a>
         `
     socialItem.innerHTML = icontag
@@ -72,7 +72,7 @@ export function createWorkProjects(arr, container) {
               <a href="${project.projectGithub}" aria-label="github link ${project.projectTitle}" >
                 <img
                 src="./static/images/social-icons/github-icon.svg"
-                alt=""/>
+                alt="github icon"/>
               </a>
             `
             : ''
@@ -81,7 +81,7 @@ export function createWorkProjects(arr, container) {
             <a href="${project.projectLink}" aria-label="redirect to ${project.projectTitle}" >
             <img
             src="./static/images/external-icon.svg"
-            alt=""/></a>
+            alt="redirect icon"/></a>
           </div>
         `;
     projectItem.innerHTML = `
