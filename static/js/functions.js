@@ -54,7 +54,7 @@ export function createWorkProjects(arr, container) {
       projectItem.classList.add("opposite");
     }
     const projectText = `
-          <h3>${project.projectTitle}</h3>
+          <h3 title="project name : ${project.projectTitle}">${project.projectTitle}</h3>
           <div class="projects-content-item-text-wrapper">
             <p>
               ${project.projectText}
@@ -69,19 +69,23 @@ export function createWorkProjects(arr, container) {
           <div class="projects-content-item-text-links">
             ${
               project.projectGithub ? `
-              <a href="${project.projectGithub}" aria-label="github link ${project.projectTitle}" >
+              <a title="Go To ${project.projectTitle} Github repository" href="${project.projectGithub}" aria-label="github link ${project.projectTitle}" >
                 <img
                 src="./static/images/social-icons/github-icon.svg"
-                alt="github icon"/>
+                alt="github icon"
+                loading="lazy"
+                />
               </a>
             `
             : ''
             }
-            
-            <a href="${project.projectLink}" aria-label="redirect to ${project.projectTitle}" >
+            <a title="Go To ${project.projectTitle} Website" href="${project.projectLink}" aria-label="redirect to ${project.projectTitle}" >
             <img
             src="./static/images/external-icon.svg"
-            alt="redirect icon"/></a>
+            alt="redirect icon"/>
+            alt="external link"
+            loading="lazy"
+            /></a>
           </div>
         `;
     projectItem.innerHTML = `
@@ -89,7 +93,11 @@ export function createWorkProjects(arr, container) {
             ${projectText}
           </div>
           <div class="projects-content-item-img">
-            <img src="${project.projectImgSource}" alt="${project.projectTitle}" />
+            <img 
+            src="${project.projectImgSource}" 
+            alt="${project.projectTitle}" 
+            loading="lazy"
+            />
             <div class="overlay"></div>
           </div>
         `;
