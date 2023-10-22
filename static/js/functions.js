@@ -83,7 +83,6 @@ export function createWorkProjects(arr, container) {
             <img
             src="./static/images/external-icon.svg"
             alt="redirect icon"
-            alt="external link"
             loading="lazy"
             /></a>
           </div>
@@ -104,6 +103,7 @@ export function createWorkProjects(arr, container) {
     container.appendChild(projectItem);
   });
 }
+
 export const createContainer = (index, arr, wrapper) => {
   const { projectStart, projectEnd, ProjectContent, projectRole, projectUrl, projectName, projectStack } =
     arr[index];
@@ -111,7 +111,7 @@ export const createContainer = (index, arr, wrapper) => {
     "<div class='projectNames'>" +
     arr.map((item, ind) => {
       return `<button class="projectBtn${index == ind ? " active" : ""
-        }" data-id = ${ind}>${item.projectName}</button>`;
+        }" data-id = ${ind}" >${item.projectName}</button>`;
     })
       .join("") +
     "</div><div class='project-inner'><h3>" +
