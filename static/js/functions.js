@@ -11,6 +11,8 @@ export function showDevelopmentStack(devStack, Developer) {
   });
 }
 export function showProfilePhoto(profilePhoto, Developer) {
+  profilePhoto.setAttribute('width', 400)
+  profilePhoto.setAttribute('height', 400)
   profilePhoto.src = Developer['developerPhoto'].desktop;
 }
 export function showAboutMe(aboutMe, Developer) {
