@@ -1,28 +1,24 @@
-export async function getData(Developer) {
-  return fetch("./static/js/userObj.json")
-    .then((response) => response.json())
-    .then((data) => { return data });
-}
-export function showDevelopmentStack(devStack, Developer) {
+
+function showDevelopmentStack(devStack, Developer) {
   Developer['developmentStack'].forEach(stack => {
     let li = document.createElement('li');
     li.innerHTML = stack;
     devStack.append(li)
   });
 }
-export function showProfilePhoto(profilePhoto, Developer) {
+function showProfilePhoto(profilePhoto, Developer) {
   profilePhoto.setAttribute('width', 400)
   profilePhoto.setAttribute('height', 400)
   profilePhoto.src = Developer['developerPhoto'].desktop;
 }
-export function showAboutMe(aboutMe, Developer) {
+function showAboutMe(aboutMe, Developer) {
   for (let i in Developer['about']) {
     let p = document.createElement('p');
     p.innerHTML = Developer['about'][i];
     aboutMe.append(p)
   }
 }
-export function greetingsAndIntro(devName, Developer) {
+function greetingsAndIntro(devName, Developer) {
   let h2 = document.createElement('h2');
   h2.textContent = Developer['name'];
   let h1 = document.createElement('h1');
@@ -33,7 +29,7 @@ export function greetingsAndIntro(devName, Developer) {
   devName.append(h1);
   devName.append(p);
 }
-export function socialIconsHendler(socialsArr, path) {
+function socialIconsHendler(socialsArr, path) {
   socialsArr.forEach(social => {
     const socialItem = document.createElement('li')
     socialItem.setAttribute('class', `social__links ${social.platform}`)
@@ -47,7 +43,7 @@ export function socialIconsHendler(socialsArr, path) {
     path.append(socialItem)
   })
 }
-export function createWorkProjects(arr, container) {
+function createWorkProjects(arr, container) {
   arr.forEach((project, index) => {
     const projectItem = document.createElement("div");
     const isOdd = index % 2 === 1;
@@ -98,6 +94,8 @@ export function createWorkProjects(arr, container) {
             src="${project.projectImgSource}" 
             alt="${project.projectTitle}" 
             loading="lazy"
+            height="400"
+            width="600"
             />
             <div class="overlay"></div>
           </div>
@@ -106,7 +104,7 @@ export function createWorkProjects(arr, container) {
   });
 }
 
-export const createContainer = (index, arr, wrapper) => {
+const createContainer = (index, arr, wrapper) => {
   const { projectStart, projectEnd, ProjectContent, projectRole, projectUrl, projectName, projectStack } =
     arr[index];
   const experienceContainer =
@@ -142,13 +140,13 @@ export const createContainer = (index, arr, wrapper) => {
   ("</div>");
   wrapper.innerHTML = experienceContainer;
 };
-export const scrollBtn = (arr) => {
+const scrollBtn = (arr) => {
   const projectNames = document.querySelector(".projectNames");
   arr.length > 6 ? projectNames.classList.add("active") : projectNames.classList.remove("active");
 };
 
 
-export function checkNavLinks(arr) {
+function checkNavLinks(arr) {
   if (window.innerWidth <= 861) {
     arr.forEach(el => {
       el.addEventListener('click', () => {

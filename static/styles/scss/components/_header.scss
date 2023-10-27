@@ -39,6 +39,9 @@ header {
                     &:hover{
                         color: $green;
                     }
+                    &[active] {
+                        color: $green;
+                    }
                     span{
                         margin-right: 5px;
                         color: $green;
