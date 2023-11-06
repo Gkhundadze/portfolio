@@ -108,12 +108,12 @@ export function createWorkProjects(arr, container) {
 
 export const createContainer = (index, arr, wrapper) => {
   const { projectStart, projectEnd, ProjectContent, projectRole, projectUrl, projectName, projectStack } =
-    arr[index];
+  arr[index];
   const experienceContainer =
     "<div class='projectNames'>" +
     arr.map((item, ind) => {
       return `<button class="projectBtn${index == ind ? " active" : ""
-        }" data-id = ${ind}" >${item.projectName}</button>`;
+        }" data-id ="${ind}" >${item.projectName}</button>`;
     })
       .join("") +
     "</div><div class='project-inner'><h3>" +
