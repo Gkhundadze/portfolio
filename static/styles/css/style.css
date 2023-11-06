@@ -126,6 +126,9 @@ header nav ul li a {
 header nav ul li a:hover {
   color: #45d4b3;
 }
+header nav ul li a[active] {
+  color: #45d4b3;
+}
 header nav ul li a span {
   margin-right: 5px;
   color: #45d4b3;
