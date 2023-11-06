@@ -14,22 +14,26 @@
 		<meta name="theme-color" content="#0a192f" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta http-equiv="cache-control" content="no-store" />
-		<meta http-equiv="expires" content="0">
+
+		<meta http-equiv="Cache-Control" content="no-cache" />
 		<meta http-equiv="Pragma" content="no-cache" />
-		<meta name="robots" content="index,follow">
+
+
+		<meta name="author" content="Grigori Khundadze">
+		<meta name="robots" content="all">
 		<link type="image/png" sizes="16x16" rel="icon" href="./static/images/favicon.ico">
 		<link rel="stylesheet" href="./static/styles/css/style.min.css" />
 		<link
-			media="print" 
+			media="all" 
 			onload="this.media='all'"
-			rel="stylesheet"
+			rel="preload"
+			as="style"
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
 			integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
 			crossorigin="anonymous"
 			referrerpolicy="no-referrer"
 		/>
-		<title>Giga Khundadze</title>
+		<title>Grigori Khundadze</title>
 		<meta name="description" content="giga khundadze, frontend developer personal website, I build WebApps & WebSites"/>
 		<meta property="og:url"          content="https://gkhundadze.com/" />
 		<meta property="og:type"         content="website" />
@@ -48,7 +52,7 @@
 			<nav class="nav">
 				<ul>
 					<li>
-						<a nav-link href="#developer-intro">Welcome</a>
+						<a nav-link active href="#developer-intro">Welcome</a>
 					</li>
 					<li>
 						<a nav-link href="#about">About</a>
@@ -63,7 +67,7 @@
 						<a nav-link href="#contact">Contact</a>
 					</li>
 				</ul>
-				<a nav-link href="./static/cv/GrigoriKhundadze.pdf" target="_blank" class="Btn resume-btn">Resume</a>
+				<a nav-link href="./static/cv/GrigoriKhundadze.pdf" download="GrigoriKhundadze" target="_blank" class="Btn resume-btn">Resume</a>
 			</nav>
 			<div class="icon">
 				<i class="fa-solid fa-bars openNavbar"></i>
@@ -90,14 +94,12 @@
 			</section>
 			<section id="experience" class="work-experience">
 				<div class="work-title">
-					<span>02.</span>
 					<h2>Where I've Worked</h2>
 				</div>
 				<div class="work-content"></div>
 			</section>
 			<section id="work" class="projects">
 				<div class="projects-title">
-					<span>03.</span>
 					<h2>Some Things I've Built</h2>
 				</div>
 
@@ -105,7 +107,6 @@
 			</section>
 			<section id="contact" class="contact">
 				<div class="contact-title">
-					<span>04.</span>
 					<h2>Send me Email</h2>
 				</div>
 				<form id="contact-form">
@@ -131,8 +132,10 @@
 				</div>
 			  </div>
 		</footer>
-		<script type="module" src="static/js/app.js"></script>
-		<script type="module" src="static/js/animation.js"></script>
+		<script src="static/js/variables.js"></script>
+		<script src="static/js/functions.js"></script>
+		<script src="static/js/animation.js"></script>
+		<script src="static/js/app.js"></script>
 		<!-- emailJS code -->
 		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script type="text/javascript">
