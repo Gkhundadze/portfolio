@@ -13,8 +13,6 @@ getData()
 	createContainer(0, completedProjects, work_content)
 	scrollBtn(completedProjects);
 	checkNavLinks(navLinksArr)
-	const sections = document.querySelectorAll("section");
-	const navLi = document.querySelectorAll("[nav-link]");
 	window.onscroll = () => {
 	  let current = "";
 	
@@ -33,7 +31,7 @@ getData()
 	};
 	work_content.addEventListener("click", function (e) {
 		if (e.target.classList == "projectBtn") {
-			f.createContainer(e.target.dataset.id, completedProjects, work_content);
+			createContainer(e.target.dataset.id, completedProjects, work_content);
 			e.target.classList.add('active')
 			e.target.style.borderRadius = "25px";
 			e.target.setAttribute("style", "height:25px !important");

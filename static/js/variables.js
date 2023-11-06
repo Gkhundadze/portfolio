@@ -7,3 +7,5 @@ const projectsContainer = document.querySelector(".projects-content");
 const work_content = document.querySelector(".work-content");
 const gmailName = document.querySelector(".gmailName");
 const navLinksArr = document.querySelectorAll('[nav-link]')
+const sections = document.querySelectorAll("section");
+const navLi = document.querySelectorAll("[nav-link]");
