@@ -54,7 +54,7 @@
 			"projectName": "unilab",
 			"projectStart": "May 2022",
 			"projectEnd": "March 2023",
-      "projectRole": "Mentor / Lecturer",
+      		"projectRole": "Mentor / Lecturer",
 			"projectUrl": "https://unilab.iliauni.edu.ge/front-end-html-css/",
 			"ProjectContent": [
 				"started work as a Mentor of accelleration program with Unilab"
@@ -73,7 +73,7 @@
 			"projectName": "geolab",
 			"projectStart": "Dec 2022",
 			"projectEnd": "present",
-      "projectRole": "Lecturer Assistant",
+      		"projectRole": "Lecturer Assistant",
 			"projectUrl": "https://geolab.edu.ge/ka-GE/Courses/CourseDetails/32?course=JavaScript%20%2F%20React%20",
 			"ProjectContent": [
 				"started internship program with administrator role, now i'm react lecturer assistant"
@@ -110,7 +110,7 @@
 		{
 			"projectName": "Ministry of Education",
 			"projectStart": "May 2023",
-			"projectEnd": "Present",
+			"projectEnd": "Oct 2023",
       		"projectRole": "Javascript Author",
 			"projectUrl": "#",
 			"ProjectContent": [
@@ -147,6 +147,16 @@
 		}
 	],
 	"workProjects": [
+		{
+			"projectTitle": "mysanteknik",
+			"projectImgSource": "./static/images/projects/my-santeknik/mysanteknik.webp",
+			"projectText": "description will appear soon ...",
+			"projectTechs": ["javascript", "css", "HTML"],
+			"projectGithub": null,
+			"projectLink": "https://www.mysanteknik.ge/",
+      		"projectStart": "Mar 2023",
+			"projectEnd": "Apr 2023"
+		},
 		{
 			"projectTitle": "From Chaos To Cosmos",
 			"projectImgSource": "./static/images/projects/from-chaos-to-cosmos/fromchaostocosmos.webp",
