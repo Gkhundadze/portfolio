@@ -1,12 +1,12 @@
 {
-	"name": "grigori",
+	"name": "Grigori",
 	"surname": "Khundadze",
 	"slogan": "I build WebApps & WebSites.",
 	"address": "Tbilisi",
 	"age": 29,
   "gmailName":  "Gkhundadze@gmail.com",
 	"contactNumber": "+995 599 144 556",
-	"introduction": "I am a frontend developer with a passion for creating beautiful and functional websites. My journey began in 2020 when I started learning HTML and CSS at Geolab, a leading technology education center. I was fascinated by the possibilities that these technologies offered, and I worked hard to master them.",
+	"introduction": "I am a frontend developer with a passion for creating beautiful and functional websites. My journey began in 2020 when I started learning HTML and CSS at Geolab, a leading technology education center in Georgia. I was fascinated by the possibilities that these technologies offered, and I worked hard to master them.",
 	"about": {
 		"p1": "I am an energetic person, purposeful, ambitious.",
 		"p2": "With creative mind, well organized, I always plan ahead to make sure I manage my time well",
@@ -18,7 +18,7 @@
 		"tablet": "url",
 		"mobile": "url"
 	},
-	"currentStatus": "Front-End Mentor / Front-End Lecturer",
+	"currentStatus": "Front-End Developer / Mentor / Lecturer",
 	"workingStatus": true,
 	"freelancing": false,
 	"developmentStack": [
