@@ -26,6 +26,7 @@ getData()
 		li.removeAttribute('active')
 		if (li.href.includes(current)) {
 		  li.setAttribute('active', '')
+		  li.onclick = header.classList.remove('active')
 		}
 	  });
 	};
