@@ -10,6 +10,7 @@ function showProfilePhoto(profilePhoto, Developer) {
   // profilePhoto.setAttribute('width', 400)
   profilePhoto.setAttribute('height', 400)
   profilePhoto.src = Developer['developerPhoto'].desktop;
+  profilePhoto.alt = Developer['name'] + ' ' + Developer['surname'] + ' ' + 'photo';
 }
 function showAboutMe(aboutMe, Developer) {
   for (let i in Developer['about']) {
