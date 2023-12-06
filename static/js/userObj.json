@@ -14,9 +14,9 @@
 		"p4": "Excellent in working with others to achieve a certain objective on time and with excellence."
 	},
 	"developerPhoto": {
-		"desktop": "./static/images/profile.webp",
-		"tablet": "url",
-		"mobile": "url"
+		"desktop": "./static/images/profile_desktop.webp",
+		"tablet": "./static/images/profile_tablet.webp",
+		"mobile": "./static/images/profile_mobile.webp"
 	},
 	"currentStatus": "Front-End Developer / Mentor / Lecturer",
 	"workingStatus": true,
@@ -80,12 +80,7 @@
 			],
 			"projectStack": "javascript react",
 			"projectMembers": [
-				{
-					"name": "giorgi",
-					"surname": "artenyan",
-					"linkedin": "none",
-					"role": "Lecturer"
-				}
+				
 			]
 		},
     {
