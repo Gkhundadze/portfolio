@@ -6,9 +6,12 @@ function showDevelopmentStack(devStack, Developer) {
     devStack.append(li)
   });
 }
-function showProfilePhoto(profilePhoto, Developer) {
-  // profilePhoto.setAttribute('width', 400)
+function showProfilePhoto(desktop, tablet, mobile, profilePhoto, Developer) {
+  desktop.setAttribute('srcset', Developer['developerPhoto'].desktop)
+  tablet.setAttribute('srcset', Developer['developerPhoto'].tablet)
+  mobile.setAttribute('srcset', Developer['developerPhoto'].mobile)
   profilePhoto.setAttribute('height', 400)
+  profilePhoto.setAttribute('width', 400)
   profilePhoto.src = Developer['developerPhoto'].desktop;
   profilePhoto.alt = Developer['name'] + ' ' + Developer['surname'] + ' ' + 'photo';
 }

@@ -5,7 +5,7 @@ getData()
 	gmailName.setAttribute('href', `mailto:${Developer.gmailName}`)
 	gmailName.textContent = Developer.gmailName;
 	showAboutMe(aboutMe, Developer);
-	showProfilePhoto(profilePhoto, Developer);
+	showProfilePhoto(desktop, tablet, mobile, profilePhoto, Developer);
 	showDevelopmentStack(devStack, Developer);
 	greetingsAndIntro(devName, Developer);
 	socialIconsHendler(Developer.developerSocials, socialIconsWrapper)
@@ -41,8 +41,13 @@ getData()
 });
 
 
+// async function getData() {
+// 	return fetch("./static/js/userObj.json")
+// 	  .then((response) => response.json())
+// 	  .then((data) => data);
+// }
 async function getData() {
-	return fetch("./static/js/userObj.json")
+	return fetch("./static/js/userObj.min.json")
 	  .then((response) => response.json())
 	  .then((data) => data);
-  }
+}

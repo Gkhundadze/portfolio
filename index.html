@@ -21,7 +21,6 @@
 		<meta name="author" content="Grigori Khundadze">
 		<meta name="robots" content="all">
 		<link type="image/png" sizes="16x16" rel="icon" href="./static/images/favicon.ico">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 		<link rel="stylesheet" href="./static/styles/css/style.min.css" />
 		<!-- <link rel="stylesheet" href="./static/styles/css/style.css"> -->
 		<title>Grigori Khundadze Frontend Developer</title>
@@ -61,8 +60,13 @@
 				<a nav-link href="./static/cv/GrigoriKhundadze.pdf" download="GrigoriKhundadze" target="_blank" class="Btn resume-btn">Resume</a>
 			</nav>
 			<div class="icon">
-				<i class="fa-solid fa-bars openNavbar"></i>
-				<i class="fa-solid fa-xmark closeNavbar"></i>
+				<svg class="openNavbar" width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M4 5C3.44772 5 3 5.44772 3 6C3 6.55228 3.44772 7 4 7H20C20.5523 7 21 6.55228 21 6C21 5.44772 20.5523 5 20 5H4ZM7 12C7 11.4477 7.44772 11 8 11H20C20.5523 11 21 11.4477 21 12C21 12.5523 20.5523 13 20 13H8C7.44772 13 7 12.5523 7 12ZM13 18C13 17.4477 13.4477 17 14 17H20C20.5523 17 21 17.4477 21 18C21 18.5523 20.5523 19 20 19H14C13.4477 19 13 18.5523 13 18Z" fill="#45d4b3"/>
+				</svg>
+				<svg class="closeNavbar" width="30px" height="30px" viewBox="-0.5 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M3 21.32L21 3.32001" stroke="#45d4b3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+					<path d="M3 3.32001L21 21.32" stroke="#45d4b3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+				</svg>
 			</div>
 		</header>
 		<main>
@@ -78,7 +82,12 @@
 				<div class="info">
 					<div id="aboutMe"></div>
 					<div class="profileWrapper">
-						<img id="profilePhoto"/>
+						<picture>
+							<source id="profile-picture-desktop" media="(min-width: 991px)" srcset="">
+							<source id="profile-picture-tablet" media="(min-width: 580px)" srcset="">
+							<source id="profile-picture-mobile" media="(min-width: 320px)" srcset="">
+							<img id="profilePhoto" src="" alt="">
+						</picture>
 					</div>
 					<ul id="devStack"></ul>
 				</div>
@@ -123,10 +132,14 @@
 				</div>
 			  </div>
 		</footer>
-		<script src="static/js/variables.js"></script>
-		<script src="static/js/functions.js"></script>
-		<script src="static/js/animation.js"></script>
-		<script src="static/js/app.js"></script>
+		<!-- <script src="static/js/variables.js"></script> -->
+		<script src="static/js/variables.min.js"></script>
+		<!-- <script src="static/js/functions.js"></script> -->
+		<script src="static/js/functions.min.js"></script>
+		<!-- <script src="static/js/animation.js"></script> -->
+		<script src="static/js/animation.min.js"></script>
+		<!-- <script src="static/js/app.js"></script> -->
+		<script src="static/js/app.min.js"></script>
 		<!-- emailJS code -->
 		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script type="text/javascript">
