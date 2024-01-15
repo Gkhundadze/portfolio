@@ -4,14 +4,14 @@
 	"slogan": "I build WebApps & WebSites.",
 	"address": "Tbilisi",
 	"age": 29,
-  "gmailName":  "Gkhundadze@gmail.com",
+	"gmailName": "Gkhundadze@gmail.com",
 	"contactNumber": "+995 599 144 556",
 	"introduction": "I am a frontend developer with a passion for creating beautiful and functional websites. My journey began in 2020 when I started learning HTML and CSS at Geolab, a leading technology education center in Georgia. I was fascinated by the possibilities that these technologies offered, and I worked hard to master them.",
 	"about": {
 		"p1": "I am an energetic person, purposeful, ambitious.",
 		"p2": "With creative mind, well organized, I always plan ahead to make sure I manage my time well",
 		"p3": "I’m positive person. responsible, attentive.",
-		"p4": "Excellent in working with others to achieve a certain objective on time and with excellence."
+		"p4": "Excellent in working with others to achieve a certain objective"
 	},
 	"developerPhoto": {
 		"desktop": "./static/images/profile_desktop.webp",
@@ -27,34 +27,70 @@
 		"JavaScript",
 		"Angular",
 		"React",
-    	"Git",
-    	"npm",
-    	"Django",
-    	"Flask"
+		"Git",
+		"npm",
+		"python",
+		"Django",
+		"Flask",
+		"linux",
+		"windows",
+		"mac os"
 	],
-  "developerSocials": [
-    {
-      "platform": "Github",
-      "profileUrl": "https://github.com/Gkhundadze",
-      "platformIconUrl": "./static/images/social-icons/github-icon.svg"
-    },
-    {
-      "platform": "LinkedIn",
-      "profileUrl": "https://www.linkedin.com/in/grigori-khundadze-72188b16a/",
-      "platformIconUrl": "./static/images/social-icons/linkedin-icon.svg"
-    },
-    {
-      "platform": "Facebook",
-      "profileUrl": "https://github.com/Gkhundadze",
-      "platformIconUrl": "./static/images/social-icons/facebook-icon.svg"
-    }
-  ],
+	"developerSocials": [
+		{
+			"platform": "Github",
+			"profileUrl": "https://github.com/Gkhundadze",
+			"platformIconUrl": "./static/images/social-icons/github-icon.svg"
+		},
+		{
+			"platform": "LinkedIn",
+			"profileUrl": "https://www.linkedin.com/in/grigori-khundadze-72188b16a/",
+			"platformIconUrl": "./static/images/social-icons/linkedin-icon.svg"
+		},
+		{
+			"platform": "Facebook",
+			"profileUrl": "https://github.com/Gkhundadze",
+			"platformIconUrl": "./static/images/social-icons/facebook-icon.svg"
+		}
+	],
+	"services": [
+		{
+			"title": "Web Development",
+			"description": "Blog, E-Comerce, Portfolio",
+			"iconPath": "https://raw.githubusercontent.com/Gkhundadze/staticFiles/main/service-icons/web-development.webp"
+		},
+		{
+			"title": "Site Administration",
+			"description": "Administrator for your website",
+			"iconPath": "https://raw.githubusercontent.com/Gkhundadze/staticFiles/main/service-icons/site-admin.webp"
+		},
+		{
+			"title": "IT Support",
+			"description": "It support for company, group of Developers",
+			"iconPath": "https://raw.githubusercontent.com/Gkhundadze/staticFiles/main/service-icons/it-support.webp"
+		},
+		{
+			"title": "IT Consulting",
+			"description": "It consultant for your business",
+			"iconPath": "https://raw.githubusercontent.com/Gkhundadze/staticFiles/main/service-icons/it-consulting.webp"
+		},
+		{
+			"title": "UI/UX Consulting",
+			"description": "Useful advivces based on frontend-development experience",
+			"iconPath": "https://raw.githubusercontent.com/Gkhundadze/staticFiles/main/service-icons/ux-design.webp"
+		},
+		{
+			"title": "Logo Design",
+			"description": "Create LOGO for your business",
+			"iconPath": "https://raw.githubusercontent.com/Gkhundadze/staticFiles/main/service-icons/logo-design.webp"
+		}
+	],
 	"completedProjects": [
 		{
 			"projectName": "unilab",
 			"projectStart": "May 2022",
 			"projectEnd": "March 2023",
-      		"projectRole": "Mentor / Lecturer",
+			"projectRole": "Mentor / Lecturer",
 			"projectUrl": "https://unilab.iliauni.edu.ge/front-end-html-css/",
 			"ProjectContent": [
 				"started work as a Mentor of accelleration program with Unilab"
@@ -73,21 +109,19 @@
 			"projectName": "geolab",
 			"projectStart": "Dec 2022",
 			"projectEnd": "present",
-      		"projectRole": "Lecturer Assistant",
+			"projectRole": "Lecturer Assistant",
 			"projectUrl": "https://geolab.edu.ge/ka-GE/Courses/CourseDetails/32?course=JavaScript%20%2F%20React%20",
 			"ProjectContent": [
 				"started internship program with administrator role, now i'm react lecturer assistant"
 			],
 			"projectStack": "javascript react",
-			"projectMembers": [
-				
-			]
+			"projectMembers": []
 		},
-    {
+		{
 			"projectName": "stars georgia",
 			"projectStart": "Dec 2021",
 			"projectEnd": "Apr 2021",
-      		"projectRole": "Front-End Developer",
+			"projectRole": "Front-End Developer",
 			"projectUrl": "none",
 			"ProjectContent": [
 				"description appears soon ..."
@@ -106,7 +140,7 @@
 			"projectName": "Ministry of Education",
 			"projectStart": "May 2023",
 			"projectEnd": "Oct 2023",
-      		"projectRole": "Javascript Author",
+			"projectRole": "Javascript Author",
 			"projectUrl": "#",
 			"ProjectContent": [
 				"description appears soon ..."
@@ -125,7 +159,7 @@
 			"projectName": "Aphra Marine",
 			"projectStart": "May 2020",
 			"projectEnd": "May 2021",
-      		"projectRole": "Database Moderator",
+			"projectRole": "Database Moderator",
 			"projectUrl": "http://www.aphramarine.com/",
 			"ProjectContent": [
 				"description appears soon ..."
@@ -146,70 +180,101 @@
 			"projectTitle": "mysanteknik",
 			"projectImgSource": "./static/images/projects/my-santeknik/mysanteknik.webp",
 			"projectText": "description will appear soon ...",
-			"projectTechs": ["javascript", "css", "HTML"],
+			"projectTechs": [
+				"javascript",
+				"css",
+				"HTML"
+			],
 			"projectGithub": null,
 			"projectLink": "https://www.mysanteknik.ge/",
-      		"projectStart": "Mar 2023",
+			"projectStart": "Mar 2023",
 			"projectEnd": "Apr 2023"
 		},
 		{
 			"projectTitle": "From Chaos To Cosmos",
 			"projectImgSource": "./static/images/projects/from-chaos-to-cosmos/fromchaostocosmos.webp",
 			"projectText": "description will appear soon ...",
-			"projectTechs": ["React", "javascript", "scss"],
+			"projectTechs": [
+				"React",
+				"javascript",
+				"scss"
+			],
 			"projectGithub": "https://github.com/Gkhundadze/Web-edition-of-Sandro-s-book",
 			"projectLink": "https://www.fromchaostocosmos.sandroasatiani.com/",
-      		"projectStart": "Feb 2022",
+			"projectStart": "Feb 2022",
 			"projectEnd": "Aug 2022"
 		},
 		{
 			"projectTitle": "volga interior",
 			"projectImgSource": "./static/images/projects/volga/volga.webp",
 			"projectText": "description will appear soon ...",
-			"projectTechs": ["VS Code", "javascript", "scss"],
+			"projectTechs": [
+				"VS Code",
+				"javascript",
+				"scss"
+			],
 			"projectGithub": "https://github.com/lakanodia/volgasalon",
 			"projectLink": "https://fullspeedwestward.com/",
-      		"projectStart": "Aug 2022",
+			"projectStart": "Aug 2022",
 			"projectEnd": "Dec 2022"
 		},
 		{
 			"projectTitle": "e207 room",
 			"projectImgSource": "./static/images/projects/e-207-room/e-207-room.webp",
 			"projectText": "description will appear soon ...",
-			"projectTechs": ["VS Code", "javascript", "scss"],
+			"projectTechs": [
+				"VS Code",
+				"javascript",
+				"scss"
+			],
 			"projectGithub": "https://github.com/UnilabEdu/e-207-room",
 			"projectLink": "https://e207room.iliauni.edu.ge/",
-      		"projectStart": "Dec 2022",
+			"projectStart": "Dec 2022",
 			"projectEnd": "March 2022"
 		},
 		{
 			"projectTitle": "Terms base",
 			"projectImgSource": "./static/images/projects/term-base/terms.webp",
 			"projectText": "description will appear soon ...",
-			"projectTechs": ["VS Code", "javascript", "scss"],
+			"projectTechs": [
+				"VS Code",
+				"javascript",
+				"scss"
+			],
 			"projectGithub": null,
 			"projectLink": "https://terms.iliauni.edu.ge/",
-      		"projectStart": "Aug 2021",
+			"projectStart": "Aug 2021",
 			"projectEnd": "Dec 2022"
 		},
 		{
 			"projectTitle": "una Chatbot",
 			"projectImgSource": "./static/images/projects/unabot/unabot.webp",
 			"projectText": "description will appear soon ...",
-			"projectTechs": ["VS Code", "github", "javascript", "css"],
+			"projectTechs": [
+				"VS Code",
+				"github",
+				"javascript",
+				"css"
+			],
 			"projectGithub": "https://github.com/Gkhundadze/chatbot-una",
 			"projectLink": "http://unabot.iliauni.edu.ge/",
-      		"projectStart": "Dec 2022",
+			"projectStart": "Dec 2022",
 			"projectEnd": "March 2022"
 		},
 		{
 			"projectTitle": "weather app",
 			"projectImgSource": "./static/images/projects/weather-app/weather-app.webp",
 			"projectText": "I created responsive web app on Angular, that allows you to find weather data about your city",
-			"projectTechs": ["VS Code", "github desktop", "npm", "angular cli", "angular"],
+			"projectTechs": [
+				"VS Code",
+				"github desktop",
+				"npm",
+				"angular cli",
+				"angular"
+			],
 			"projectGithub": "https://github.com/Gkhundadze/weather-app",
 			"projectLink": "https://chimerical-muffin-64c9e3.netlify.app/",
-      		"projectStart": "May 2021",
+			"projectStart": "May 2021",
 			"projectEnd": "June 2021"
 		}
 	]

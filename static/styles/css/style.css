@@ -117,14 +117,28 @@ input {
   -webkit-appearance: none;
   border-radius: 0;
 }
-
+/* vars */
+:root {
+  --linearbackground: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  --mainColor: #36ffea;
+  --backgroundColor: #403699;
+  --backgroundColorLight: #403699d9;
+  --serviceCardDescription: #d4e5d8;
+  --projectsDescriptionBackground: #26344d;
+  --projectsCardTitle: var(--mainColor);
+  --pageMainHeadingColor: var(--mainColor);
+  --pageParagraphsColor: #ebe1e1;
+  --pageSecondaryHeadingColor: #ccd6f6;
+  --tagsColor: #ccd6f6;
+  --semiBlackTransparent: rgba(0, 0, 0, 0.5)
+}
 .Btn {
   cursor: pointer;
-  color: #45d4b3;
+  color: var(--mainColor);
   background-color: transparent;
   -webkit-transition: 0.25s;
   transition: 0.25s;
-  border: 1px solid #45d4b3;
+  border: 1px solid var(--mainColor);
   padding: 0.75rem 1rem;
   border-radius: 5px;
   text-decoration: none;
@@ -137,7 +151,6 @@ input {
 }
 
 header {
-  color: green;
   width: 100%;
   position: fixed;
   top: 0;
@@ -150,7 +163,7 @@ header {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: rgba(10, 25, 47, 0.85);
+  background-color: var(--semiBlackTransparent);
   padding: 10px 50px;
   z-index: 99;
   border-bottom: 2px solid rgba(255, 255, 255, 0.5);
@@ -159,11 +172,14 @@ header {
 
 header div a.logo {
   color: #ccd6f6;
+  width: 50px;
   text-decoration: none;
   letter-spacing: 1px;
   text-transform: capitalize;
 }
-
+header img.logo:hover {
+  animation: skew-y-shakeing 1.5s;
+}
 header nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -193,16 +209,16 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-  color: #45d4b3;
+  color: var(--mainColor);
 }
 
 header nav ul li a[active] {
-  color: #45d4b3;
+  color: var(--mainColor);
 }
 
 header nav ul li a span {
   margin-right: 5px;
-  color: #45d4b3;
+  color: var(--mainColor);
 }
 
 header .icon {
@@ -214,7 +230,7 @@ header i {
   font-size: 25px;
 }
 main {
-  background-color: #0a192f;
+  background-color: var(--backgroundColor);
 }
 
 main .developer-intro {
@@ -222,7 +238,7 @@ main .developer-intro {
 }
 
 main .developer-intro .dev-name {
-  color: #45d4b3;
+  color: var(--mainColor);
   font-family: "Roboto Mono";
   font-size: 1.3rem;
   margin: 0px 0px 30px 4px;
@@ -234,7 +250,7 @@ main .developer-intro .dev-name::first-letter {
 
 main .developer-intro #devName>h1 {
   font-size: clamp(40px, 8vw, 60px);
-  color: #8892b0;
+  color: var(--pageMainHeadingColor);
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   margin: 10px 0;
   font-weight: 600;
@@ -242,7 +258,7 @@ main .developer-intro #devName>h1 {
 
 main .developer-intro #devName>h2 {
   font-size: clamp(40px, 8vw, 50px);
-  color: #ccd6f6;
+  color: var(--pageSecondaryHeadingColor);
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   text-transform: capitalize;
   font-weight: 600;
@@ -254,7 +270,7 @@ main .developer-intro #devName>h3::first-letter {
 
 main .developer-intro #devName>p {
   margin: 20px 0px 0px;
-  color: #8892b0;
+  color: var(--pageParagraphsColor);
   font-size: clamp(16px, 5vw, 24px);
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   line-height: 1.3;
@@ -263,10 +279,84 @@ main .developer-intro #devName>p {
 main .developer-intro .first-btn {
   margin: 50px 0;
 }
-
-main #about {
+main .developer-services {
+  padding: 150px 15% 60px 15%;
+}
+main .myServices {
   font-family: "Roboto Mono", monospace;
   color: #8892b0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 150px 15% 60px 15%;
+}
+main .myServices .heading {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+main .myServices .heading h2 {
+  color: var(--pageSecondaryHeadingColor);
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+}
+@media (max-width: 580px) {
+  .myServices .heading h2 {
+    font-size: 27px;
+ }
+}
+.myServices .heading p {
+  width: 80%;
+  margin: 0 auto;
+  font-weight: 400;
+  text-align: center;
+  line-height: 20px;
+  color: var(--pageParagraphsColor);
+}
+@media (max-width: 769px) {
+  .myServices .heading p {
+    width: 90%;
+ }
+}
+.myServices .cardsWrapper {
+  padding-top: 50px;
+}
+.myServices .cardsWrapper .cards {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-bottom: 70px;
+}
+.myServices .cardsWrapper .cards .serviceCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 300px;
+  
+}
+@media (max-width: 580px) {
+  .myServices .cardsWrapper .cards .serviceCard {
+    width: 100%;
+ }
+}
+.myServices .cardsWrapper .cards .serviceCard img {
+  border-radius: 10px;
+  width: 100%;
+  display: block;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.myServices .cardsWrapper .cards .serviceCard .cardTitle {
+  color: var(--mainColor);
+  margin: 20px 0 10px;
+}
+.myServices .serviceCard .cardParagraph {
+  font-size: 14px;
+  color: var(--pageParagraphsColor);
+}
+main #about {
+  font-family: "Roboto Mono", monospace;
   padding: 60px 15%;
 }
 
@@ -277,7 +367,7 @@ main #about h2 {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: #ccd6f6;
+  color: var(--pageSecondaryHeadingColor);
   font-size: 2.5rem;
   margin-bottom: 3rem;
 }
@@ -301,6 +391,7 @@ main #about .info {
 
 main #about .info p {
   line-height: 20px;
+  color: var(--pageParagraphsColor);
 }
 
 main #about .info p:not(:last-child) {
@@ -330,7 +421,7 @@ main #about .info .profileWrapper::before {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: #45d4b3;
+  background-color: rgba(0,0,0, .5);
   opacity: 0.3;
   border-radius: inherit;
   z-index: 2;
@@ -344,7 +435,7 @@ main #about .info .profileWrapper::after {
   position: absolute;
   width: 100%;
   height: 100%;
-  border: 2px solid #45d4b3;
+  border: 2px solid var(--mainColor);
   top: 1.5rem;
   left: 1.5rem;
   border-radius: inherit;
@@ -371,7 +462,7 @@ main #about .info .profileWrapper:hover::after {
   position: absolute;
   width: 100%;
   height: 100%;
-  border: 2px solid #45d4b3;
+  border: 2px solid var(--mainColor);
   top: 0.5rem;
   left: 0.5rem;
   border-radius: inherit;
@@ -390,6 +481,8 @@ main #about .info #devStack li {
   margin: 0.2rem 0;
   -webkit-transition: 0.2s;
   transition: 0.2s;
+  text-transform: capitalize;
+  color: var(--tagsColor);
 }
 
 main #about .info #devStack li:hover {
@@ -399,7 +492,7 @@ main #about .info #devStack li:hover {
 
 main #about .info #devStack li::before {
   content: "»";
-  color: #45d4b3;
+  color: var(--mainColor);
   margin-right: 0.5rem;
 }
 
@@ -420,7 +513,7 @@ main .work-experience .work-title {
 }
 
 main .work-experience .work-title span {
-  color: #45d4b3;
+  color: var(--mainColor);
   margin-right: 10px;
   font-family: "Roboto Mono", monospace;
   font-size: 22px;
@@ -429,7 +522,7 @@ main .work-experience .work-title span {
 main .work-experience .work-title h2 {
   font-size: 32px;
   font-weight: 600;
-  color: #ccd6f6;
+  color: var(--pageSecondaryHeadingColor);
   font-family: "Noto Sans", sans-serif;
 }
 
@@ -452,6 +545,8 @@ main .work-experience .work-content .projectNames {
   height: 252px;
   overflow-y: scroll;
   overflow-x: hidden;
+  background-color: var(--semiBlackTransparent);
+  border-radius: 10px;
 }
 
 main .work-experience .work-content .projectNames::-webkit-scrollbar {
@@ -463,7 +558,7 @@ main .work-experience .work-content .projectNames::-webkit-scrollbar-track {
 }
 
 main .work-experience .work-content .projectNames::-webkit-scrollbar-thumb {
-  background: #45d4b3;
+  background: var(--mainColor);
 }
 
 main .work-experience .work-content .projectNames button {
@@ -479,7 +574,7 @@ main .work-experience .work-content .projectNames button {
   font-size: 13px;
   border: none;
   background-color: transparent;
-  color: #8892b0;
+  color: var(--pageSecondaryHeadingColor);
   width: 130px;
   height: 42px;
   padding: 15px;
@@ -490,8 +585,8 @@ main .work-experience .work-content .projectNames button {
 }
 
 main .work-experience .work-content .projectNames button.active {
-  background-color: #112240;
-  color: #45d4b3;
+  background-color: var(--projectsDescriptionBackground);
+  color: var(--mainColor);
 }
 
 main .work-experience .work-content .projectNames button.active::before {
@@ -501,12 +596,12 @@ main .work-experience .work-content .projectNames button.active::before {
   height: 100%;
   top: 0;
   left: -2px;
-  background-color: #45d4b3;
+  background-color: var(--mainColor);
 }
 
 main .work-experience .work-content .projectNames button:hover {
-  background-color: #112240;
-  color: #45d4b3;
+  background-color: var(--projectsDescriptionBackground);
+  color: var(--mainColor);
   outline: 0px;
 }
 
@@ -519,19 +614,19 @@ main .work-experience .work-content .project-inner h3 {
   font-family: "Noto Sans", sans-serif;
   margin-bottom: 8px;
   font-size: 22px;
-  color: #ccd6f6;
+  color: var(--pageSecondaryHeadingColor);
 }
 
 main .work-experience .work-content .project-inner .duration {
   margin-bottom: 25px;
-  color: #a8b2d1;
+  color: var(--pageParagraphsColor);
   font-family: "Roboto Mono", monospace;
   font-size: 13px;
 }
 
 main .work-experience .work-content .project-inner .project-stack {
   margin-bottom: 25px;
-  color: #a8b2d1;
+  color: var(--pageParagraphsColor);
   font-family: "Roboto Mono", monospace;
   font-size: 13px;
   text-transform: capitalize;
@@ -539,7 +634,7 @@ main .work-experience .work-content .project-inner .project-stack {
 
 main .work-experience .work-content .project-inner .link-to-project {
   margin-bottom: 25px;
-  color: #a8b2d1;
+  color: var(--pageParagraphsColor);
   font-family: "Roboto Mono", monospace;
 }
 
@@ -551,7 +646,7 @@ main .work-experience .work-content .project-inner .link-to-project a {
 }
 
 main .work-experience .work-content .project-inner .link-to-project a:hover {
-  color: #c9d0e3;
+  color: var(--mainColor);
 }
 
 main .work-experience .work-content .project-inner div {
@@ -561,12 +656,12 @@ main .work-experience .work-content .project-inner div {
 }
 
 main .work-experience .work-content .project-inner div i {
-  color: #45d4b3;
+  color: var(--mainColor);
 }
 
 main .work-experience .work-content .project-inner div p {
   padding-left: 30px;
-  color: #8892b0;
+  color: var(--pageParagraphsColor);
   font-size: 15px;
   font-family: "Noto Sans", sans-serif;
   margin-bottom: 10px;
@@ -593,7 +688,7 @@ main .projects-title {
 }
 
 main .projects-title span {
-  color: #45d4b3;
+  color: var(--mainColor);
   margin-right: 10px;
   font-family: "Roboto Mono", monospace;
   font-size: 22px;
@@ -602,7 +697,7 @@ main .projects-title span {
 main .projects-title h2 {
   font-size: 32px;
   font-weight: 600;
-  color: #ccd6f6;
+  color: var(--pageSecondaryHeadingColor);
   font-family: "Noto Sans", sans-serif;
 }
 
@@ -650,7 +745,7 @@ main .projects-content-item-img .overlay {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #64ffda;
+  background-color: var(--mainColor);
   opacity: 0.2;
   -webkit-transition: opacity 0.3s ease-in-out;
   transition: opacity 0.3s ease-in-out;
@@ -669,7 +764,7 @@ main .projects-content-item-text {
 }
 
 main .projects-content-item-text .project-date {
-  color: #45d4b3;
+  color: var(--pageParagraphsColor);
   font-family: "Roboto Mono", monospace;
   font-weight: 400;
   margin-bottom: 10px;
@@ -678,7 +773,7 @@ main .projects-content-item-text .project-date {
 main .projects-content-item-text h3 {
   text-transform: capitalize;
   font-size: 28px;
-  color: #ccd6f6;
+  color: var(--projectsCardTitle);
   margin-bottom: 20px;
   border-bottom: 1px solid lightblue;
   padding-bottom: 5px;
@@ -687,7 +782,7 @@ main .projects-content-item-text h3 {
 
 main .projects-content-item-text-wrapper {
   padding: 25px;
-  background-color: #112240;
+  background-color: var(--projectsDescriptionBackground);
   border-radius: 4px;
   color: #a8b2d1;
   font-size: 18px;
@@ -698,6 +793,7 @@ main .projects-content-item-text-wrapper {
 
 main .projects-content-item-text-wrapper p {
   line-height: 1.2;
+  color: var(--pageParagraphsColor);
 }
 
 main .projects-content-item-text-techs {
@@ -723,6 +819,7 @@ main .projects-content-item-text-techs ul {
 main .projects-content-item-text-techs ul li {
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
+  color: var(--tagsColor);
 }
 
 main .projects-content-item-text-techs ul li:hover {
@@ -747,6 +844,10 @@ main .projects-content-item-text-links a {
 main .projects-content-item-text-links a img {
   width: 20px;
   height: 20px;
+  transition-duration: .2s;
+}
+main .projects-content-item-text-links a img:hover {
+  transform: scale(1.1);
 }
 
 main .contact {
@@ -766,7 +867,7 @@ main .contact-title {
 }
 
 main .contact-title span {
-  color: #45d4b3;
+  color: var(--mainColor);
   margin-right: 10px;
   font-family: "Roboto Mono", monospace;
   font-size: 22px;
@@ -851,7 +952,7 @@ main .contact form textarea {
 /* Social Icons Styles */
 .social__icons,
 .gmailLink {
-  border: 1px solid #64ffda;
+  border: 1px solid var(--mainColor);
   border-bottom: none;
   border-radius: 25px;
   background-color: rgba(0, 0, 0, 0.3);
@@ -896,8 +997,7 @@ footer .social__icons .social__icons__list .social__links a img {
 }
 
 footer .social__icons .social__icons__list .social__links a img:hover {
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
+  animation: skew-y-shakeing 1.5s;
 }
 
 footer .social__icons .social__icons__list .social__icons__list::after {
@@ -955,7 +1055,7 @@ footer .gmailLink div a {
 footer .gmailLink div a:hover {
   -webkit-transform: translateY(-5px);
   transform: translateY(-5px);
-  color: #64ffda;
+  color: var(--mainColor);
 }
 
 footer .gmailLink div::after {
@@ -969,8 +1069,12 @@ footer .gmailLink div::after {
 .closeNavbar, .openNavbar {
   cursor: pointer;
 }
+.openNavbar path {
+  fill: var(--mainColor);
+}
 .closeNavbar {
   display: none;
+  stroke: var(--mainColor);
 }
 header.active .openNavbar {
   display: none;
@@ -1078,7 +1182,7 @@ header.active .closeNavbar {
 
   header .icon {
     width: 30px;
-    color: #45d4b3;
+    color: var(--mainColor);
     display: block !important;
     z-index: 1;
   }
@@ -1260,5 +1364,52 @@ header.active .closeNavbar {
 @media (max-width: 380px) {
   main .contact form textarea {
     width: 200px;
+  }
+}
+@keyframes horizontal-shaking {
+  0% {
+      transform: translateX(0)
+  }
+
+  25% {
+      transform: translateX(5px)
+  }
+
+  50% {
+      transform: translateX(-5px)
+  }
+
+  75% {
+      transform: translateX(5px)
+  }
+
+  100% {
+      transform: translateX(0)
+  }
+}
+
+@keyframes skew-y-shakeing {
+  0% {
+      transform: skewY(-15deg);
+  }
+
+  5% {
+      transform: skewY(15deg);
+  }
+
+  10% {
+      transform: skewY(-15deg);
+  }
+
+  15% {
+      transform: skewY(15deg);
+  }
+
+  20% {
+      transform: skewY(0deg);
+  }
+
+  100% {
+      transform: skewY(0deg);
   }
 }
