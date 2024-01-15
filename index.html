@@ -21,8 +21,8 @@
 		<meta name="author" content="Grigori Khundadze">
 		<meta name="robots" content="all">
 		<link type="image/png" sizes="16x16" rel="icon" href="./static/images/favicon.ico">
-		<link rel="stylesheet" href="./static/styles/css/style.min.css" />
-		<!-- <link rel="stylesheet" href="./static/styles/css/style.css"> -->
+		<!-- <link rel="stylesheet" href="./static/styles/css/style.min.css" /> -->
+		<link rel="stylesheet" href="./static/styles/css/style.css">
 		<title>Grigori Khundadze Frontend Developer</title>
 		<meta name="description" content="grigori khundadze, frontend developer personal website, I build WebApps & WebSites"/>
 		<meta property="og:url"          content="https://gkhundadze.com/" />
@@ -35,8 +35,16 @@
 		<header id="header">
 			<div>
 				<a class="logo" href="#developer-intro">
-					<!-- <img class="logo" src="static/images/logo.svg" alt="logo" /> -->
-					under development
+					<img class="logo" src="static/images/1.svg" alt="logo" />
+					<!-- <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 250" width="50" height="50">
+						
+						<defs>
+							<image  width="250" height="250" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPoAAAD6CAMAAAC/MqoPAAAAAXNSR0IB2cksfwAAAnlQTFRFICAgQEBAEBAQAAAAUFBQgICAYGBgsLCwoKCgwMDAkJCQcHBwMDAwf39/r6+vj4+Pn5+fPz8/X19fv7+/z8/P////7+/vT09PLy8v39/fHx8fb29v/////v7+7e3t/Pz82dnZ4ODg7+/v/f397Ozs1tbWq6ur8fHx5OTk3Nzcbm5u5eXl0tLSY2Nje3t7zMzMmpqa8PDw4eHh+fn5pKSkbW1tR0dHNDQ0jY2NqKiohoaGk5OTtbW1+vr6ampqHR0dISEhUlJSioqKNjY2bGxsvb29tLS09PT01dXVtra2NTU1FRUVSkpK0dHROjo6sbGxHh4ezc3NPj4+urq6+Pj4fHx8S0tLjo6OVFRU+/v7srKy8/PzdXV19fX1OTk5mZmZw8PDgoKCeXl5m5ubV1dXlJSUjIyM29vbkZGRVVVVcnJyZGRkkpKSnp6eiIiIiYmJ4uLilZWVRUVFYWFhmJiY9vb23d3dyMjIvr6+rq6uYmJilpaWubm5ra2t09PT7u7u3t7euLi4WFhYDg4OMzMzSEhIeHh4dHR0dnZ2XV1d2trau7u7pqamGhoaJCQkVlZWaGhoa2trXFxcOzs7CgoKQkJCHBwcUVFRTU1NLS0twsLC5+fnCAgIJiYmoaGh19fXDAwMKSkpQUFBl5eXue/i0PTsZmZmQ0ND6enpRdSzf+HL8/z6Ude4uu/jWVlZMTEx6Pr10fTsruzeourZdN/GXNm9aNzBxfLn3PfxvLy8i+TQl+fU6urq8vLyUNe3c9/GnJycXNm8ounZzs7OrezeiuTPZ9zBxsbG5ubmlufUDw8PxMTEcXFxW1tbg4ODhYWF6Pr16Pr16Pr10v6CtwAAANN0Uk5T/////////////////////////////////////wAAIAD/8AAAMP//ALD//6D//////wDgAP///////////wD///////////8A////////////////AP////8A/wD/AP///////////////////////9D/////AP///////////xD///////////////////////////////////+A////////////////YP//AP////9w//////////////9QAP////////////+Q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"/>
+						</defs>
+						<style>
+						</style>
+						<use id="Background" href="#img1" x="0" y="0"/>
+					</svg> -->
 				</a>
 			</div>
 			<nav class="nav">
@@ -61,11 +69,11 @@
 			</nav>
 			<div class="icon">
 				<svg class="openNavbar" width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<path fill-rule="evenodd" clip-rule="evenodd" d="M4 5C3.44772 5 3 5.44772 3 6C3 6.55228 3.44772 7 4 7H20C20.5523 7 21 6.55228 21 6C21 5.44772 20.5523 5 20 5H4ZM7 12C7 11.4477 7.44772 11 8 11H20C20.5523 11 21 11.4477 21 12C21 12.5523 20.5523 13 20 13H8C7.44772 13 7 12.5523 7 12ZM13 18C13 17.4477 13.4477 17 14 17H20C20.5523 17 21 17.4477 21 18C21 18.5523 20.5523 19 20 19H14C13.4477 19 13 18.5523 13 18Z" fill="#45d4b3"/>
+					<path fill="red" fill-rule="evenodd" clip-rule="evenodd" d="M4 5C3.44772 5 3 5.44772 3 6C3 6.55228 3.44772 7 4 7H20C20.5523 7 21 6.55228 21 6C21 5.44772 20.5523 5 20 5H4ZM7 12C7 11.4477 7.44772 11 8 11H20C20.5523 11 21 11.4477 21 12C21 12.5523 20.5523 13 20 13H8C7.44772 13 7 12.5523 7 12ZM13 18C13 17.4477 13.4477 17 14 17H20C20.5523 17 21 17.4477 21 18C21 18.5523 20.5523 19 20 19H14C13.4477 19 13 18.5523 13 18Z" />
 				</svg>
 				<svg class="closeNavbar" width="30px" height="30px" viewBox="-0.5 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<path d="M3 21.32L21 3.32001" stroke="#45d4b3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-					<path d="M3 3.32001L21 21.32" stroke="#45d4b3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+					<path d="M3 21.32L21 3.32001" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+					<path d="M3 3.32001L21 21.32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 				</svg>
 			</div>
 		</header>
@@ -77,6 +85,17 @@
 					<a class="Btn" href="https://geolab.edu.ge/ka-GE/Courses/CourseDetails/27?course=%E1%83%AF%E1%83%90%E1%83%95%E1%83%90%E1%83%A1%E1%83%99%E1%83%A0%E1%83%98%E1%83%9E%E1%83%A2%E1%83%98" target="_blank">check out my course</a>
 				</div>
 			</section>
+			<section class="myServices" id="MyServices">
+				<div class="heading">
+					 <h2>My Services</h2>
+					 <p>services description</p>
+				</div>
+				 <div class="cardsWrapper">
+					 <div class="cards">
+						 
+					 </div>
+				 </div>
+			 </section>
 			<section id="about">
 				<h2>about me</h2>
 				<div class="info">
@@ -132,14 +151,14 @@
 				</div>
 			  </div>
 		</footer>
-		<!-- <script src="static/js/variables.js"></script> -->
-		<script src="static/js/variables.min.js"></script>
-		<!-- <script src="static/js/functions.js"></script> -->
-		<script src="static/js/functions.min.js"></script>
-		<!-- <script src="static/js/animation.js"></script> -->
-		<script src="static/js/animation.min.js"></script>
-		<!-- <script src="static/js/app.js"></script> -->
-		<script src="static/js/app.min.js"></script>
+		<script src="static/js/variables.js"></script>
+		<!-- <script src="static/js/variables.min.js"></script> -->
+		<script src="static/js/functions.js"></script>
+		<!-- <script src="static/js/functions.min.js"></script> -->
+		<script src="static/js/animation.js"></script>
+		<!-- <script src="static/js/animation.min.js"></script> -->
+		<script src="static/js/app.js"></script>
+		<!-- <script src="static/js/app.min.js"></script> -->
 		<!-- emailJS code -->
 		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script type="text/javascript">

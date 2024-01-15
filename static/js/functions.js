@@ -158,3 +158,20 @@ function checkNavLinks(arr) {
     })
   }
 }	
+
+
+
+function renderServices (serviceArr, locationDiv) {
+  serviceArr.forEach((service) => {
+    const template =  `
+    <div class="serviceCard">
+      <img src=${service.iconPath} alt="Web Development" />
+      <h3 class="cardTitle">${service.title}</h3>
+      <p class="cardParagraph">
+        ${service.description}
+      </p>
+    </div>
+  `
+  locationDiv.innerHTML += template
+  })
+}

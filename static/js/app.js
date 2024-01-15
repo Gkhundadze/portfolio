@@ -1,9 +1,11 @@
 getData()
 .then((Developer) => {
 	const workProjects = Developer.workProjects;
+	const services = Developer.services
 	const completedProjects = Developer.completedProjects;
 	gmailName.setAttribute('href', `mailto:${Developer.gmailName}`)
 	gmailName.textContent = Developer.gmailName;
+	renderServices(services, servicesWrapper)
 	showAboutMe(aboutMe, Developer);
 	showProfilePhoto(desktop, tablet, mobile, profilePhoto, Developer);
 	showDevelopmentStack(devStack, Developer);
@@ -47,7 +49,7 @@ getData()
 // 	  .then((data) => data);
 // }
 async function getData() {
-	return fetch("./static/js/userObj.min.json")
+	return fetch("./static/js/userObj.json")
 	  .then((response) => response.json())
 	  .then((data) => data);
 }
