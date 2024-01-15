@@ -121,13 +121,17 @@ input {
 :root {
   --linearbackground: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
   --mainColor: #36ffea;
-  --backgroundColor: #161143;
-  --backgroundColorLight: #161143d9;
+  --backgroundColor: #403699;
+  --backgroundColorLight: #403699d9;
   --serviceCardDescription: #d4e5d8;
   --projectsDescriptionBackground: #26344d;
   --projectsCardTitle: var(--mainColor);
+  --pageMainHeadingColor: var(--mainColor);
+  --pageParagraphsColor: #ebe1e1;
+  --pageSecondaryHeadingColor: #ccd6f6;
+  --tagsColor: #ccd6f6;
+  --semiBlackTransparent: rgba(0, 0, 0, 0.5)
 }
-
 .Btn {
   cursor: pointer;
   color: var(--mainColor);
@@ -159,7 +163,7 @@ header {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: var(--backgroundColorLight);
+  background-color: var(--semiBlackTransparent);
   padding: 10px 50px;
   z-index: 99;
   border-bottom: 2px solid rgba(255, 255, 255, 0.5);
@@ -173,7 +177,9 @@ header div a.logo {
   letter-spacing: 1px;
   text-transform: capitalize;
 }
-
+header img.logo:hover {
+  animation: skew-y-shakeing 1.5s;
+}
 header nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -244,7 +250,7 @@ main .developer-intro .dev-name::first-letter {
 
 main .developer-intro #devName>h1 {
   font-size: clamp(40px, 8vw, 60px);
-  color: #8892b0;
+  color: var(--pageMainHeadingColor);
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   margin: 10px 0;
   font-weight: 600;
@@ -252,7 +258,7 @@ main .developer-intro #devName>h1 {
 
 main .developer-intro #devName>h2 {
   font-size: clamp(40px, 8vw, 50px);
-  color: #ccd6f6;
+  color: var(--pageSecondaryHeadingColor);
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   text-transform: capitalize;
   font-weight: 600;
@@ -264,7 +270,7 @@ main .developer-intro #devName>h3::first-letter {
 
 main .developer-intro #devName>p {
   margin: 20px 0px 0px;
-  color: #8892b0;
+  color: var(--pageParagraphsColor);
   font-size: clamp(16px, 5vw, 24px);
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   line-height: 1.3;
@@ -287,19 +293,9 @@ main .myServices {
 main .myServices .heading {
   text-align: center;
   margin-bottom: 1.5rem;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 700;
-  text-transform: capitalize;
 }
 main .myServices .heading h2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  color: #ccd6f6;
+  color: var(--pageSecondaryHeadingColor);
   font-size: 2.5rem;
   margin-bottom: 3rem;
 }
@@ -311,13 +307,10 @@ main .myServices .heading h2 {
 .myServices .heading p {
   width: 80%;
   margin: 0 auto;
-  font-family: "Inter";
-  font-style: normal;
   font-weight: 400;
-  font-size: 15px;
-  line-height: 24px;
   text-align: center;
-  text-transform: capitalize;
+  line-height: 20px;
+  color: var(--pageParagraphsColor);
 }
 @media (max-width: 769px) {
   .myServices .heading p {
@@ -340,7 +333,7 @@ main .myServices .heading h2 {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  max-width: 250px;
+  max-width: 300px;
   
 }
 @media (max-width: 580px) {
@@ -360,11 +353,10 @@ main .myServices .heading h2 {
 }
 .myServices .serviceCard .cardParagraph {
   font-size: 14px;
-  color: var(--serviceCardDescription);
+  color: var(--pageParagraphsColor);
 }
 main #about {
   font-family: "Roboto Mono", monospace;
-  color: #8892b0;
   padding: 60px 15%;
 }
 
@@ -375,7 +367,7 @@ main #about h2 {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: #ccd6f6;
+  color: var(--pageSecondaryHeadingColor);
   font-size: 2.5rem;
   margin-bottom: 3rem;
 }
@@ -399,6 +391,7 @@ main #about .info {
 
 main #about .info p {
   line-height: 20px;
+  color: var(--pageParagraphsColor);
 }
 
 main #about .info p:not(:last-child) {
@@ -488,6 +481,8 @@ main #about .info #devStack li {
   margin: 0.2rem 0;
   -webkit-transition: 0.2s;
   transition: 0.2s;
+  text-transform: capitalize;
+  color: var(--tagsColor);
 }
 
 main #about .info #devStack li:hover {
@@ -527,7 +522,7 @@ main .work-experience .work-title span {
 main .work-experience .work-title h2 {
   font-size: 32px;
   font-weight: 600;
-  color: #ccd6f6;
+  color: var(--pageSecondaryHeadingColor);
   font-family: "Noto Sans", sans-serif;
 }
 
@@ -550,6 +545,8 @@ main .work-experience .work-content .projectNames {
   height: 252px;
   overflow-y: scroll;
   overflow-x: hidden;
+  background-color: var(--semiBlackTransparent);
+  border-radius: 10px;
 }
 
 main .work-experience .work-content .projectNames::-webkit-scrollbar {
@@ -577,7 +574,7 @@ main .work-experience .work-content .projectNames button {
   font-size: 13px;
   border: none;
   background-color: transparent;
-  color: #8892b0;
+  color: var(--pageSecondaryHeadingColor);
   width: 130px;
   height: 42px;
   padding: 15px;
@@ -617,19 +614,19 @@ main .work-experience .work-content .project-inner h3 {
   font-family: "Noto Sans", sans-serif;
   margin-bottom: 8px;
   font-size: 22px;
-  color: #ccd6f6;
+  color: var(--pageSecondaryHeadingColor);
 }
 
 main .work-experience .work-content .project-inner .duration {
   margin-bottom: 25px;
-  color: #a8b2d1;
+  color: var(--pageParagraphsColor);
   font-family: "Roboto Mono", monospace;
   font-size: 13px;
 }
 
 main .work-experience .work-content .project-inner .project-stack {
   margin-bottom: 25px;
-  color: #a8b2d1;
+  color: var(--pageParagraphsColor);
   font-family: "Roboto Mono", monospace;
   font-size: 13px;
   text-transform: capitalize;
@@ -637,7 +634,7 @@ main .work-experience .work-content .project-inner .project-stack {
 
 main .work-experience .work-content .project-inner .link-to-project {
   margin-bottom: 25px;
-  color: #a8b2d1;
+  color: var(--pageParagraphsColor);
   font-family: "Roboto Mono", monospace;
 }
 
@@ -649,7 +646,7 @@ main .work-experience .work-content .project-inner .link-to-project a {
 }
 
 main .work-experience .work-content .project-inner .link-to-project a:hover {
-  color: #c9d0e3;
+  color: var(--mainColor);
 }
 
 main .work-experience .work-content .project-inner div {
@@ -664,7 +661,7 @@ main .work-experience .work-content .project-inner div i {
 
 main .work-experience .work-content .project-inner div p {
   padding-left: 30px;
-  color: #8892b0;
+  color: var(--pageParagraphsColor);
   font-size: 15px;
   font-family: "Noto Sans", sans-serif;
   margin-bottom: 10px;
@@ -700,7 +697,7 @@ main .projects-title span {
 main .projects-title h2 {
   font-size: 32px;
   font-weight: 600;
-  color: #ccd6f6;
+  color: var(--pageSecondaryHeadingColor);
   font-family: "Noto Sans", sans-serif;
 }
 
@@ -767,7 +764,7 @@ main .projects-content-item-text {
 }
 
 main .projects-content-item-text .project-date {
-  color: var(--mainColor);
+  color: var(--pageParagraphsColor);
   font-family: "Roboto Mono", monospace;
   font-weight: 400;
   margin-bottom: 10px;
@@ -796,6 +793,7 @@ main .projects-content-item-text-wrapper {
 
 main .projects-content-item-text-wrapper p {
   line-height: 1.2;
+  color: var(--pageParagraphsColor);
 }
 
 main .projects-content-item-text-techs {
@@ -821,6 +819,7 @@ main .projects-content-item-text-techs ul {
 main .projects-content-item-text-techs ul li {
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
+  color: var(--tagsColor);
 }
 
 main .projects-content-item-text-techs ul li:hover {
@@ -845,6 +844,10 @@ main .projects-content-item-text-links a {
 main .projects-content-item-text-links a img {
   width: 20px;
   height: 20px;
+  transition-duration: .2s;
+}
+main .projects-content-item-text-links a img:hover {
+  transform: scale(1.1);
 }
 
 main .contact {
@@ -994,8 +997,7 @@ footer .social__icons .social__icons__list .social__links a img {
 }
 
 footer .social__icons .social__icons__list .social__links a img:hover {
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
+  animation: skew-y-shakeing 1.5s;
 }
 
 footer .social__icons .social__icons__list .social__icons__list::after {
@@ -1362,5 +1364,52 @@ header.active .closeNavbar {
 @media (max-width: 380px) {
   main .contact form textarea {
     width: 200px;
+  }
+}
+@keyframes horizontal-shaking {
+  0% {
+      transform: translateX(0)
+  }
+
+  25% {
+      transform: translateX(5px)
+  }
+
+  50% {
+      transform: translateX(-5px)
+  }
+
+  75% {
+      transform: translateX(5px)
+  }
+
+  100% {
+      transform: translateX(0)
+  }
+}
+
+@keyframes skew-y-shakeing {
+  0% {
+      transform: skewY(-15deg);
+  }
+
+  5% {
+      transform: skewY(15deg);
+  }
+
+  10% {
+      transform: skewY(-15deg);
+  }
+
+  15% {
+      transform: skewY(15deg);
+  }
+
+  20% {
+      transform: skewY(0deg);
+  }
+
+  100% {
+      transform: skewY(0deg);
   }
 }

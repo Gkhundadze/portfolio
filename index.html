@@ -56,6 +56,9 @@
 						<a nav-link href="#about">About</a>
 					</li>
 					<li>
+						<a nav-link href="#MyServices">Services</a>
+					</li>
+					<li>
 						<a nav-link href="#experience">Experience</a>
 					</li>
 					<li>
@@ -85,17 +88,6 @@
 					<a class="Btn" href="https://geolab.edu.ge/ka-GE/Courses/CourseDetails/27?course=%E1%83%AF%E1%83%90%E1%83%95%E1%83%90%E1%83%A1%E1%83%99%E1%83%A0%E1%83%98%E1%83%9E%E1%83%A2%E1%83%98" target="_blank">check out my course</a>
 				</div>
 			</section>
-			<section class="myServices" id="MyServices">
-				<div class="heading">
-					 <h2>My Services</h2>
-					 <p>services description</p>
-				</div>
-				 <div class="cardsWrapper">
-					 <div class="cards">
-						 
-					 </div>
-				 </div>
-			 </section>
 			<section id="about">
 				<h2>about me</h2>
 				<div class="info">
@@ -111,6 +103,17 @@
 					<ul id="devStack"></ul>
 				</div>
 			</section>
+			<section class="myServices" id="MyServices">
+				<div class="heading">
+					 <h2>My Services</h2>
+					 <p>I can provide the following types of services</p>
+				</div>
+				 <div class="cardsWrapper">
+					 <div class="cards">
+						 
+					 </div>
+				 </div>
+			 </section>
 			<section id="experience" class="work-experience">
 				<div class="work-title">
 					<h2>Where I've Worked</h2>
@@ -131,11 +134,11 @@
 				<form id="contact-form">
 					<input required type="hidden" name="contact_number">
 					<label for="nameInput">Name</label>
-					<input name="name input" required id="nameInput" type="text" name="user_name">
+					<input name="name" required id="nameInput" type="text" name="user_name">
 					<label for="emailInput">Email</label>
-					<input name="email input" id="emailInput" required type="email" name="user_email">
+					<input name="email" id="emailInput" required type="email" name="user_email">
 					<label for="messageInput">Message</label>
-					<textarea name="message input" id="messageInput" required name="message"></textarea>
+					<textarea name="message" id="messageInput" required name="message"></textarea>
 					<input type="submit" value="Send" class="Btn">
 				</form>
 			</section>
@@ -171,14 +174,14 @@
 					// generate a five digit number for the contact_number variable
 					this.contact_number.value = Math.random() * 100000 | 0;
 					// these IDs from the previous steps
-					emailjs.sendForm('service_ms82eju', 'template_c0aqjoq', this)
+					emailjs.sendForm('service_ms82eju', 'template_c0aqjoq',this)
 						.then(function() {
-							alert('Email sent')
+							alert('Message sent, Thank you ;)')
 							event.srcElement[1].value = ''
 							event.srcElement[2].value = ''
 							event.srcElement[3].value = ''
 						}, function(error) {
-							console.log('Email not sent', error);
+							alert('Email not sent', error);
 						});
 				});
 			}

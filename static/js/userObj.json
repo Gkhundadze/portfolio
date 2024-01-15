@@ -11,7 +11,7 @@
 		"p1": "I am an energetic person, purposeful, ambitious.",
 		"p2": "With creative mind, well organized, I always plan ahead to make sure I manage my time well",
 		"p3": "I’m positive person. responsible, attentive.",
-		"p4": "Excellent in working with others to achieve a certain objective on time and with excellence."
+		"p4": "Excellent in working with others to achieve a certain objective"
 	},
 	"developerPhoto": {
 		"desktop": "./static/images/profile_desktop.webp",
@@ -29,8 +29,12 @@
 		"React",
 		"Git",
 		"npm",
+		"python",
 		"Django",
-		"Flask"
+		"Flask",
+		"linux",
+		"windows",
+		"mac os"
 	],
 	"developerSocials": [
 		{
@@ -53,32 +57,32 @@
 		{
 			"title": "Web Development",
 			"description": "Blog, E-Comerce, Portfolio",
-			"iconPath": "https://raw.githubusercontent.com/Gkhundadze/staticFiles/main/service-icons/web-development.png"
+			"iconPath": "https://raw.githubusercontent.com/Gkhundadze/staticFiles/main/service-icons/web-development.webp"
 		},
 		{
 			"title": "Site Administration",
 			"description": "Administrator for your website",
-			"iconPath": "https://raw.githubusercontent.com/Gkhundadze/staticFiles/main/service-icons/site-admin.png"
+			"iconPath": "https://raw.githubusercontent.com/Gkhundadze/staticFiles/main/service-icons/site-admin.webp"
 		},
 		{
 			"title": "IT Support",
 			"description": "It support for company, group of Developers",
-			"iconPath": "https://raw.githubusercontent.com/Gkhundadze/staticFiles/main/service-icons/it-support.png"
+			"iconPath": "https://raw.githubusercontent.com/Gkhundadze/staticFiles/main/service-icons/it-support.webp"
 		},
 		{
 			"title": "IT Consulting",
 			"description": "It consultant for your business",
-			"iconPath": "https://raw.githubusercontent.com/Gkhundadze/staticFiles/main/service-icons/it-consulting.png"
+			"iconPath": "https://raw.githubusercontent.com/Gkhundadze/staticFiles/main/service-icons/it-consulting.webp"
 		},
 		{
 			"title": "UI/UX Consulting",
 			"description": "Useful advivces based on frontend-development experience",
-			"iconPath": "https://raw.githubusercontent.com/Gkhundadze/staticFiles/main/service-icons/ux-design.png"
+			"iconPath": "https://raw.githubusercontent.com/Gkhundadze/staticFiles/main/service-icons/ux-design.webp"
 		},
 		{
 			"title": "Logo Design",
 			"description": "Create LOGO for your business",
-			"iconPath": "https://raw.githubusercontent.com/Gkhundadze/staticFiles/main/service-icons/logo-design.jpg"
+			"iconPath": "https://raw.githubusercontent.com/Gkhundadze/staticFiles/main/service-icons/logo-design.webp"
 		}
 	],
 	"completedProjects": [
