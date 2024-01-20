@@ -23,13 +23,10 @@ function showAboutMe(aboutMe, Developer) {
   }
 }
 function greetingsAndIntro(devName, Developer) {
-  let h1 = document.createElement('h1');
-  h1.textContent = Developer['name'] + ' ' + Developer['surname'] + ' ' + Developer['currentStatus'];
   let h2 = document.createElement('h2');
   h2.textContent = Developer['slogan']
   let p = document.createElement('p');
   p.textContent = Developer['introduction']
-  devName.append(h1);
   devName.append(h2);
   devName.append(p);
 }
