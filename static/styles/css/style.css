@@ -151,7 +151,9 @@ input {
 .Btn:hover {
   background-color: rgba(100, 255, 218, 0.1);
 }
-
+.show-full-text {
+  -webkit-line-clamp: unset !important;
+}
 header {
   width: 100%;
   position: fixed;
@@ -247,6 +249,7 @@ main .developer-intro .dev-name {
   font-family: "Roboto Mono";
   font-size: 1.3rem;
   margin: 0px 0px 30px 4px;
+  display: inline-block;
 }
 
 main .developer-intro .dev-name::first-letter {
@@ -279,6 +282,7 @@ main .developer-intro #devName>p {
   font-size: clamp(16px, 5vw, 24px);
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   line-height: 1.3;
+  min-height: 100px;
 }
 
 main .developer-intro .first-btn {
@@ -292,9 +296,6 @@ main .developer-services {
 main .myServices {
   font-family: "Roboto Mono", monospace;
   color: #8892b0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   padding: 150px 15% 60px 15%;
 }
 
@@ -507,7 +508,7 @@ main #about .info #devStack li::before {
 
 main .work-experience {
   margin: 0 auto;
-  padding: 60px 18%;
+  padding: 60px 15%;
   position: relative;
 }
 
@@ -681,9 +682,8 @@ main .work-experience .work-content .project-inner div p {
 
 
 main .projects {
-  max-width: 1000px;
   margin: 0 auto;
-  padding: 60px 0;
+  padding: 60px 15%;
 }
 
 
@@ -862,9 +862,8 @@ main .projects-content-item-text-links a img:hover {
 }
 
 main .contact {
-  max-width: 1000px;
   margin: 0 auto;
-  padding: 60px 0;
+  padding: 60px 15%;
 }
 
 main .contact-title {
@@ -1405,6 +1404,9 @@ header.active .closeNavbar {
 
   main #about .info .profileWrapper img {
     height: 250px;
+  }
+  main #about .info .profileWrapper {
+    min-height: 250px;
   }
 }
 

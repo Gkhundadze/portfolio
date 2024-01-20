@@ -164,11 +164,15 @@ function renderServices (serviceArr, locationDiv) {
     <div class="serviceCard">
       <img loading="lazy" src=${service.iconPath} alt="${service.title} banner" />
       <h3 class="cardTitle">${service.title}</h3>
-      <p class="cardParagraph">
+      <p onclick="showFullText(this)" class="cardParagraph">
         ${service.description}
       </p>
     </div>
   `
   locationDiv.innerHTML += template
   })
+}
+
+function showFullText(el) {
+  el.classList.toggle('show-full-text')
 }

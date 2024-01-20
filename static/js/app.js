@@ -21,7 +21,8 @@ getData()
 	  sections.forEach((section) => {
 		const sectionTop = section.offsetTop;
 		if (scrollY >= sectionTop - 60) {
-		  current = section.getAttribute("id"); }
+		  current = section.getAttribute("id"); 
+		}
 	  });
 	  
 	  navLi.forEach((li) => {
@@ -40,6 +41,14 @@ getData()
 			e.target.setAttribute("style", "height:25px !important");
 		}
 	});
+	anime({
+		targets: '.dev-name',
+		direction: 'alternate',
+		rotate: '1turn',
+		duration: 1000,
+		easing: 'spring(1, 80, 10, 0)',
+		fontSize: '2rem'
+	  });
 });
 
 
