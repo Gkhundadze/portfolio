@@ -88,6 +88,7 @@ html {
 
 body {
   line-height: 1;
+  overflow-x: hidden;
 }
 
 ol,
@@ -122,7 +123,8 @@ input {
 :root {
   --linearbackground: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
   --mainColor: #36ffea;
-  --backgroundColor: #403699;
+  --backgroundColor: #2d1306;
+  --secondBackgroundColor: #2a2276d9;
   --backgroundColorLight: #403699d9;
   --serviceCardDescription: #d4e5d8;
   --projectsDescriptionBackground: #26344d;
@@ -237,9 +239,25 @@ header i {
 }
 
 main {
-  background-color: var(--backgroundColor);
+  background-color: var(--secondBackgroundColor);
+  padding-top: 100px;
 }
-
+.box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  display: inline-block;
+  background-color: var(--backgroundColor);
+  width: 1px;
+  height: 1px;
+  transition: .3s;
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+  filter: blur(1px);
+}
+/* .blurred {
+  filter: blur(1px);
+} */
 main .developer-intro {
   padding: 150px 15% 60px 15%;
 }
