@@ -35,10 +35,10 @@ getData()
 		const percentage = 3
 		const boxSize = Math.round(width / 100 * percentage)
 	window.onscroll = () => {
-	  let current = "";
+	  let current = "developer-intro";
 	  sections.forEach((section) => {
 		const sectionTop = section.offsetTop;
-		if (scrollY >= sectionTop - 60) {
+		if (scrollY >= sectionTop - 70) {
 		  current = section.getAttribute("id"); 
 		}
 	  });
@@ -68,7 +68,6 @@ getData()
 		easing: 'easeOutBack',
 		fontSize: '2rem'
 	  });
-	  generateBackground()
 	  function generateBackground() {
 		const wrapper = document.querySelector('body')
         for (let i = 1; i < 80; i++) {
@@ -82,28 +81,22 @@ getData()
 			targets: '.box',
 			easing: 'easeInOutQuad',
 			loop: false,
-			delay: 500,
+			delay: anime.stagger(200, {start: 500}),
 			duration: 10000
 		})
 		timeline
 			.add({
-				translateY: () => anime.random(0, height),
-				translateX: () => anime.random(0, width + 200),
-				scale: () => anime.random(.5, 6),
-				opacity: () => anime.random(1, 0.3),
-				easing: 'easeInOutQuad',
+				// translateY: () => anime.random(0, height - (height / 100 * 10)),
+				translateY: () => anime.random(0, height - (height / 100 * 15)),
+				translateX: () => anime.random(0, width - (width / 100 * 15)),
+				scale: () => anime.random(1, 6),
 			})
 
 		
 	  }
+	  window.addEventListener('load' , () => generateBackground())
 });
 
-
-// async function getData() {
-// 	return fetch("./static/js/userObj.json")
-// 	  .then((response) => response.json())
-// 	  .then((data) => data);
-// }
 async function getData() {
 	return fetch("./static/js/userObj.json")
 	  .then((response) => response.json())

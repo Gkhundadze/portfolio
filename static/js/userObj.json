@@ -92,6 +92,30 @@
 	],
 	"completedProjects": [
 		{
+			"projectName": "geolab",
+			"projectStart": "Dec 2022",
+			"projectEnd": "Jan 2024",
+			"projectRole": "Lecturer Assistant",
+			"projectUrl": "https://geolab.edu.ge/courses/vebprogramireba-javascript-react/",
+			"ProjectContent": [
+				"started internship program with administrator role, now i'm react lecturer assistant"
+			],
+			"projectStack": "javascript, react",
+			"projectMembers": []
+		},
+		{
+			"projectName": "geolab",
+			"projectStart": "Dec 2022",
+			"projectEnd": "present",
+			"projectRole": "Branch Manager",
+			"projectUrl": "https://geolab.edu.ge/about-us/",
+			"ProjectContent": [
+				"Branch Manager"
+			],
+			"projectStack": "Management",
+			"projectMembers": []
+		},
+		{
 			"projectName": "unilab",
 			"projectStart": "May 2022",
 			"projectEnd": "March 2023",
@@ -100,7 +124,7 @@
 			"ProjectContent": [
 				"started work as a Mentor of accelleration program with Unilab"
 			],
-			"projectStack": "html css javascript",
+			"projectStack": "html, css, javascript",
 			"projectMembers": [
 				{
 					"name": "luka",
@@ -111,18 +135,6 @@
 			]
 		},
 		{
-			"projectName": "geolab",
-			"projectStart": "Dec 2022",
-			"projectEnd": "present",
-			"projectRole": "Lecturer Assistant",
-			"projectUrl": "https://geolab.edu.ge/ka-GE/Courses/CourseDetails/32?course=JavaScript%20%2F%20React%20",
-			"ProjectContent": [
-				"started internship program with administrator role, now i'm react lecturer assistant"
-			],
-			"projectStack": "javascript react",
-			"projectMembers": []
-		},
-		{
 			"projectName": "stars georgia",
 			"projectStart": "Dec 2021",
 			"projectEnd": "Apr 2021",
@@ -131,7 +143,7 @@
 			"ProjectContent": [
 				"description appears soon ..."
 			],
-			"projectStack": "Django javascript",
+			"projectStack": "Django, javascript",
 			"projectMembers": [
 				{
 					"name": "tariel",

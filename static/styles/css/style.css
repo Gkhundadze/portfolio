@@ -571,9 +571,6 @@ main .work-experience .work-content .projectNames {
   flex-direction: column;
   -ms-flex-negative: 0;
   flex-shrink: 0;
-  height: 252px;
-  overflow-y: scroll;
-  overflow-x: hidden;
   background-color: var(--semiBlackTransparent);
   border-radius: 10px;
 }
@@ -611,6 +608,7 @@ main .work-experience .work-content .projectNames button {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   text-align: left;
+  text-transform: capitalize;
 }
 
 main .work-experience .work-content .projectNames button.active {
@@ -641,9 +639,10 @@ main .work-experience .work-content .project-inner {
 
 main .work-experience .work-content .project-inner h3 {
   font-family: "Noto Sans", sans-serif;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
   font-size: 22px;
   color: var(--pageSecondaryHeadingColor);
+  text-transform: capitalize;
 }
 
 main .work-experience .work-content .project-inner .duration {
@@ -651,6 +650,7 @@ main .work-experience .work-content .project-inner .duration {
   color: var(--pageParagraphsColor);
   font-family: "Roboto Mono", monospace;
   font-size: 13px;
+  text-transform: capitalize;
 }
 
 main .work-experience .work-content .project-inner .project-stack {
