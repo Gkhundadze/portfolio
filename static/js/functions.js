@@ -46,7 +46,7 @@ function socialIconsHendler(socialsArr, path) {
 }
 function createWorkProjects(arr, container) {
   arr.forEach((project, index) => {
-    const projectItem = document.createElement("div");
+    const projectItem = document.createElement("article");
     const isOdd = index % 2 === 1;
     projectItem.classList.add("projects-content-item");
     if (isOdd) {
@@ -114,12 +114,12 @@ const createContainer = (index, arr, wrapper) => {
         }" data-id ="${ind}" >${item.projectName}</button>`;
     })
       .join("") +
-    "</div><div class='project-inner'><h3>" +
+    "</div><article class='project-inner'><h3>" +
     projectRole +
     "</h3><p class='duration'>" +
     projectStart +
     " - " +
-    projectEnd +
+    projectEnd + "</p>" +
     "<h4 class='project-stack'>project stack : " +
     projectStack +
     "</h4>" +
@@ -134,7 +134,7 @@ const createContainer = (index, arr, wrapper) => {
       return (
         '<div><i class="fa-solid fa-caret-right"></i><p>' +
         item +
-        "</p></div>"
+        "</article>"
       );
     }).join("");
   ("</div>");
@@ -161,13 +161,13 @@ function checkNavLinks(arr) {
 function renderServices (serviceArr, locationDiv) {
   serviceArr.forEach((service) => {
     const template =  `
-    <div class="serviceCard">
+    <article class="serviceCard">
       <img loading="lazy" src=${service.iconPath} alt="${service.title} banner" />
       <h3 class="cardTitle">${service.title}</h3>
       <p onclick="showFullText(this)" class="cardParagraph">
         ${service.description}
       </p>
-    </div>
+    </article>
   `
   locationDiv.innerHTML += template
   })
