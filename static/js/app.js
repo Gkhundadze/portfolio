@@ -8,10 +8,8 @@ getData()
 	const completedProjects = Developer.completedProjects;
 	gmailName.setAttribute('href', `mailto:${Developer.gmailName}`)
 	gmailName.textContent = Developer.gmailName;
-	renderServices(services, servicesWrapper)
-	showAboutMe(aboutMe, Developer);
-	showProfilePhoto(desktop, tablet, mobile, profilePhoto, Developer);
-	showDevelopmentStack(devStack, Developer);
+	// renderServices(services, servicesWrapper)
+	// showProfilePhoto(desktop, tablet, mobile, profilePhoto, Developer);
 	socialIconsHendler(Developer.developerSocials, socialIconsWrapper)
 	createWorkProjects(workProjects, projectsContainer);
 	createContainer(0, completedProjects, work_content)
