@@ -11,7 +11,7 @@ getData()
 	// renderServices(services, servicesWrapper)
 	// showProfilePhoto(desktop, tablet, mobile, profilePhoto, Developer);
 	socialIconsHendler(Developer.developerSocials, socialIconsWrapper)
-	createWorkProjects(workProjects, projectsContainer);
+	// createWorkProjects(workProjects, projectsContainer);
 	createContainer(0, completedProjects, work_content)
 	scrollBtn(completedProjects);
 	checkNavLinks(navLinksArr)
