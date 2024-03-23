@@ -12,7 +12,6 @@ getData()
 	showAboutMe(aboutMe, Developer);
 	showProfilePhoto(desktop, tablet, mobile, profilePhoto, Developer);
 	showDevelopmentStack(devStack, Developer);
-	greetingsAndIntro(devName, Developer);
 	socialIconsHendler(Developer.developerSocials, socialIconsWrapper)
 	createWorkProjects(workProjects, projectsContainer);
 	createContainer(0, completedProjects, work_content)
